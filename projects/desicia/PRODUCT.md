@@ -35,7 +35,7 @@ client's cloud, under the client's ownership. (Derived from competitor research;
 ## Operating Context
 
 Buyers evaluate on a laptop between meetings and forward the link to a CTO or security lead. Their data lives in
-Snowflake / Databricks / SAP / Salesforce / ServiceNow; approvals and audit trails are part of how they work.
+Snowflake / Databricks / Microsoft Fabric / SAP / Dynamics 365 / Salesforce / ServiceNow; approvals and audit trails are part of how they work.
 
 ## Capabilities and Constraints
 

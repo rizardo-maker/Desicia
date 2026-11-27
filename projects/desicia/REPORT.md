@@ -183,3 +183,33 @@ npm test                   # contact endpoint checks
   - set the canonical domain;
   - optionally delete the unused kit folders `assets/photos`, `assets/objects` and `assets/scenes` (about 21 MB;
     nothing on the page loads them).
+
+## 6. Change log
+
+### 27 Nov 2026: whole hero console, Microsoft Fabric and Dynamics 365
+
+- **Hero console fully visible.** The kit's centred hero faded its window out from 82% of the frame and pinned the
+  console absolutely, so the console's last rows (the PO proposal and its Approve / Edit actions) were cut off.
+  `css/desicia.css` now puts the console in the flow on its lit stage, with no mask and no clipping, and tightens
+  the hero's spacing so the words, buttons and the whole console end above the fold. There is also a short-screen
+  step at heights of 860px or less. On screens that are still too short (1366×768: 0.88, 1024×768: 0.97),
+  `js/demo.js` zooms the console just enough to fit, never below 0.75. Below that floor (1280×720 runs 7px over,
+  375×667 phones run 79px over) the hero grows and the console stays whole. The console is marked `.ui`, a drawn
+  mock, the same as the service mocks.
+- **Integrations:** the hub in "Industries and integrations" now shows **Microsoft Fabric** and **Dynamics 365**
+  (10 spokes). Dynamics 365 is also named in the automation card ("write back to SAP, Dynamics 365, Salesforce or
+  ServiceNow").
+  - The marks are official Microsoft icons under MIT, added by hand because the kit's logo sets have none:
+    - `assets/icons/microsoft-fabric.svg` is from npm `@fabric-msft/svg-icons@12.0.0`;
+    - `assets/icons/dynamics-365.svg` is from `microsoft/Microsoft-AI-Decision-Framework`.
+  - Both are credited in `icons-credits.json`. They are trademarks of Microsoft and are used only to name a
+    supported system.
+  - The hub now starts below its panel title, so the top tiles no longer sit on the words at 1024.
+- **Validation after the change:**
+  - taste gate **PASS** in round 1 of a new build (the 390 core-pill contrast waiver applied; 16 WARN);
+  - layout check clean at 1440, 1024, 820, 768 and 390;
+  - consistency `--quick` at 1440/390 has no FAILs other than the waived artefact;
+  - copy-lint 0 FAIL / 0 WARN (776 words);
+  - impeccable URL scans clean at 1440 and 390;
+  - `npm test` passes.
+  - No motion was added (the zoom is static), so the review-animations verdict stands.

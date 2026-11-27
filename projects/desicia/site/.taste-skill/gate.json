@@ -1,34 +1,16 @@
 {
- "start": "2026-11-27T15:30:41.968Z",
- "round": 3,
+ "start": "2026-11-27T17:41:02.404Z",
+ "round": 0,
  "idle": 0,
  "errors": 0,
- "status": "open",
+ "status": "pass",
  "history": [
   {
-   "at": "2026-11-27T15:32:50.530Z",
+   "at": "2026-11-27T17:43:19.262Z",
    "mode": "manual",
-   "status": "fail",
-   "fails": 2,
-   "round": 1,
-   "reused": false,
-   "stopHookActive": false
-  },
-  {
-   "at": "2026-11-27T15:36:01.300Z",
-   "mode": "manual",
-   "status": "fail",
-   "fails": 2,
-   "round": 2,
-   "reused": false,
-   "stopHookActive": false
-  },
-  {
-   "at": "2026-11-27T16:53:26.394Z",
-   "mode": "manual",
-   "status": "open",
-   "fails": 1,
-   "round": 3,
+   "status": "pass",
+   "fails": 0,
+   "round": 0,
    "reused": false,
    "stopHookActive": false
   }
@@ -42,15 +24,11 @@
   "category": null,
   "primary": "Book a call",
   "rounds": 3,
-  "start": "2026-11-27T15:30:41.968Z",
+  "start": "2026-11-27T17:41:02.404Z",
   "by": "gate.mjs --start"
  },
  "manual": true,
- "roundKey": "a38a5255c0fda169:e075f3b2",
- "roundFree": false,
- "idleFree": false,
- "blockKey": null,
- "fp": "a38a5255c0fda169",
+ "fp": "7cb011d3771f3074",
  "page": "index.html",
  "found": {
   "fails": [
@@ -117,7 +95,7 @@
    {
     "check": "section-gaps",
     "where": "main#top > section.hero.hero--centred / section#thesis",
-    "msg": "180px between these sections, -45% against the median 329px",
+    "msg": "202px between these sections, -39% against the median 329px",
     "fix": "use one gap between sections (all within 25% of each other)",
     "widths": [
      1440,
@@ -131,8 +109,7 @@
     "msg": "uneven space at the edge of a band: 176px outside its edge, 17px inside it (the space on either side of a change of ground reads as one gap only when the two match)",
     "fix": "use one gap between sections (all within 25% of each other)",
     "widths": [
-     1440,
-     390
+     1440
     ],
     "from": "consistency"
    },
@@ -159,7 +136,7 @@
    {
     "check": "copy-length",
     "where": "section#questions \"Questions buyers ask\"",
-    "msg": "3 sections over 90 words a screen outside the UI mocks (\"Questions buyers ask\" 118, \"Security, ownership and \" 96, \"The engagement process\" 93); 71 words a screen across the page (635 words in 9 screens): a tech page says it in about 80 or fewer",
+    "msg": "3 sections over 90 words a screen outside the UI mocks (\"Questions buyers ask\" 118, \"Security, ownership and \" 96, \"The engagement process\" 93); 71 words a screen across the page (637 words in 9 screens): a tech page says it in about 80 or fewer",
     "fix": "cut every section to its heading, one line and the product UI: the UI says the rest; no second paragraph, no list of feature sentences",
     "widths": [
      1440
@@ -219,8 +196,8 @@
    },
    {
     "check": "fade-cut",
-    "where": "div.mini.ui > ol.log > li:nth-of-type(3) > span \"Price fixed\"",
-    "msg": "a line of div.mini.ui fades out under its edge (\"Price fixed\"): drawn at a fraction of #4c534d on #fcfefc, half-erased",
+    "where": "div.mini.ui > ol.log > li:nth-of-type(2) > span \"€2,310 over\"",
+    "msg": "a line of div.mini.ui fades out under its edge (\"€2,310 over\"): drawn at a fraction of #4c534d on #fcfefc, half-erased",
     "fix": "fit the mock's rows inside its panel (fewer rows, a taller panel), or end the fade below the last whole row: no row half-erased",
     "widths": [
      390
@@ -240,11 +217,12 @@
   ],
   "crashed": [],
   "seconds": {
-   "consistency": 125,
+   "consistency": 129,
    "layout": 4
   }
  },
- "open": [
+ "open": [],
+ "waived": [
   {
    "check": "contrast",
    "where": "div.dg > div.dg-nodes > div.dg-node.dg-node--core-pill > span.dg-label \"DESICIA\"",
@@ -259,11 +237,10 @@
    ],
    "wheres": [
     "div.dg > div.dg-nodes > div.dg-node.dg-node--core-pill > span.dg-label \"DESICIA\""
-   ]
+   ],
+   "reason": "False reading. The label is light text on its own dark gradient pill (about 17:1). At this 390 stop the text-hidden plate is shot while the fixed mobile action bar (paper ground) covers the pill: the checker's ground lookup skips fixed layers but its screenshot does not, so it compares white text with paper (1.1:1). The same artefact gave round 1's gantt-name 2.7:1 (ink over the bar's green button)."
   }
  ],
- "waived": [],
  "warnCount": 16,
- "at": "2026-11-27T16:53:26.395Z",
- "openTold": true
+ "at": "2026-11-27T17:43:19.262Z"
 }

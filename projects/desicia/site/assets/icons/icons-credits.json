@@ -117,5 +117,31 @@
     "licence": "ISC",
     "url": "https://github.com/lucide-icons/lucide",
     "trademark": false
+  },
+  {
+    "file": "microsoft-fabric.svg",
+    "icon": "file:microsoft-fabric",
+    "name": "Microsoft Fabric",
+    "kind": "colour",
+    "source": "@fabric-msft/svg-icons@12.0.0 (svg/fabric_48_color.svg), published by Microsoft",
+    "author": "Microsoft",
+    "licence": "MIT",
+    "url": "https://www.npmjs.com/package/@fabric-msft/svg-icons",
+    "trademark": true,
+    "markUrl": "https://www.microsoft.com/microsoft-fabric",
+    "note": "added by hand: the logos set has no Microsoft Fabric mark; cropped to its drawing with a 2% margin as icons.mjs does"
+  },
+  {
+    "file": "dynamics-365.svg",
+    "icon": "file:dynamics-365",
+    "name": "Microsoft Dynamics 365",
+    "kind": "colour",
+    "source": "microsoft/Microsoft-AI-Decision-Framework@main images/icons/Dynamics365_scalable.svg (Microsoft product icon)",
+    "author": "Microsoft",
+    "licence": "MIT",
+    "url": "https://github.com/microsoft/Microsoft-AI-Decision-Framework",
+    "trademark": true,
+    "markUrl": "https://www.microsoft.com/dynamics-365",
+    "note": "added by hand: the logos set has no Dynamics 365 mark and Simple Icons removed Microsoft marks; cropped to its drawing with a 2% margin"
   }
 ]
