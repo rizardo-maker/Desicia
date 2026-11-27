@@ -1,9 +1,19 @@
 node_modules/
 .cache/
 .DS_Store
-# taste-skill / impeccable run artefacts
+.vercel/
+
+# local contact log and secrets (the site server writes data/requests.jsonl)
+data/
+.env
+.env.local
+
+# taste-skill / impeccable run artefacts (the gate records and waivers in .taste-skill/ stay)
 .taste-skill/chrome-*/
 **/.taste-skill/chrome-*/
+.taste-skill/shots/
+.taste-skill/consistency/
+.taste-skill/gate/
 shots/
 **/shots/
 .impeccable/build/

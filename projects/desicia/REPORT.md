@@ -1,6 +1,6 @@
 # DESICIA website: build report
 
-Branch `arena/d954650d-desicia`. Site in `projects/desicia/site/`. Supporting documents: `BRIEF.md`,
+Branch `arena/d954650d-desicia`. Site at the repo root (moved from `projects/desicia/site/` on 27 Nov 2026 for Vercel). Supporting documents: `BRIEF.md`,
 `research/COMPETITORS.md`, `SCRIPT.md` (all page copy, written before any design), `PRODUCT.md`, `DESIGN.md`,
 `SKILL-ROUTING.md`.
 
@@ -52,9 +52,9 @@ Proof section later, when they exist.
     "tasteful" default, and it was off-brand next to a green accent, so every warm neutral was re-derived in
     OKLCH (hue 135–150, chroma ≤ 0.016). Contrast went up: muted text is 7.4:1 on the canvas, up from 6.1:1.
   - Full role table in `DESIGN.md`.
-- **Type:** Schibsted Grotesk for display and text (weight 400 display, tight tracking) and JetBrains Mono for
-  system data. Both are self-hosted woff2 with OFL licences, so there are no third-party font calls. The kit
-  dealt Geist, but impeccable bans it.
+- **Type:** Source Serif 4 for headings (weight 500, optical sizes), Libre Franklin for text and UI, and
+  JetBrains Mono for system data. All are self-hosted woff2 with OFL licences, so there are no third-party font
+  calls. (The first build used Schibsted Grotesk throughout; the client found it too generic, see the change log.)
 - **Grid:** 12 columns, 1280 wrap, sharp radius, and one screen per section on desktop. On phones a section is
   either exactly two screens or at most 1.5 screens, ending on its own content.
 - **Assets (no stock, no placeholders):** every picture is the system itself.
@@ -98,7 +98,7 @@ Proof section later, when they exist.
   |---|---|---|
   | contrast (390) | `div.dg-node.dg-node--core-pill > span.dg-label` "DESICIA" | The label is light text on its own dark gradient pill (about 17:1). At that scroll stop the fixed mobile "Book a call" bar covers the pill. The checker's ground lookup skips fixed layers, but its text-hidden screenshot does not, so it compares white text with the bar's paper (1.1:1). The same artefact caused build 1's gantt-name "2.7:1" (ink over the bar's green button). |
 
-  The waiver is in `site/.taste-skill/waivers.json`. It was not applied in the last round because its first
+  The waiver is in `.taste-skill/waivers.json`. It was not applied in the last round because its first
   target string carried a trailing " [390]" that the gate does not print. The target has since been corrected,
   but no round was left to re-run.
 - Outside the gate, after all changes:
@@ -158,19 +158,24 @@ Kept, with reasons:
   windows sit on the page.
 - Advisory "repeating stripes": the gantt's "Operate" bar is striped to mean "ongoing", not decoration.
 
-## 5. Run it locally
+## 5. Run it locally and deploy
 
 ```bash
-cd projects/desicia/site
 node server.mjs            # or: npm start   →  http://localhost:8080
 npm test                   # contact endpoint checks
 ```
 
-- Node 18.17 or later. There are no required dependencies. `nodemailer` is optional and used only when SMTP is
+**Vercel:** import the GitHub repo and deploy with the defaults (Framework Preset "Other", no build command, root
+directory `./`). `vercel.json` sets the security headers and caching; `.vercelignore` keeps the studio tooling, the
+notes and the unused kit media out of the upload. In Project Settings → Environment Variables set `CONTACT_TO`,
+`CONTACT_FROM` and `SMTP_HOST`, `SMTP_PORT`, `SMTP_SECURE`, `SMTP_USER`, `SMTP_PASS` so requests are emailed.
+
+- Node 20 or later. There are no required dependencies. `nodemailer` is optional and used only when SMTP is
   configured.
 - **Contact flow:** the form posts to `POST /api/contact`. Validation, a honeypot, rate limiting and a size limit
-  are in `server.mjs`.
-  - Every request is appended to `data/requests.jsonl`.
+  are in `api/_lib/contact.mjs`, shared by the Vercel function `api/contact.js` and the local `server.mjs`.
+  - Locally every request is appended to `data/requests.jsonl`; on Vercel (read-only disk) it is written to the
+    function log.
   - With `SMTP_HOST` set (see `.env.example`: CONTACT_TO, CONTACT_FROM, SMTP_HOST/PORT/SECURE/USER/PASS) the
     request is also emailed.
   - Set `CONTACT_TO` to the real inbox before launch. `hello@desicia.example` is a placeholder.
@@ -213,3 +218,26 @@ npm test                   # contact endpoint checks
   - impeccable URL scans clean at 1440 and 390;
   - `npm test` passes.
   - No motion was added (the zoom is static), so the review-animations verdict stands.
+
+### 27 Nov 2026: professional type, site moved to the repo root for Vercel
+
+- **Type:** the single grotesk (Schibsted Grotesk) read as generic. Headings are now **Source Serif 4** (weight 500,
+  optical sizes, tracking −2 %), and body and UI are **Libre Franklin**. JetBrains Mono stays for figures inside the
+  mocks. All are self-hosted from `@fontsource-variable` (OFL licences in `fonts/`). Follow-ups for the wider face:
+  - the hero lead is capped at 31em (about 65 characters);
+  - the console's signal list is 292px, so no row truncates;
+  - the phone integrations hub is 320px tall, so the section stays within 1.5 screens.
+- **Repo layout:** the website moved from `projects/desicia/site/` to the repo root (`git mv`, so history is kept), so
+  Vercel deploys it with no Root Directory setting. The notes stay in `projects/desicia/`.
+  - **Contact endpoint on Vercel:** the contact logic moved to `api/_lib/contact.mjs` (Web Request/Response). It is
+    served by the Vercel function `api/contact.js` and by `server.mjs` locally.
+  - **Deploy config:** `vercel.json` sets the headers and caching; `.vercelignore` limits the upload to the site.
+  - **Local server:** it now also refuses to serve the tooling, notes, `api/` and tests.
+- **Validation:**
+  - taste gate **PASS** in round 1 of a new build, with no open FAIL and no waiver needed;
+  - layout check clean at 1440, 1024, 820, 768 and 390;
+  - consistency `--quick` 0 FAIL at 1440 and 390;
+  - copy-lint 0/0;
+  - impeccable URL scans clean on the home page (1440, 390) and privacy;
+  - `npm test` passes, covering both the local server and the Vercel function, plus the hidden paths.
+  - No motion changed.

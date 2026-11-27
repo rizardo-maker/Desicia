@@ -8,8 +8,8 @@ web
 
 ## Stack
 
-delegated: plain static HTML/CSS/JS built on the taste-skill kit (`site/assets/`), served by a zero-framework Node
-server (`site/server.mjs`) that also handles `POST /api/contact`. Chosen so the site deploys anywhere Node 18+ runs
+delegated: plain static HTML/CSS/JS built on the taste-skill kit (`assets/`, repo root), deployed on Vercel (static files
+plus the function `api/contact.js`), with a zero-framework Node server (`server.mjs`) for local runs; both handle `POST /api/contact`. Chosen so the site deploys anywhere Node 18+ runs
 and the static part works from any CDN.
 
 ## Users

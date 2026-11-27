@@ -1,0 +1,22 @@
+# Only the website is deployed. The studio tooling, the project notes and the local server stay in the repo.
+.claude
+.agents
+.impeccable
+.taste-skill
+.cache
+skills-library
+templates
+scripts
+projects
+test
+data
+node_modules
+server.mjs
+.env
+.env.*
+*.md
+skills.lock.json
+# kit folders the page never loads (about 21 MB)
+assets/photos
+assets/objects
+assets/scenes

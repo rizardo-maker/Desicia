@@ -2,7 +2,7 @@
 
 > Phase 3. Colour by impeccable `colorize` (Persuade mode: colour may own regions; roles, not swatches), type by
 > impeccable `typeset` + taste `start.mjs types`, mechanics by taste `system.md` / `layout-v4.md`, floor by
-> impeccable `craft-floor`. Tokens live in `site/index.html` `:root` (taste `start.mjs brand` output) and the page
+> impeccable `craft-floor`. Tokens live in `index.html` (repo root) `:root` (taste `start.mjs brand` output) and the page
 > CSS block that maps the extra roles.
 
 ## World
@@ -43,11 +43,15 @@ green-black above, with its own elevation steps: band #101814 → window #17211c
 paper). Dark UI windows sit only on light grounds (hero, services); on the dark band the window steps lighter.
 
 ## Type (typeset)
-- Display + text: **Schibsted Grotesk** (variable 400–700): a sturdy editorial grotesk with a point of view; avoids
-  every reflex face impeccable lists (Inter, Geist, Space Grotesk, Instrument Sans, IBM Plex…). Taste deals it for
-  "services that want a sturdy editorial voice".
+- Display: **Source Serif 4** (variable, optical size 8–60, headings at 500, tracking −2 % / −2.6 % at XL): a sober,
+  low-contrast serif in the register of consulting and financial reporting, so an executive reads the page as a firm,
+  not a startup template. Its optical-size axis gives the large headings the display cut.
+- Text and UI: **Libre Franklin** (variable 400–600): the Franklin Gothic family of corporate and newspaper
+  typography; firm, open and very readable at 14–20px. The pairing is taste's `source-serif` deal ("law, finance…
+  sober and readable") and avoids every reflex face impeccable lists (Inter, Geist, Space Grotesk, Instrument Sans,
+  IBM Plex…). Replaced Schibsted Grotesk on 27 Nov 2026: the client found the single grotesk too generic.
 - Data: **JetBrains Mono** 400/500, only for figures, IDs, timestamps and code inside UI mocks (never as costume).
-- Roles (1440 / 390): h1 72 / 40 at 400, tracking −4.2 %; h2 48 / 30; h3 & card titles 20 / 18 at 500; lead 20 / 18;
+- Roles (1440 / 390): h1 72 / 40 at 500 (Source Serif 4), tracking −2.6 %; h2 48 / 30; h3 & card titles 20 / 18 at 500; lead 20 / 18;
   body 16 / 26; small 14; label 13 / 500 sentence case; mono UI 12–13 with `tnum`.
 - `text-wrap: balance` on headings, `pretty` on body; measure ≤ 62 ch.
 
