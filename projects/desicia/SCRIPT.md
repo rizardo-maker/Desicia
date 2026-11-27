@@ -80,7 +80,7 @@ Services panel: Data analytics — "Forecasts and answers from your data" · Aut
 ### 3 · Services (id services)
 - H2: **What DESICIA builds.** <muted>One team for all three, so nothing is lost between them.</muted>
 - Card 1 — H3 `Forecasts demand, risk and cash` — `Forecasting on your warehouse, with the drivers behind each number shown to the people who decide.` UI: weekly demand chart, actual vs forecast with range, "Drivers: promotions, lead time, weather".
-- Card 2 — H3 `Automates work across systems` — `Agents read, decide within limits you set and write back to SAP, Salesforce or ServiceNow.` UI: run log with five steps and an approval.
+- Card 2 — H3 `Automates work across systems` — `Agents read, decide within limits you set and write back to SAP, Dynamics 365, Salesforce or ServiceNow.` UI: run log with five steps and an approval.
 - Card 3 — H3 `Rebuilds processes around them` — `We redesign the process, retire the manual steps and train the team that runs it after us.` UI: migration board: Legacy / Parallel run / Live.
 
 ### 4 · Demo (id demo, dark band, iris-opens)
@@ -101,7 +101,7 @@ Services panel: Data analytics — "Forecasts and answers from your data" · Aut
   - Logistics · `Route and capacity planning, exception handling, invoice audit`
   - Healthcare operations · `Staff scheduling, claims triage, supply levels`
   - Software companies · `Churn prediction, renewal forecasts, support routing`
-- Diagram (hub, card title in text): `Connects to the systems you run` — Snowflake, Databricks, SAP, Salesforce, ServiceNow, NetSuite, Workday, Slack.
+- Diagram (hub, card title in text): `Connects to the systems you run` — Snowflake, Databricks, Microsoft Fabric, SAP, Microsoft Dynamics 365, Salesforce, Oracle, PostgreSQL, Slack, Microsoft Teams (labels: Fabric, Dynamics 365, Teams).
 
 ### 6 · Method (id method)
 - H2: **How an engagement runs**

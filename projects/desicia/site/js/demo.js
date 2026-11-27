@@ -143,3 +143,29 @@ function openTabLinks() {
 }
 
 navCurrent(); openTabLinks();
+
+/* The hero console stays whole inside the first screen. CSS tightens the hero's spacing; where a screen is still too
+   short, the console is zoomed down just enough to end above the hero's bottom padding (never under 0.75; past that
+   the hero simply grows and the console stays whole below the fold). Re-measured on resize and once fonts settle. */
+function fitHeroConsole() {
+  const hero = document.querySelector('main > .hero--centred');
+  const win = hero && hero.querySelector('.hero__window');
+  const piece = win && win.querySelector('.ly-piece');
+  if (!piece) return;
+  let frame = 0;
+  const fit = () => {
+    frame = 0;
+    piece.style.removeProperty('--fit');
+    const hs = getComputedStyle(hero), ws = getComputedStyle(win);
+    const screen = parseFloat(hs.minHeight) || innerHeight;   // 100svh, resolved to px
+    const limit = screen - parseFloat(hs.paddingBottom) - parseFloat(ws.paddingBottom);
+    const top = piece.getBoundingClientRect().top - hero.getBoundingClientRect().top;
+    const s = Math.max(0.75, Math.min(1, (limit - top) / piece.offsetHeight));
+    if (s < 0.999) piece.style.setProperty('--fit', s.toFixed(3));
+  };
+  const queue = () => { if (!frame) frame = requestAnimationFrame(fit); };
+  fit();
+  addEventListener('resize', queue);
+  if (document.fonts) document.fonts.ready.then(queue);
+}
+fitHeroConsole();
