@@ -20,7 +20,7 @@
 | Icons | — | taste `scripts/icons.mjs` | real tool marks in their own colours |
 | Imagery | "anti ai slop" | open-design `craft/anti-ai-slop.md` | no stock, no brains, no gradients; system UI only |
 | Colour | — | impeccable `reference/colorize.md` | roles table, tinted neutrals, accent discipline |
-| Type | — | impeccable `reference/typeset.md` + taste `start.mjs types` | Schibsted Grotesk + JetBrains Mono |
+| Type | — | impeccable `reference/typeset.md` + taste `start.mjs types` | Source Serif 4 + Libre Franklin + JetBrains Mono (was Schibsted Grotesk until 27 Nov 2026) |
 | Motion (build) | "ui animation", "frontend dev" | open-design `skills/ui-animation`, `skills/frontend-dev` | CSS transitions first, ease-out curves, ≤300 ms UI, hover gating |
 | Motion (review) | "review animations" | open-design `skills/review-animations` | ten standards, Before/After/Why table |
 | Accessibility | — | taste `consistency.mjs` basics + impeccable `audit` | names, focus, reduced motion |

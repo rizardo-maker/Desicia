@@ -32,7 +32,7 @@ p, li { text-wrap: pretty; }
 .dw__bar .sp, .dwin__bar .sp { flex: 1; }
 .dw__mono { font: 400 12px/1 var(--font-mono); letter-spacing: 0; }
 .dw__dots { display: flex; gap: 6px; } .dw__dots i { width: 9px; height: 9px; border-radius: 50%; background: #34403a; }
-.dw__body { display: grid; grid-template-columns: 270px 1fr; min-height: 380px; }
+.dw__body { display: grid; grid-template-columns: 292px 1fr; min-height: 380px; }
 .dw__list { border-right: 1px solid rgb(255 255 255 / .07); padding: 10px; display: grid; align-content: start; gap: 2px; }
 .dw__q { font-size: 12px; color: var(--d-dark-muted); padding: 6px 8px 8px; }
 .dw__item { display: grid; grid-template-columns: 14px 1fr auto; gap: 1px 8px; padding: 9px 8px; border-radius: 6px; font-size: 13px; }
@@ -226,7 +226,7 @@ p, li { text-wrap: pretty; }
 .value__out { display: grid; align-content: start; gap: 18px; }
 .vfig { display: grid; gap: 4px; }
 .vfig__label { margin: 0; font-size: 13px; color: var(--d-dark-muted); }
-.vfig__num { margin: 0; font: var(--display-weight) 40px/1.05 var(--font-display); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+.vfig__num { margin: 0; font: var(--display-weight) 40px/1.05 var(--font-display); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
 .vcmp { display: grid; gap: 8px; }
 .vcmp__row { display: grid; grid-template-columns: 48px 1fr 104px; gap: 12px; align-items: center; font-size: 13px; }
 .vcmp__row span { color: var(--d-dark-muted); }
@@ -401,7 +401,7 @@ html[data-buttons="tonal"] .btn--secondary { background: #c6cdc2; }
    screens, so each ends on its content and the next section follows at the page's usual gap */
 @media (max-width: 639px) {
   .split { row-gap: var(--s-6); }
-  #industries .panel--titled { height: 360px; grid-template-rows: 1fr; }
+  #industries .panel--titled { height: 320px; grid-template-rows: 1fr; }
   #industries .panel__title { display: none; }
   #security .panel--solo { height: 320px; }
   #security .audit__foot { display: none; }
@@ -446,3 +446,6 @@ main > .hero--centred .dw__body { min-height: 0; }
 @media (min-width: 640px) {
   #industries .panel--titled .dg { inset: calc(var(--s-5) + 1.4em + var(--s-3)) 0 0 0; }
 }
+
+/* Libre Franklin sets wider than the kit's default face: the hero lead keeps a reading measure of about 65 characters */
+.hero--centred .hero__lead { max-width: 31em; }

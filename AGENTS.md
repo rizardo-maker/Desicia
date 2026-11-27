@@ -19,6 +19,9 @@ Non-negotiables:
 
 Layout:
 - `projects/<slug>/` — one folder per client: BRIEF, research, routing, PRODUCT/DESIGN, `site/`, REPORT.
+  **Exception: DESICIA's own site lives at the repo root** (index.html, css/, js/, fonts/, assets/, api/, server.mjs) so
+  Vercel deploys it with no settings; its notes stay in `projects/desicia/`. Run the taste gate and checks from the root.
+  `.vercelignore` keeps the tooling, the notes and the unused kit media out of the deployment.
 - `templates/` — the phase documents to copy into a new project.
 - `scripts/install-skills.sh` — reinstall packs at the commits in `skills.lock.json`.
 - `scripts/setup-chrome.sh` — headless Chromium for taste-skill checks on machines with no Chrome.

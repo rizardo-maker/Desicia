@@ -1,4 +1,35 @@
-# Desicia
+# DESICIA
+
+The DESICIA website (enterprise AI, data analytics and automation) lives at the root of this repo: a static page
+plus one serverless contact endpoint, ready for Vercel.
+
+```
+index.html  privacy.html  terms.html  404.html   the pages
+css/  js/  fonts/  assets/                       styles, scripts, self-hosted fonts, the taste-skill kit
+api/contact.js  api/_lib/contact.mjs             POST /api/contact (Vercel function + shared logic)
+server.mjs                                       local server (static + /api/contact), not used on Vercel
+vercel.json  .vercelignore                       headers and caching; what is uploaded
+projects/desicia/                                brief, research, script, design notes, build report
+```
+
+## Deploy on Vercel
+
+1. In Vercel, **Add New → Project** and import this GitHub repo.
+2. Keep the defaults: Framework Preset **Other**, Root Directory **`./`**, no build command, no output directory.
+3. Optional (so call requests are emailed): in **Settings → Environment Variables** add `CONTACT_TO`,
+   `CONTACT_FROM`, `SMTP_HOST`, `SMTP_PORT`, `SMTP_SECURE`, `SMTP_USER` and `SMTP_PASS`, then redeploy. Without SMTP
+   every request is still written to the function log (**Logs** tab).
+
+## Run locally
+
+```bash
+npm start      # http://localhost:8080 (requests saved to data/requests.jsonl)
+npm test       # contact endpoint checks (local server and Vercel function)
+```
+
+Node 20 or later locally (Vercel runs Node 24, set in package.json). Copy `.env.example` to `.env` to set the contact and SMTP values.
+
+## The studio around it
 
 A website studio repo where every page goes through one process and three design skill packs:
 

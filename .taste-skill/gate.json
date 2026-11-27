@@ -1,12 +1,12 @@
 {
- "start": "2026-11-27T17:41:02.404Z",
+ "start": "2026-11-27T17:59:32.106Z",
  "round": 0,
  "idle": 0,
  "errors": 0,
  "status": "pass",
  "history": [
   {
-   "at": "2026-11-27T17:43:19.262Z",
+   "at": "2026-11-27T18:01:45.677Z",
    "mode": "manual",
    "status": "pass",
    "fails": 0,
@@ -24,31 +24,14 @@
   "category": null,
   "primary": "Book a call",
   "rounds": 3,
-  "start": "2026-11-27T17:41:02.404Z",
+  "start": "2026-11-27T17:59:32.106Z",
   "by": "gate.mjs --start"
  },
  "manual": true,
- "fp": "7cb011d3771f3074",
+ "fp": "5c9fedd895720881",
  "page": "index.html",
  "found": {
-  "fails": [
-   {
-    "check": "contrast",
-    "where": "div.dg > div.dg-nodes > div.dg-node.dg-node--core-pill > span.dg-label \"DESICIA\"",
-    "msg": "body text over a effect reads at 1.1:1 at its worst tenth (needs 4.5:1), on a busy ground",
-    "fix": "put the text on a calm part of the picture, or on a solid panel",
-    "widths": [
-     390
-    ],
-    "from": "consistency",
-    "ids": [
-     "contrast"
-    ],
-    "wheres": [
-     "div.dg > div.dg-nodes > div.dg-node.dg-node--core-pill > span.dg-label \"DESICIA\""
-    ]
-   }
-  ],
+  "fails": [],
   "warns": [
    {
     "check": "flush",
@@ -95,7 +78,7 @@
    {
     "check": "section-gaps",
     "where": "main#top > section.hero.hero--centred / section#thesis",
-    "msg": "202px between these sections, -39% against the median 329px",
+    "msg": "196px between these sections, -40% against the median 326px",
     "fix": "use one gap between sections (all within 25% of each other)",
     "widths": [
      1440,
@@ -106,7 +89,7 @@
    {
     "check": "section-gaps",
     "where": "section#services / section#demo",
-    "msg": "uneven space at the edge of a band: 176px outside its edge, 17px inside it (the space on either side of a change of ground reads as one gap only when the two match)",
+    "msg": "uneven space at the edge of a band: 228px outside its edge, 17px inside it (the space on either side of a change of ground reads as one gap only when the two match)",
     "fix": "use one gap between sections (all within 25% of each other)",
     "widths": [
      1440
@@ -125,8 +108,8 @@
    },
    {
     "check": "fade-cut",
-    "where": "div#view-pipe > div.pipe__out > p.pipe__label \"Output\"",
-    "msg": "a line of div.dwin.ui fades out under its edge (\"Output\"): drawn at a fraction of #b3bcb5 on #1f2b25, half-erased (inside a held section or scroll scene, whose motion --quick does not check)",
+    "where": "div.pipe__sources > div.src:nth-of-type(1) > span > b \"Snowflake\"",
+    "msg": "2 lines of div.dwin.ui fade out under its edge (\"Snowflake\", \"Output\"): drawn at a fraction of #eef1ed on #1f2b25, half-erased (inside a held section or scroll scene, whose motion --quick does not check)",
     "fix": "fit the mock's rows inside its panel (fewer rows, a taller panel), or end the fade below the last whole row: no row half-erased",
     "widths": [
      1440
@@ -222,25 +205,7 @@
   }
  },
  "open": [],
- "waived": [
-  {
-   "check": "contrast",
-   "where": "div.dg > div.dg-nodes > div.dg-node.dg-node--core-pill > span.dg-label \"DESICIA\"",
-   "msg": "body text over a effect reads at 1.1:1 at its worst tenth (needs 4.5:1), on a busy ground",
-   "fix": "put the text on a calm part of the picture, or on a solid panel",
-   "widths": [
-    390
-   ],
-   "from": "consistency",
-   "ids": [
-    "contrast"
-   ],
-   "wheres": [
-    "div.dg > div.dg-nodes > div.dg-node.dg-node--core-pill > span.dg-label \"DESICIA\""
-   ],
-   "reason": "False reading. The label is light text on its own dark gradient pill (about 17:1). At this 390 stop the text-hidden plate is shot while the fixed mobile action bar (paper ground) covers the pill: the checker's ground lookup skips fixed layers but its screenshot does not, so it compares white text with paper (1.1:1). The same artefact gave round 1's gantt-name 2.7:1 (ink over the bar's green button)."
-  }
- ],
+ "waived": [],
  "warnCount": 16,
- "at": "2026-11-27T17:43:19.262Z"
+ "at": "2026-11-27T18:01:45.678Z"
 }

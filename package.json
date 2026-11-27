@@ -2,9 +2,9 @@
   "name": "desicia-site",
   "version": "1.0.0",
   "private": true,
-  "description": "DESICIA website: static page + contact endpoint",
+  "description": "DESICIA website: static page + contact endpoint (Vercel function in api/, local server in server.mjs)",
   "type": "module",
-  "engines": { "node": ">=18.17" },
+  "engines": { "node": "24.x" },
   "scripts": {
     "start": "node server.mjs",
     "test": "node test/contact.test.mjs"
