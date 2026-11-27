@@ -21,7 +21,7 @@ and the static part works from any CDN.
 
 ## Product Purpose
 
-DESICIA sells three services: AI data analytics (raw enterprise data → real-time decisions, forecasts, executive
+DECISIA sells three services: AI data analytics (raw enterprise data → real-time decisions, forecasts, executive
 clarity), AI automations (reliable workflow orchestration across ops, sales, finance and engineering) and end-to-end
 AI transformation (modernising legacy processes, systems and teams). The site's success = booked calls from
 qualified enterprise buyers.
@@ -29,13 +29,15 @@ qualified enterprise buyers.
 ## Positioning
 
 One team takes one business decision from raw data to an automated, measured action in production, inside the
-client's cloud, under the client's ownership. (Derived from competitor research; proposed to the client, see
+client's own Microsoft Azure tenant, under the client's ownership. Azure first (27 Nov 2026, client): Azure OpenAI in
+Azure AI Foundry for agents, Azure Machine Learning for forecasts, Microsoft Fabric and Power BI for data and reporting,
+Event Hubs for streams, Entra ID, Key Vault and Azure Monitor for identity, secrets and audit. (Derived from competitor research; proposed to the client, see
 `research/COMPETITORS.md`.)
 
 ## Operating Context
 
 Buyers evaluate on a laptop between meetings and forward the link to a CTO or security lead. Their data lives in
-Snowflake / Databricks / Microsoft Fabric / SAP / Dynamics 365 / Salesforce / ServiceNow; approvals and audit trails are part of how they work.
+Microsoft Azure / Fabric / Power BI / Dynamics 365 / Teams, alongside SAP / Salesforce / Snowflake / Databricks / Oracle; approvals and audit trails are part of how they work.
 
 ## Capabilities and Constraints
 
@@ -49,7 +51,7 @@ Snowflake / Databricks / Microsoft Fabric / SAP / Dynamics 365 / Salesforce / Se
 
 ## Brand Commitments
 
-- Name only: DESICIA, in capitals. Colours and fonts delegated.
+- Name only: DECISIA, in capitals. Colours and fonts delegated.
 - Banned: "revolutionize", "unlock the power of AI", "synergy"; purple-blue gradients, glowing AI brains, cards in
   cards; stock photos and placeholder boxes.
 

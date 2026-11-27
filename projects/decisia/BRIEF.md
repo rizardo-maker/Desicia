@@ -1,4 +1,4 @@
-# Brief — DESICIA
+# Brief — DECISIA
 
 > Phase 0 of `.claude/skills/website-pipeline`. No build until the clarity score is 100 %.
 > ✅ answered (source) · 🟡 assumed (user approved or user-delegated) · ❌ open
@@ -6,7 +6,7 @@
 ## Clarity checklist
 
 ### Company and offer
-- [x] ✅ Name: **DESICIA**, written in capitals (kickoff prompt).
+- [x] ✅ Name: **DECISIA**, written in capitals (kickoff prompt).
 - [x] ✅ What it sells (prompt): 1) AI data analytics: raw enterprise data turned into real-time decisions, predictive intelligence and executive clarity; 2) AI automations: autonomous, reliable workflow orchestration across ops, sales, finance and engineering; 3) end-to-end AI transformation: modernising legacy processes, systems and teams.
 - [x] ✅ Pricing: none shown; scoped after a call (round 2 answer).
 - [x] ✅ Where: remote-first, global; no city shown (round 2 answer).

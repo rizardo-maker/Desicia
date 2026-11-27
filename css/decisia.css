@@ -1,4 +1,4 @@
-/* DESICIA page CSS: only what sits inside the visuals and what the taste kit lacks.
+/* DECISIA page CSS: only what sits inside the visuals and what the taste kit lacks.
    Colour roles (impeccable colorize, DESIGN.md): paper #f5f8f3, ink #131914, secondary #4c534d (neutrals tinted toward the green),
    ledger green #006d41 for action and state; the demo band is a green-black (#101814) with its own steps. */
 :root {
@@ -17,6 +17,33 @@ html { accent-color: var(--p-accent); caret-color: var(--p-accent); scrollbar-co
 h1, h2, h3 { text-wrap: balance; }
 p, li { text-wrap: pretty; }
 .field__error { color: var(--d-err); }
+
+/* ------------------------------------------------ type system (DESIGN.md "Type"): editorial serif heads, Inter for reading
+   and UI, JetBrains Mono with tabular figures for every number a reader compares. The three families are the root
+   tokens --font-serif / --font-sans / --font-mono (css/fonts.css); the kit's --font-display / --font-text map onto them. */
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: optimizeLegibility; }
+body { font-family: var(--font-sans); font-weight: 400; line-height: 1.6; font-feature-settings: "cv11", "ss01"; }
+h1, h2 { font-family: var(--font-serif); font-weight: 400; font-style: normal; }
+h1 em, h2 em { font-style: italic; font-weight: 400; letter-spacing: -0.01em; }
+.hero h1, .hero--centred h1 { font-size: clamp(3.25rem, 6vw, 5.25rem); line-height: 1.04; letter-spacing: -0.025em; }
+h2, .t-h2 { font-size: clamp(2.25rem, 4vw, 3.5rem); line-height: 1.08; letter-spacing: -0.02em; }
+/* the brand mark: the serif in capitals, opened up */
+.nav__logo { font: 400 22px/1 var(--font-serif); letter-spacing: 0.06em; text-transform: uppercase; }
+/* every title under the section heads: Inter 600 */
+h3, h4, .card > h3, .card > h4, .faq .faq__item > h3, .steps h3,
+.gaps__name, .rows__name, .gantt__name, .panel__title, .mini__head b, .src b, .step b, .arun b, .ask__q, .pipe__headline b {
+  font-family: var(--font-sans); font-weight: 600; letter-spacing: -0.015em; line-height: 1.3; }
+h3 { font-size: var(--t-card); }
+.faq .faq__item > h3 { font-size: var(--t-lead); }
+/* reading text, subtitles, navigation and buttons */
+.t-lead, .hero__lead, .section-head p, .measure { line-height: 1.6; }
+.nav__link, .btn, .tab, .pill { font-family: var(--font-sans); font-weight: 500; letter-spacing: -0.005em; }
+/* data: the console, the demo workspace, W1-W12, metrics, SKUs, timestamps and the audit log */
+.dw__mono, .dw__item time, .dw__bar .dw__mono, .mini__mono, .log span, .gantt__head span, .chart__axis text, .chart__note,
+.audit td, .audit th, .cmp td, .demo__status, .rng output, .vfig__num, .vcmp b, .src em, .step em, .pipe__meta,
+.auto__note, .audit__foot .chip, [data-demo-clock] {
+  font-family: var(--font-mono); font-variant-numeric: tabular-nums; font-feature-settings: "zero" 0; }
+.audit td:nth-child(2), .audit td:nth-child(3) { font-family: var(--font-mono); font-size: 12px; }
 
 /* hero: a wider measure so the h1 sits on two lines */
 .hero--centred h1 { max-width: 20ch; }
@@ -75,7 +102,7 @@ p, li { text-wrap: pretty; }
 .gaps { list-style: none; margin: var(--s-7) 0 0; padding: 0; display: grid; }
 .gaps li { padding: var(--s-4) 0; border-bottom: 1px solid var(--hairline); display: grid; gap: var(--s-1); }
 .gaps li:first-child { border-top: 1px solid var(--hairline); }
-.gaps__name { font-weight: 500; }
+.gaps__name { font-weight: 600; }
 .gaps p { margin: 0; max-width: 52ch; }
 .thesis__close { margin: var(--s-6) 0 0; font-weight: 500; max-width: 46ch; }
 @media (max-width: 639px) { .gaps { margin-top: var(--s-6); } .gaps li { padding: var(--s-3) 0; } .thesis__close { margin-top: var(--s-4); } }
@@ -86,7 +113,7 @@ p, li { text-wrap: pretty; }
   border-radius: 8px 8px 0 0; box-shadow: 0 0 0 1px color-mix(in oklab, var(--p-ink) 9%, transparent), 0 18px 40px -24px rgb(30 24 18 / .35);
   padding: 14px 16px 16px; font-size: 13px; line-height: 1.4; }
 .mini__head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-bottom: 12px; white-space: nowrap; }
-.mini__head b { font-weight: 500; overflow: hidden; text-overflow: ellipsis; }
+.mini__head b { font-weight: 600; overflow: hidden; text-overflow: ellipsis; }
 .mini__mono, .log span, .audit td:first-child { font-family: var(--font-mono); font-size: 12px; color: var(--p-muted); font-variant-numeric: tabular-nums; }
 .chart { display: block; width: 100%; height: auto; overflow: visible; }
 .chart__axis text { font: 400 11px var(--font-mono); fill: var(--p-muted); }
@@ -160,13 +187,13 @@ p, li { text-wrap: pretty; }
 .src { position: relative; display: grid; grid-template-columns: 22px 1fr; gap: 10px; align-items: center; padding: 10px 12px; border-radius: 6px; background: var(--d-dark-3); }
 .src .ic { width: 22px; height: 22px; object-fit: contain; }
 .src .ic-ink { filter: invert(1) brightness(1.6); }
-.src b { display: block; font-weight: 500; font-size: 13px; }
+.src b { display: block; font-weight: 600; font-size: 13px; }
 .src em { display: block; font-style: normal; font-size: 12px; color: var(--d-dark-muted); font-family: var(--font-mono); }
 .src__pipe { position: absolute; left: 100%; top: 50%; width: 24px; height: 1px; background: rgb(255 255 255 / .16); overflow: hidden; }
 .src__pipe > i, .step__pipe > i { position: absolute; inset: 0; background: linear-gradient(90deg, transparent, var(--d-signal)); transform: translateX(-101%); }
 .pipe__steps { list-style: none; margin: 0; padding: 0 0 0 24px; border-left: 1px solid rgb(255 255 255 / .16); display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; align-content: center; }
 .step { position: relative; display: grid; gap: 4px; padding: 14px 12px; border-radius: 6px; background: var(--d-dark-3); box-shadow: 0 0 0 1px rgb(255 255 255 / .06); }
-.step b { font-weight: 500; font-size: 14px; }
+.step b { font-weight: 600; font-size: 14px; }
 .step em { font-style: normal; font-size: 12px; color: var(--d-dark-muted); font-family: var(--font-mono); line-height: 1.4; }
 .step__state { width: 18px; height: 18px; border-radius: 50%; border: 1.5px solid rgb(255 255 255 / .25); margin-bottom: 6px; position: relative; }
 .step.is-run .step__state { border-color: rgb(80 212 146 / .3); border-top-color: var(--d-signal); animation: d-spin 1s linear infinite; }
@@ -176,7 +203,7 @@ p, li { text-wrap: pretty; }
 .pipe__out { display: grid; align-content: start; padding: 14px; border-radius: 6px; background: var(--d-dark-3); transition: opacity 240ms var(--d-ease); }
 .pipe__out.is-pending { opacity: .35; }
 .pipe__headline { margin: 0; display: grid; gap: 2px; }
-.pipe__headline b { font-weight: 500; }
+.pipe__headline b { font-weight: 600; }
 .pipe__headline span { color: var(--d-dark-muted); font-size: 13px; }
 .bars { display: grid; grid-template-columns: repeat(8, 1fr); gap: 6px; align-items: end; height: 96px; margin-top: 16px; }
 .bars i { display: block; height: calc(max(var(--v), .03) * 100%); border-radius: 2px 2px 0 0; background: var(--d-signal); opacity: calc(.35 + var(--v)); }
@@ -186,7 +213,30 @@ p, li { text-wrap: pretty; }
 .okdot { width: 8px; height: 8px; border-radius: 50%; background: var(--d-signal); flex: none; }
 @keyframes d-spin { to { transform: rotate(360deg); } }
 @keyframes d-sweep { from { transform: translateX(-101%); } to { transform: translateX(101%); } }
-.is-flow > i { animation: d-sweep 520ms var(--d-ease) both; }
+/* continuous flow (DESIGN.md "Motion"): while the workspace is on screen (.is-live, set by js/demo.js) a packet of
+   data runs down every connector, staggered so the stream reads left to right and never stops; a run of the
+   pipeline takes the connectors over with its own sweep, then hands them back to the stream. transform only. */
+@keyframes d-stream { 0% { transform: translateX(-101%); } 55%, 100% { transform: translateX(101%); } }
+.dwin.is-live .src__pipe > i, .dwin.is-live .step__pipe > i { animation: d-stream 2.4s linear infinite; }
+.dwin.is-live .src:nth-child(3) .src__pipe > i { animation-delay: -.3s; }
+.dwin.is-live .src:nth-child(4) .src__pipe > i { animation-delay: -.6s; }
+.dwin.is-live .src:nth-child(5) .src__pipe > i { animation-delay: -.9s; }
+.dwin.is-live .step[data-step-i="0"] .step__pipe > i { animation-delay: .5s; }
+.dwin.is-live .step[data-step-i="1"] .step__pipe > i { animation-delay: .8s; }
+.dwin.is-live .step[data-step-i="2"] .step__pipe > i { animation-delay: 1.1s; }
+.dwin.is-live .pipe.is-running .src__pipe > i, .dwin.is-live .pipe.is-running .step__pipe > i { animation: none; }
+.is-flow > i, .dwin.is-live .pipe.is-running .is-flow > i { animation: d-sweep 520ms var(--d-ease) both; }
+/* the flow's own pause control (WCAG 2.2.2: it moves for more than 5 s), in the workspace's title bar */
+.dwin__pause { display: inline-grid; place-items: center; width: 32px; height: 32px; flex: none; margin-right: 4px; padding: 0; border: 0;
+  border-radius: 50%; background: rgb(255 255 255 / .08); color: var(--d-dark-ink); cursor: pointer; }
+.dwin__pause svg { width: 14px; height: 14px; fill: currentColor; }
+@media (hover: hover) and (pointer: fine) { .dwin__pause:hover { background: rgb(255 255 255 / .16); } }
+.dwin.is-paused .src__pipe > i, .dwin.is-paused .step__pipe > i { animation-play-state: paused; }
+@media (max-width: 639px) { .dwin__pause { display: none; } }   /* no connectors on a phone, so no flow to pause */
+/* the console's tool call turns while it is the step being worked on, and reads as a full ring once its answer is posted
+   (a paused or held console shows the finished thread, so it rests on the full ring) */
+.dw.is-live .dw__tool:has(+ .is-off) .dw__spin { animation: d-spin 1s linear infinite; }
+.dw__tool:not(:has(+ .is-off)) .dw__spin { border-color: var(--d-signal); }
 
 /* automation view */
 .auto { grid-template-columns: minmax(0, 1fr) 340px; grid-template-rows: 1fr auto; }
@@ -196,11 +246,11 @@ p, li { text-wrap: pretty; }
 .arun:last-child::before, .arun--ask:has(+ [hidden])::before { display: none; }
 .arun > i { width: 18px; height: 18px; border-radius: 50%; border: 1.5px solid rgb(255 255 255 / .25); margin-top: 1px; position: relative; z-index: 1; background: var(--d-dark-2); }
 .arun.is-done > i { border-color: var(--d-signal); background: var(--d-signal) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath d='M5 9.3 7.7 12 13 6.4' fill='none' stroke='%2308130d' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 16px no-repeat; }
-.arun b { font-weight: 500; font-size: 14px; }
+.arun b { font-weight: 600; font-size: 14px; }
 .arun span { color: var(--d-dark-muted); font-size: 13px; }
 .arun--ask > i { border: 1.5px dashed #e09a3e; }
 .arun--ask .ask { grid-column: 2 / -1; padding: 14px 16px; border-radius: 6px; background: var(--d-dark-3); box-shadow: 0 0 0 1px rgb(224 154 62 / .35); }
-.ask__q { margin: 0; font-weight: 500; }
+.ask__q { margin: 0; font-weight: 600; }
 .ask__why { margin: 4px 0 12px; font-size: 13px; color: var(--d-dark-muted); }
 .ask__btns { display: flex; gap: 8px; }
 .arun--ask.is-answered .ask { box-shadow: 0 0 0 1px rgb(80 212 146 / .3); }
@@ -226,7 +276,7 @@ p, li { text-wrap: pretty; }
 .value__out { display: grid; align-content: start; gap: 18px; }
 .vfig { display: grid; gap: 4px; }
 .vfig__label { margin: 0; font-size: 13px; color: var(--d-dark-muted); }
-.vfig__num { margin: 0; font: var(--display-weight) 40px/1.05 var(--font-display); letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.vfig__num { margin: 0; font: 500 36px/1.1 var(--font-mono); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
 .vcmp { display: grid; gap: 8px; }
 .vcmp__row { display: grid; grid-template-columns: 48px 1fr 104px; gap: 12px; align-items: center; font-size: 13px; }
 .vcmp__row span { color: var(--d-dark-muted); }
@@ -287,7 +337,7 @@ p, li { text-wrap: pretty; }
 .gantt__row::before { content: ""; position: absolute; z-index: -1; inset: 0 0 0 var(--name); pointer-events: none;
   background: repeating-linear-gradient(90deg, var(--hairline) 0 1px, transparent 1px calc(100% / 13)); }
 .gantt__head::before { content: none; }
-.gantt__name { grid-column: 1; height: 32px; display: flex; align-items: center; font-size: 15px; font-weight: 500; }
+.gantt__name { grid-column: 1; height: 32px; display: flex; align-items: center; font-size: 15px; font-weight: 600; }
 .gantt__head { min-height: 28px; background: none; }
 .gantt__head > span { height: 20px; display: flex; align-items: center; font: 400 12px/1 var(--font-mono); color: var(--muted); }
 .gantt__head > span:not(.gantt__name) { padding-left: 6px; }
@@ -315,7 +365,7 @@ p, li { text-wrap: pretty; }
 }
 .steps { list-style: none; padding: 0; margin: var(--s-7) 0 0; }
 .steps li { display: grid; align-content: start; gap: var(--s-2); }
-.steps h3 { margin: var(--s-2) 0 0; font-size: var(--t-card); font-weight: 500; letter-spacing: -0.01em; }
+.steps h3 { margin: var(--s-2) 0 0; font-size: var(--t-card); font-weight: 600; letter-spacing: -0.015em; }
 .steps p { margin: 0; }
 .steps .steps__when { font: 400 13px/1.4 var(--font-mono); letter-spacing: 0; color: var(--muted); }
 @media (max-width: 1023px) {
@@ -337,7 +387,7 @@ p, li { text-wrap: pretty; }
 @media (max-width: 639px) { #questions .faq__item { padding-block: var(--s-4); } #questions .faq__item h3 { font-size: 18px; } #questions .faq__item p { font-size: 16px; } }
 .terms { margin: var(--s-6) 0 0; }
 .terms > li { padding-block: var(--s-3); grid-template-columns: 200px minmax(0, 1fr); }
-.terms .rows__name { color: var(--ink); font-weight: 500; }
+.terms .rows__name { color: var(--ink); font-weight: 600; }
 .terms > li > p { grid-column: 2; grid-row: 1; margin: 0; color: var(--muted); }
 @media (max-width: 639px) { .terms > li { grid-template-columns: 1fr; padding-block: var(--s-2); } .terms > li > p { grid-column: 1; grid-row: auto; font-size: 15px; } }
 .panel--book { margin-top: var(--s-6); height: 380px; }
@@ -358,7 +408,8 @@ p, li { text-wrap: pretty; }
 /* ------------------------------------------------ reduced motion: every state lands at once */
 @media (prefers-reduced-motion: reduce) {
   .step.is-run .step__state { animation: none; }
-  .is-flow > i, .arun--after { animation: none; }
+  .is-flow > i, .arun--after, .dwin.is-live .src__pipe > i, .dwin.is-live .step__pipe > i, .dw.is-live .dw__spin { animation: none !important; }
+  .dwin__pause { display: none; }
   .vcmp__row i, .pipe__out { transition: none; }
 }
 
@@ -405,8 +456,8 @@ html[data-buttons="tonal"] .btn--secondary { background: #c6cdc2; }
   #industries .panel__title { display: none; }
   #security .panel--solo { height: 320px; }
   #security .audit__foot { display: none; }
-  .panel--book { height: 300px; }
-  .book { padding: var(--s-4); }
+  .panel--book { height: auto; }
+  .book { padding: var(--s-4); gap: 12px; }
   .book textarea { min-height: 80px; height: 80px; }
 }
 /* tablets: the three service rows stay within one and a half screens, so the dark demo never shows in their second frame */

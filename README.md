@@ -1,6 +1,6 @@
-# DESICIA
+# DECISIA
 
-The DESICIA website (enterprise AI, data analytics and automation) lives at the root of this repo: a static page
+The DECISIA website (enterprise AI, data analytics and automation) lives at the root of this repo: a static page
 plus one serverless contact endpoint, ready for Vercel.
 
 ```
@@ -9,7 +9,7 @@ css/  js/  fonts/  assets/                       styles, scripts, self-hosted fo
 api/contact.js  api/_lib/contact.mjs             POST /api/contact (Vercel function + shared logic)
 server.mjs                                       local server (static + /api/contact), not used on Vercel
 vercel.json  .vercelignore                       headers and caching; what is uploaded
-projects/desicia/                                brief, research, script, design notes, build report
+projects/decisia/                                brief, research, script, design notes, build report
 ```
 
 ## Deploy on Vercel

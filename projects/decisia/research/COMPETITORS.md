@@ -1,4 +1,4 @@
-# Competitor research — DESICIA
+# Competitor research — DECISIA
 
 > Phase 1 of `.claude/skills/website-pipeline`. Live pages fetched 27 Nov 2026 (palantir.com, databricks.com,
 > scale.com, scale.com/enterprise, snowflake.com, linear.app, x.ai, distyl.ai, faculty.ai, fractal.ai,
@@ -143,5 +143,5 @@ Scale's figures and testimonials format, Distyl's coined concept, any competitor
 - **Enemy:** the stalled pilot — a model or dashboard that never changes a decision or a system.
 - **Mechanism:** one team builds the whole loop — data → decision → automated action → measured result — inside the client's cloud.
 - **Proof without proof:** written terms (success metric before build, fixed price per phase, client owns everything, exit after any phase), a demo the buyer can operate, the security model in plain words, and one honest admission ("we are new").
-- **Positioning sentence (proposed, for client approval):** DESICIA is the AI engineering firm that takes one business decision from raw data to an automated, measured action in production — in the client's cloud, under the client's ownership.
+- **Positioning sentence (proposed, for client approval):** DECISIA is the AI engineering firm that takes one business decision from raw data to an automated, measured action in production — in the client's cloud, under the client's ownership.
 - **Look:** paper and ink with a deep emerald accent; real system UI as every picture; one dark band for the demo.

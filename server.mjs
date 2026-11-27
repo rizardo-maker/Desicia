@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /*
-  DESICIA local server: the static site + POST /api/contact, for development and for hosts that run Node.
+  DECISIA local server: the static site + POST /api/contact, for development and for hosts that run Node.
   On Vercel this file is not used: the static files are served by Vercel and /api/contact runs as the function in
   api/contact.js. Both share the contact logic in api/_lib/contact.mjs.
   - No framework, Node 18+. `npm start` (or `node server.mjs`), binds HOST (default 0.0.0.0) and PORT (default 8080).
@@ -94,6 +94,6 @@ const server = http.createServer((req, res) => {
 });
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
-  server.listen(PORT, HOST, () => console.log(`DESICIA site on http://${HOST}:${PORT}  (contact -> ${process.env.CONTACT_TO || 'hello@desicia.example'}${process.env.SMTP_HOST ? ', SMTP on' : ', SMTP off: logging to data/requests.jsonl'})`));
+  server.listen(PORT, HOST, () => console.log(`DECISIA site on http://${HOST}:${PORT}  (contact -> ${process.env.CONTACT_TO || 'hello@decisia.example'}${process.env.SMTP_HOST ? ', SMTP on' : ', SMTP off: logging to data/requests.jsonl'})`));
 }
 export { server, validate };

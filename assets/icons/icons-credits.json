@@ -143,5 +143,29 @@
     "trademark": true,
     "markUrl": "https://www.microsoft.com/dynamics-365",
     "note": "added by hand: the logos set has no Dynamics 365 mark and Simple Icons removed Microsoft marks; cropped to its drawing with a 2% margin"
+  },
+  {
+    "file": "azure.svg",
+    "icon": "logos:microsoft-azure",
+    "name": "Microsoft Azure",
+    "kind": "colour",
+    "source": "gilbarbara/logos@d6960edc1b7309d392c76e40d3a320df7f9ff85c",
+    "author": "Gil Barbara",
+    "licence": "CC0-1.0",
+    "url": "https://github.com/gilbarbara/logos",
+    "trademark": true,
+    "markUrl": "https://azure.microsoft.com/"
+  },
+  {
+    "file": "power-bi.svg",
+    "icon": "logos:microsoft-power-bi",
+    "name": "Microsoft Power BI",
+    "kind": "colour",
+    "source": "gilbarbara/logos@d6960edc1b7309d392c76e40d3a320df7f9ff85c",
+    "author": "Gil Barbara",
+    "licence": "CC0-1.0",
+    "url": "https://github.com/gilbarbara/logos",
+    "trademark": true,
+    "markUrl": "https://www.microsoft.com/power-platform/products/power-bi"
   }
 ]

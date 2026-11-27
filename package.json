@@ -1,8 +1,8 @@
 {
-  "name": "desicia-site",
+  "name": "decisia-site",
   "version": "1.0.0",
   "private": true,
-  "description": "DESICIA website: static page + contact endpoint (Vercel function in api/, local server in server.mjs)",
+  "description": "DECISIA website: static page + contact endpoint (Vercel function in api/, local server in server.mjs)",
   "type": "module",
   "engines": { "node": "24.x" },
   "scripts": {

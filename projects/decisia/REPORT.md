@@ -1,4 +1,4 @@
-# DESICIA website: build report
+# DECISIA website: build report
 
 Branch `arena/d954650d-desicia`. Site at the repo root (moved from `projects/desicia/site/` on 27 Nov 2026 for Vercel). Supporting documents: `BRIEF.md`,
 `research/COMPETITORS.md`, `SCRIPT.md` (all page copy, written before any design), `PRODUCT.md`, `DESIGN.md`,
@@ -23,7 +23,7 @@ transformation firms. Full teardown in `research/COMPETITORS.md`.
 
 ## 2. Positioning
 
-**DESICIA: enterprise AI, from data to action.** One team builds the forecasts, the automations and the process
+**DECISIA: enterprise AI, from data to action.** One team builds the forecasts, the automations and the process
 changes, inside the client's own cloud.
 
 There is no proof yet, so trust rests on commitments a buyer can check and put in a contract:
@@ -52,8 +52,8 @@ Proof section later, when they exist.
     "tasteful" default, and it was off-brand next to a green accent, so every warm neutral was re-derived in
     OKLCH (hue 135–150, chroma ≤ 0.016). Contrast went up: muted text is 7.4:1 on the canvas, up from 6.1:1.
   - Full role table in `DESIGN.md`.
-- **Type:** Source Serif 4 for headings (weight 500, optical sizes), Libre Franklin for text and UI, and
-  JetBrains Mono for system data. All are self-hosted woff2 with OFL licences, so there are no third-party font
+- **Type:** Instrument Serif for the display heads and wordmark (400, italic on the h1's emphasis), Inter for text and
+  UI, and JetBrains Mono with tabular figures for system data (the client's spec, see the change log). All are self-hosted woff2 with OFL licences, so there are no third-party font
   calls. (The first build used Schibsted Grotesk throughout; the client found it too generic, see the change log.)
 - **Grid:** 12 columns, 1280 wrap, sharp radius, and one screen per section on desktop. On phones a section is
   either exactly two screens or at most 1.5 screens, ending on its own content.
@@ -89,14 +89,14 @@ Proof section later, when they exist.
   the footer leading, the tab hover and two headings. A new build re-checked that code:
   - Round 1 flagged two headings that did not name the category; both were fixed. The thesis heading became
     "Where AI and analytics projects stall", and the FAQ question became "…Can we start in week 1?".
-  - Round 2 flagged the `<title>` not matching the h1. It became "DESICIA: Enterprise AI, data analytics and
+  - Round 2 flagged the `<title>` not matching the h1. It became "DECISIA: Enterprise AI, data analytics and
     automation".
   - Round 3 ended **`GATE: OPEN 1`** (rounds used up).
 - **The one open FAIL is a checker artefact, verified on the crop:**
 
   | Check | Target | Why it is false |
   |---|---|---|
-  | contrast (390) | `div.dg-node.dg-node--core-pill > span.dg-label` "DESICIA" | The label is light text on its own dark gradient pill (about 17:1). At that scroll stop the fixed mobile "Book a call" bar covers the pill. The checker's ground lookup skips fixed layers, but its text-hidden screenshot does not, so it compares white text with the bar's paper (1.1:1). The same artefact caused build 1's gantt-name "2.7:1" (ink over the bar's green button). |
+  | contrast (390) | `div.dg-node.dg-node--core-pill > span.dg-label` "DECISIA" | The label is light text on its own dark gradient pill (about 17:1). At that scroll stop the fixed mobile "Book a call" bar covers the pill. The checker's ground lookup skips fixed layers, but its text-hidden screenshot does not, so it compares white text with the bar's paper (1.1:1). The same artefact caused build 1's gantt-name "2.7:1" (ink over the bar's green button). |
 
   The waiver is in `.taste-skill/waivers.json`. It was not applied in the last round because its first
   target string carried a trailing " [390]" that the gate does not print. The target has since been corrected,
@@ -122,7 +122,7 @@ Proof section later, when they exist.
 ### open-design review-animations
 | Before | After | Why |
 |---|---|---|
-| `.step { transition: box-shadow 200ms }` (desicia.css:168) | no transition; the state snaps, and the spinner already signals the run | `box-shadow` is not GPU-composited, and the step state changes 4 times a run |
+| `.step { transition: box-shadow 200ms }` (decisia.css:168) | no transition; the state snaps, and the spinner already signals the run | `box-shadow` is not GPU-composited, and the step state changes 4 times a run |
 | `.demo .tab:hover` set light text on the selected tab's light fill | `.demo .tab:not([aria-selected="true"]):hover` | hover made the selected label 1.4:1 (found by impeccable; motion-adjacent state styling) |
 
 Kept, with reasons:
@@ -178,7 +178,7 @@ notes and the unused kit media out of the upload. In Project Settings → Enviro
     function log.
   - With `SMTP_HOST` set (see `.env.example`: CONTACT_TO, CONTACT_FROM, SMTP_HOST/PORT/SECURE/USER/PASS) the
     request is also emailed.
-  - Set `CONTACT_TO` to the real inbox before launch. `hello@desicia.example` is a placeholder.
+  - Set `CONTACT_TO` to the real inbox before launch. `hello@decisia.example` is a placeholder.
 - **Security headers:** a strict CSP (self only, fonts self-hosted).
 - **SEO:** title and description, Open Graph with `share.png` (1200×630), JSON-LD ProfessionalService, `robots.txt`,
   plus privacy, terms and 404 pages.
@@ -195,7 +195,7 @@ notes and the unused kit media out of the upload. In Project Settings → Enviro
 
 - **Hero console fully visible.** The kit's centred hero faded its window out from 82% of the frame and pinned the
   console absolutely, so the console's last rows (the PO proposal and its Approve / Edit actions) were cut off.
-  `css/desicia.css` now puts the console in the flow on its lit stage, with no mask and no clipping, and tightens
+  `css/decisia.css` now puts the console in the flow on its lit stage, with no mask and no clipping, and tightens
   the hero's spacing so the words, buttons and the whole console end above the fold. There is also a short-screen
   step at heights of 860px or less. On screens that are still too short (1366×768: 0.88, 1024×768: 0.97),
   `js/demo.js` zooms the console just enough to fit, never below 0.75. Below that floor (1280×720 runs 7px over,
@@ -228,7 +228,7 @@ notes and the unused kit media out of the upload. In Project Settings → Enviro
   - the console's signal list is 292px, so no row truncates;
   - the phone integrations hub is 320px tall, so the section stays within 1.5 screens.
 - **Repo layout:** the website moved from `projects/desicia/site/` to the repo root (`git mv`, so history is kept), so
-  Vercel deploys it with no Root Directory setting. The notes stay in `projects/desicia/`.
+  Vercel deploys it with no Root Directory setting. The notes stay in `projects/decisia/`.
   - **Contact endpoint on Vercel:** the contact logic moved to `api/_lib/contact.mjs` (Web Request/Response). It is
     served by the Vercel function `api/contact.js` and by `server.mjs` locally.
   - **Deploy config:** `vercel.json` sets the headers and caching; `.vercelignore` limits the upload to the site.
@@ -241,3 +241,54 @@ notes and the unused kit media out of the upload. In Project Settings → Enviro
   - impeccable URL scans clean on the home page (1440, 390) and privacy;
   - `npm test` passes, covering both the local server and the Vercel function, plus the hidden paths.
   - No motion changed.
+
+### 27 Nov 2026: DECISIA, editorial type, Azure first, continuous motion
+
+- **Name:** the brand is **DECISIA** (it was misspelt DESICIA). Renamed everywhere: page text, titles and meta, the
+  wordmark, diagram labels and alt text, code comments, `package.json` (`decisia-site`), the contact defaults
+  (`hello@decisia.example`), tests, docs, `css/decisia.css` and `projects/decisia/`. `share.png` was re-shot from the new
+  hero. The GitHub repository itself is still named `Desicia` (rename it on GitHub if wanted; links redirect).
+- **Type (client spec):** `--font-serif` Instrument Serif 400 + italic, `--font-sans` Inter 400 to 600, `--font-mono`
+  JetBrains Mono 400/500 with `tabular-nums`, defined at the root in `css/fonts.css`. Hero h1 `clamp(3.25rem, 6vw,
+  5.25rem)` / 1.04 / −0.025em with "from data to action" in italic; h2 `clamp(2.25rem, 4vw, 3.5rem)` / 1.08 / −0.02em;
+  uppercase wordmark +0.06em; h3/h4 and every card title or label Inter 600 / −0.015em / 1.3; body 1.6, antialiased.
+  Mono on the console, demo workspace, W1 to W12, metrics (value figures now mono 500), SKUs, timestamps, the audit log.
+  Self-hosted from Fontsource (the same files as Google Fonts; the CSP allows fonts from 'self' only, and `next/font`
+  does not apply to a static site). Source Serif 4 and Libre Franklin files removed.
+  - Follow-ups for the new metrics: the phone booking screen stays within 1.5 screens (plan panel sized to its
+    card, 12 px form gaps, the plan's last row shortened); two service descriptions shortened to two lines so the
+    services section stays under 1.5 screens at 1024 and 768; demo step notes shortened so none wraps.
+- **Azure first:** hero lead and meta ("on Microsoft Azure"); console bar `Azure · SAP`; bowtie now Fabric, SAP,
+  Dynamics 365 → Azure forecast → Teams, SAP, Power BI; services name Azure Machine Learning, Fabric, Power BI and
+  Azure OpenAI; demo sources Microsoft Fabric and Azure Event Hubs, region Azure West Europe; hub leads with Azure,
+  Fabric, Power BI, Dynamics 365, Teams (PostgreSQL and Slack dropped); method "In your Azure tenant"; FAQ answer
+  "Azure OpenAI in your own tenant by default"; security row "Your Azure tenant" (Entra ID, Key Vault, your region)
+  and Azure Monitor for the audit log; audit chips `Azure West Europe` / `Entra ID · 4 roles`. New marks:
+  `assets/icons/azure.svg` and `power-bi.svg` (gilbarbara/logos, CC0, credited in `icons-credits.json`).
+- **Continuous motion (client: the flows stopped mid-way):** the bowtie lost its `data-ui-cycles="2"` cap and the
+  hub its `"pulse": "none"`, so both loop for as long as they are on screen, phones included (`data-dg-phone="loop"`).
+  The hero console also loops on phones (`phoneConsole` in `js/demo.js`, the kit's `ui.loop`, with its pause button).
+  The demo connectors carry a continuous packet stream (`d-stream`), which a pipeline run takes over and hands back.
+  Checked in Chrome: bowtie, hub and console were still cycling after 19 s at 1440 and 390.
+- **review-animations** (open-design, ten standards) on the new motion:
+
+  | Before | After | Why |
+  |---|---|---|
+  | `.dw.is-live .dw__spin { animation: d-spin 1s linear infinite }` (spins after the answer is posted) | spins only while the tool step is the latest (`.dw__tool:has(+ .is-off)`); full green ring once done | motion must indicate state; a spinner beside a finished answer says "still working" |
+  | demo stream: autoplay with no control | `button.dwin__pause` in the workspace bar (`aria-pressed`, label swaps), `animation-play-state: paused`; hidden on phones, where the connectors are hidden | WCAG 2.2.2: automatic motion over 5 s needs a pause |
+  | `.is-flow` left on the connectors after a run | removed 520 ms after the run, so the stream resumes | otherwise the run's sweep would end the continuous flow |
+
+  Kept, with reasons: `d-stream` is explanatory (data moving between systems), transform only, 2.4 s linear (constant
+  speed reads as flow; linear is right for a conveyor, not for UI response), staggered 300 ms, runs only while on
+  screen (`.is-live` via IntersectionObserver) and is off under reduced motion. The diagram and console loops are the
+  kit's, each with a pause button and off-screen pausing. **Verdict: Approve.**
+- **Validation:**
+  - taste gate **PASS** on a fresh build (round 1 of the final build; no open FAIL, no waiver applied);
+  - layout check clean at 1440, 1024, 820, 768 and 390;
+  - consistency `--quick` 0 FAIL at 1440 and 390;
+  - copy-lint 0 FAIL / 0 WARN (795 words);
+  - `npm test` passes;
+  - impeccable (1440, 390): **2 findings, both from the client's type spec and kept on purpose**: `overused-font`
+    (Inter as the primary face) and `italic-serif-display` (the italic serif in the hero h1; impeccable notes that
+    an editorial register may want it). Change either by swapping `--font-sans` or removing the `<em>` in the h1.
+

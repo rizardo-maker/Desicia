@@ -1,12 +1,12 @@
 {
- "start": "2026-11-27T17:59:32.106Z",
+ "start": "2026-11-27T18:45:54.813Z",
  "round": 0,
  "idle": 0,
  "errors": 0,
  "status": "pass",
  "history": [
   {
-   "at": "2026-11-27T18:01:45.677Z",
+   "at": "2026-11-27T18:48:08.074Z",
    "mode": "manual",
    "status": "pass",
    "fails": 0,
@@ -24,11 +24,11 @@
   "category": null,
   "primary": "Book a call",
   "rounds": 3,
-  "start": "2026-11-27T17:59:32.106Z",
+  "start": "2026-11-27T18:45:54.813Z",
   "by": "gate.mjs --start"
  },
  "manual": true,
- "fp": "5c9fedd895720881",
+ "fp": "f0906a6687625219",
  "page": "index.html",
  "found": {
   "fails": [],
@@ -78,7 +78,7 @@
    {
     "check": "section-gaps",
     "where": "main#top > section.hero.hero--centred / section#thesis",
-    "msg": "196px between these sections, -40% against the median 326px",
+    "msg": "178px between these sections, -43% against the median 314px",
     "fix": "use one gap between sections (all within 25% of each other)",
     "widths": [
      1440,
@@ -89,7 +89,7 @@
    {
     "check": "section-gaps",
     "where": "section#services / section#demo",
-    "msg": "uneven space at the edge of a band: 228px outside its edge, 17px inside it (the space on either side of a change of ground reads as one gap only when the two match)",
+    "msg": "uneven space at the edge of a band: 216px outside its edge, 17px inside it (the space on either side of a change of ground reads as one gap only when the two match)",
     "fix": "use one gap between sections (all within 25% of each other)",
     "widths": [
      1440
@@ -98,8 +98,8 @@
    },
    {
     "check": "nav-labels",
-    "where": "header.nav.nav--centre > div.wrap.nav__bar > a.nav__logo \"DESICIA\"",
-    "msg": "\"DESICIA\" opens a section headed \"Enterprise AI, from data to action\"",
+    "where": "header.nav.nav--centre > div.wrap.nav__bar > a.nav__logo \"DECISIA\"",
+    "msg": "\"DECISIA\" opens a section headed \"Enterprise AI, from data to action\"",
     "fix": "name each nav link after the heading of the section it opens",
     "widths": [
      1440
@@ -108,8 +108,8 @@
    },
    {
     "check": "fade-cut",
-    "where": "div.pipe__sources > div.src:nth-of-type(1) > span > b \"Snowflake\"",
-    "msg": "2 lines of div.dwin.ui fade out under its edge (\"Snowflake\", \"Output\"): drawn at a fraction of #eef1ed on #1f2b25, half-erased (inside a held section or scroll scene, whose motion --quick does not check)",
+    "where": "div.pipe__sources > div.src:nth-of-type(1) > span > b \"Microsoft Fabric\"",
+    "msg": "2 lines of div.dwin.ui fade out under its edge (\"Microsoft Fabric\", \"Output\"): drawn at a fraction of #eef1ed on #1f2b25, half-erased (inside a held section or scroll scene, whose motion --quick does not check)",
     "fix": "fit the mock's rows inside its panel (fewer rows, a taller panel), or end the fade below the last whole row: no row half-erased",
     "widths": [
      1440
@@ -119,7 +119,7 @@
    {
     "check": "copy-length",
     "where": "section#questions \"Questions buyers ask\"",
-    "msg": "3 sections over 90 words a screen outside the UI mocks (\"Questions buyers ask\" 118, \"Security, ownership and \" 96, \"The engagement process\" 93); 71 words a screen across the page (637 words in 9 screens): a tech page says it in about 80 or fewer",
+    "msg": "3 sections over 90 words a screen outside the UI mocks (\"Questions buyers ask\" 118, \"Security, ownership and \" 106, \"The engagement process\" 93); 73 words a screen across the page (656 words in 9 screens): a tech page says it in about 80 or fewer",
     "fix": "cut every section to its heading, one line and the product UI: the UI says the rest; no second paragraph, no list of feature sentences",
     "widths": [
      1440
@@ -168,8 +168,18 @@
     "from": "consistency"
    },
    {
+    "check": "no-visual",
+    "where": "section#book \"Book a call\"",
+    "msg": "pictures, effects and mocks cover 22% of this section; a feature section needs a visual (about 25% or more)",
+    "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
     "check": "cta",
-    "where": "section#services \"DESICIA services. One team for all three\"",
+    "where": "section#services \"DECISIA services. One team for all three\"",
     "msg": "a section over 1.5 screens long with no link or button in it",
     "fix": "add the action: a button in the hero, one on every priced item, one in the closing section",
     "widths": [
@@ -189,8 +199,8 @@
    },
    {
     "check": "fade-cut",
-    "where": "div#view-pipe > ol.pipe__steps > li.step:nth-of-type(3) > b \"Features\"",
-    "msg": "2 lines of div.dwin.ui fade out under its edge (\"Features\", \"Forecast\"): drawn at a fraction of #eef1ed on #1f2b25, half-erased (inside a held section or scroll scene, whose motion --quick does not check)",
+    "where": "div#view-pipe > ol.pipe__steps > li.step:nth-of-type(1) > em \"38 s · 4 sources\"",
+    "msg": "2 lines of div.dwin.ui fade out under its edge (\"38 s · 4 sources\", \"212/212 checks\"): drawn at a fraction of #b3bcb5 on #1f2b25, half-erased (inside a held section or scroll scene, whose motion --quick does not check)",
     "fix": "fit the mock's rows inside its panel (fewer rows, a taller panel), or end the fade below the last whole row: no row half-erased",
     "widths": [
      390
@@ -206,6 +216,6 @@
  },
  "open": [],
  "waived": [],
- "warnCount": 16,
- "at": "2026-11-27T18:01:45.678Z"
+ "warnCount": 17,
+ "at": "2026-11-27T18:48:08.074Z"
 }

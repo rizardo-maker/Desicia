@@ -1,5 +1,5 @@
 /*
-  DESICIA contact logic, shared by the Vercel function (api/contact.js) and the local server (server.mjs).
+  DECISIA contact logic, shared by the Vercel function (api/contact.js) and the local server (server.mjs).
   Web-standard Request in, Response out, so the same code runs on Vercel and on plain Node 18+.
   - Accepts multipart/form-data (what the page's form sends), urlencoded, JSON or text/plain.
   - Validates every field (the same messages as the page's own error lines), drops bots (honeypot field "website"),
@@ -73,8 +73,8 @@ async function sendMail(f, id) {
       secure: String(process.env.SMTP_SECURE || '') === 'true',
       auth: process.env.SMTP_USER ? { user: process.env.SMTP_USER, pass: process.env.SMTP_PASS } : undefined });
   }
-  const to = process.env.CONTACT_TO || 'hello@desicia.example';
-  const from = process.env.CONTACT_FROM || 'DESICIA website <no-reply@desicia.example>';
+  const to = process.env.CONTACT_TO || 'hello@decisia.example';
+  const from = process.env.CONTACT_FROM || 'DECISIA website <no-reply@decisia.example>';
   await mailer.sendMail({ from, to, replyTo: `${f.name} <${f.email}>`,
     subject: `Call request: ${f.company} (${f.area})`,
     text: `New call request ${id}\n\nName: ${f.name}\nEmail: ${f.email}\nCompany: ${f.company}\nArea: ${f.area}\n\nWhat should change:\n${f.message}\n` });

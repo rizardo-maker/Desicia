@@ -1,4 +1,4 @@
-# Design system — DESICIA
+# Design system — DECISIA
 
 > Phase 3. Colour by impeccable `colorize` (Persuade mode: colour may own regions; roles, not swatches), type by
 > impeccable `typeset` + taste `start.mjs types`, mechanics by taste `system.md` / `layout-v4.md`, floor by
@@ -43,17 +43,29 @@ green-black above, with its own elevation steps: band #101814 → window #17211c
 paper). Dark UI windows sit only on light grounds (hero, services); on the dark band the window steps lighter.
 
 ## Type (typeset)
-- Display: **Source Serif 4** (variable, optical size 8–60, headings at 500, tracking −2 % / −2.6 % at XL): a sober,
-  low-contrast serif in the register of consulting and financial reporting, so an executive reads the page as a firm,
-  not a startup template. Its optical-size axis gives the large headings the display cut.
-- Text and UI: **Libre Franklin** (variable 400–600): the Franklin Gothic family of corporate and newspaper
-  typography; firm, open and very readable at 14–20px. The pairing is taste's `source-serif` deal ("law, finance…
-  sober and readable") and avoids every reflex face impeccable lists (Inter, Geist, Space Grotesk, Instrument Sans,
-  IBM Plex…). Replaced Schibsted Grotesk on 27 Nov 2026: the client found the single grotesk too generic.
-- Data: **JetBrains Mono** 400/500, only for figures, IDs, timestamps and code inside UI mocks (never as costume).
-- Roles (1440 / 390): h1 72 / 40 at 500 (Source Serif 4), tracking −2.6 %; h2 48 / 30; h3 & card titles 20 / 18 at 500; lead 20 / 18;
-  body 16 / 26; small 14; label 13 / 500 sentence case; mono UI 12–13 with `tnum`.
-- `text-wrap: balance` on headings, `pretty` on body; measure ≤ 62 ch.
+Three root tokens, defined in `css/fonts.css` (`:root`), mapped onto the kit's `--font-display` / `--font-text` in each
+page's `:root`, so light sections and the dark `#demo` band share one hierarchy. All self-hosted woff2 from Fontsource
+(SIL OFL, licences in `fonts/`): the same files Google Fonts serves, without a third-party request (CSP `font-src 'self'`).
+- `--font-serif` **Instrument Serif** 400, roman and italic: the editorial display face for the h1, the section h2s and
+  the wordmark. High contrast and condensed, so it reads as a firm's report, not a startup template.
+- `--font-sans` **Inter** 400 / 500 / 600 (variable): body, subtitles, navigation, buttons, h3/h4, card titles, labels.
+- `--font-mono` **JetBrains Mono** 400 / 500 with `font-variant-numeric: tabular-nums`: everything a reader compares or
+  scans: the operations console, the demo workspace, the Gantt weeks W1 to W12, metrics, SKUs, timestamps, the audit log.
+- Scale:
+
+  | Role | Face | Size | Line height | Tracking |
+  |---|---|---|---|---|
+  | Hero h1 | serif 400 (italic on "from data to action") | `clamp(3.25rem, 6vw, 5.25rem)` (52 to 84 px) | 1.04 | −0.025em |
+  | Section h2 | serif 400 | `clamp(2.25rem, 4vw, 3.5rem)` (36 to 56 px) | 1.08 | −0.02em |
+  | Wordmark | serif 400, uppercase | 22 px (20 phone) | 1 | +0.06em |
+  | h3/h4, card titles, feature labels | sans 600 | 18 px (FAQ 18) | 1.3 | −0.015em |
+  | Body, subtitles | sans 400 | 16 / lead 18 px | 1.6 | 0 |
+  | Nav links, buttons, tabs | sans 500 | 15 to 16 px | 1 | −0.005em |
+  | Data | mono 400 / 500, `tnum` | 11 to 14 px (value figures 36 px at 500) | 1.4 | 0 |
+
+- `-webkit-font-smoothing: antialiased` on the root; `text-wrap: balance` on headings, `pretty` on body; measure ≤ 62 ch.
+- impeccable flags Inter (reflex face) and the italic serif h1 (common AI-startup hero). Both are the client's stated
+  type spec (27 Nov 2026), kept on purpose and reported in REPORT.md.
 
 ## Space, grid, radius
 - Spacing scale 4 · 8 · 12 · 16 · 24 · 32 · 48 · 64 · 96 · 128 (`--s-1`…`--s-10`).
@@ -71,9 +83,16 @@ paper). Dark UI windows sit only on light grounds (hero, services); on the dark 
 
 ## Motion (taste motion.md + open-design ui-animation / review-animations)
 1. Hero entrance: h1 rises line by line, lead/buttons fade up 12 px, console settles from .98 — once, ~1.1 s.
-2. Signature moment A: the hero console loop (one timed loop on the page) with a pause control.
-3. Signature moment B: the demo's data-to-automation flow: packets travel the pipeline on "Run pipeline", steps
-   tick, the forecast lands; the automation run waits for the visitor's Approve. Click-driven, settles < 2 s.
+2. Signature moment A: the hero console loop with a pause control; its tool spinner turns only while that step is the
+   one being worked on, then shows a full ring.
+3. Signature moment B: the demo's data-to-automation flow. While the workspace is on screen a packet runs down every
+   connector without end (`d-stream`, 2.4 s linear, staggered left to right, transform only; its own pause button in
+   the workspace bar). "Run pipeline" takes the connectors over with its sweep, the steps tick, the forecast lands,
+   then the stream resumes. The automation run waits for the visitor's Approve.
+3b. Continuous loops (client, 27 Nov 2026: "flows must not stop mid-way"): the thesis bowtie and the industries hub loop
+   without a cycle cap (`data-ui-cycles` removed, the hub's `pulse: none` removed) and keep looping on phones
+   (`data-dg-phone="loop"`); the hero console loops on phones too (`js/demo.js` `phoneConsole`, the kit's `ui.loop`). Every loop
+   pauses off screen and has a pause button.
 4. Section transition: `iris-opens` on the dark demo band (dealt), scrubbed, still on phones / reduced motion.
 5. Micro: kit hover layer gated to `(hover: hover) and (pointer: fine)`; press 100–160 ms; tab indicator.
 - Easing `cubic-bezier(.22,1,.36,1)`; UI ≤ 300 ms; transform/opacity only; reserved sizes → zero CLS;

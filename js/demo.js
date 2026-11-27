@@ -1,8 +1,12 @@
-/* DESICIA demo workspace: three click-driven views (no timed loops, nothing starts on scroll).
+/* DECISIA demo workspace: three click-driven views, and the continuous motion around them.
    - Data pipeline: "Run pipeline" resets the steps and plays sources -> ingest -> validate -> features -> forecast
-     once (about 2 s), then holds the finished picture. Reduced motion: the states change at once.
+     (about 2 s), then hands the connectors back to the live stream. Reduced motion: the states change at once.
    - Automation run: Approve / Reject answer the waiting step; "Replay run" puts it back to waiting.
-   - Value estimate: the visitor's four inputs drive one formula, updated on input. */
+   - Value estimate: the visitor's four inputs drive one formula, updated on input.
+   - Live: the console and the workspace get .is-live while on screen, so their CSS loops (the data stream on the
+     connectors, the console's spinner) run without end there and stop off screen.
+   - Phone: the kit holds the console still under 640px; DECISIA's console keeps telling its story there too. */
+import { loop } from '../assets/ui/ui.js';
 const reduced = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 const wait = ms => new Promise(r => setTimeout(r, reduced() ? 0 : ms));
 const fmt = n => Math.round(n).toLocaleString('en-US');
@@ -23,6 +27,7 @@ function pipeline(root) {
   btn.addEventListener('click', async () => {
     if (running) return;
     running = true;
+    root.classList.add('is-running');
     btn.disabled = true;
     status.textContent = 'Running · reading 4 sources';
     steps.forEach(s => s.classList.remove('is-done', 'is-run'));
@@ -42,6 +47,9 @@ function pipeline(root) {
     }
     out.classList.remove('is-pending');
     status.textContent = `Last run finished ${clock()} · 212 of 212 checks passed`;
+    await wait(520);
+    root.querySelectorAll('.is-flow').forEach(el => el.classList.remove('is-flow'));
+    root.classList.remove('is-running');
     btn.disabled = false;
     running = false;
   });
@@ -107,6 +115,47 @@ function value(root) {
 const p = document.querySelector('[data-pipe]'); if (p) pipeline(p);
 const a = document.querySelector('[data-auto]'); if (a) automation(a);
 const val = document.querySelector('[data-value]'); if (val) value(val);
+
+/* ------------------------------------------------ continuous motion */
+// .is-live while on screen: the CSS loops run only then, and stop for reduced motion or a hidden tab
+function live() {
+  const els = [...document.querySelectorAll('.dw, .dwin')];
+  if (!els.length || reduced() || !('IntersectionObserver' in window)) return;
+  const io = new IntersectionObserver(es => es.forEach(e => e.target.classList.toggle('is-live', e.isIntersecting)),
+    { rootMargin: '80px 0px' });
+  els.forEach(el => io.observe(el));
+  // the workspace's flow has its own pause button (it moves for more than 5 s)
+  const btn = document.querySelector('[data-flow-pause]'), win = btn && btn.closest('.dwin');
+  if (!btn || !win) return;
+  const PAUSE = btn.innerHTML;
+  const PLAY = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5.25 3.7v8.6c0 .62.68 1 1.2.66l6.5-4.3c.47-.31.47-1 0-1.32l-6.5-4.3c-.52-.34-1.2.04-1.2.66Z"/></svg>';
+  btn.addEventListener('click', () => {
+    const paused = win.classList.toggle('is-paused');
+    const label = paused ? 'Play the data flow' : 'Pause the data flow';
+    btn.innerHTML = paused ? PLAY : PAUSE;
+    btn.setAttribute('aria-pressed', String(paused));
+    btn.setAttribute('aria-label', label); btn.title = label;
+  });
+}
+live();
+
+// the hero console on a phone: the same story as layout.js plays on wider screens (steps 900 ms apart, a
+// short hold on the finished thread, then again), on the kit's loop so it pauses off screen and has its pause button
+function phoneConsole() {
+  const box = document.querySelector('.dw__thread[data-ly-steps]');
+  if (!box || innerWidth >= 640 || reduced()) return;
+  const items = [...box.querySelectorAll('[data-step]')].filter(el => getComputedStyle(el).display !== 'none');
+  if (!items.length) return;
+  const every = parseInt(box.dataset.lySteps, 10) || 700;
+  const set = n => items.forEach((s, k) => s.classList.toggle('is-off', k >= n));
+  const done = () => set(items.length);
+  loop(box, async api => {
+    await api.wait(1800);
+    set(0);
+    for (let n = 1; n <= items.length; n++) { await api.wait(n === 1 ? 380 : every); set(n); }
+  }, { still: done, rest: 1200 });
+}
+phoneConsole();
 
 /* ------------------------------------------------ page chrome (not the demo, but small enough to live here) */
 // 1. the nav marks the section in view (aria-current="location"), no animation beyond the kit's underline

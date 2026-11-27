@@ -3,24 +3,24 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>DESICIA: Enterprise AI, data analytics and automation</title>
-<meta name="description" content="DESICIA builds forecasting, automation and the process change around them, inside your cloud, with a first system in production in 12 weeks.">
+<title>DECISIA: Enterprise AI, data analytics and automation on Azure</title>
+<meta name="description" content="DECISIA builds forecasting, automation and the process change around them on Microsoft Azure, inside your tenant, with a first system in production in 12 weeks.">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="DESICIA">
-<meta property="og:title" content="DESICIA: Enterprise AI, data analytics and automation">
-<meta property="og:description" content="Forecasts, automations and process change that turn company data into approved decisions and system actions.">
+<meta property="og:site_name" content="DECISIA">
+<meta property="og:title" content="DECISIA: Enterprise AI, data analytics and automation">
+<meta property="og:description" content="Forecasts, automations and process change on Microsoft Azure that turn company data into approved decisions and system actions.">
 <meta property="og:image" content="share.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="DESICIA: Enterprise AI, from data to action">
+<meta property="og:image:alt" content="DECISIA: Enterprise AI, from data to action">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#f5f8f3">
 <!-- <link rel="canonical" href="https://[the client's domain]/"> : add once the domain is known (REPORT.md) -->
 <meta name="site-kind" content="software">
 <meta name="page-type" content="software">
-<link rel="preload" href="fonts/source-serif-4-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/libre-franklin-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/fonts.css">
 <link rel="stylesheet" href="assets/system.css">
 <link rel="stylesheet" href="assets/ui/cards.css">
@@ -34,17 +34,17 @@
   --p-accent: #006d41; --p-accent-ink: #f5f8f3; --p-action: #006d41; --p-action-ink: #f5f8f3;
   --p-inv-bg: #131914; --p-inv-surface: #212922; --p-inv-ink: #f5f8f3; --p-inv-muted: #a0a7a1;
   --p-inv-accent: #f5f8f3; --p-inv-accent-ink: #131914; --p-inv-action: #f5f8f3; --p-inv-action-ink: #131914;
-  --font-display: "Source Serif 4", Georgia, "Times New Roman", serif;
-  --font-text: "Libre Franklin", system-ui, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
-  --display-weight: 500;
+  --font-display: var(--font-serif);
+  --font-text: var(--font-sans);
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;   /* restated: system.css sets its own */
+  --display-weight: 400;
   --display-tracking: -0.02em;
-  --display-tracking-xl: -0.026em;
+  --display-tracking-xl: -0.025em;
   --ly-scale: 1;
 }
 </style>
 <link rel="stylesheet" href="assets/diagrams/diagram.css">
-<link rel="stylesheet" href="css/desicia.css">
+<link rel="stylesheet" href="css/decisia.css">
 <script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
 <script src="assets/backgrounds/backgrounds.js"></script>
 <script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
@@ -52,7 +52,7 @@
 <link rel="modulepreload" href="assets/moments/lib.js">
 <link rel="modulepreload" href="assets/moments/iris-opens/moment.js">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ProfessionalService","name":"DESICIA","description":"AI data analytics, AI automation and AI transformation for enterprise operations.","areaServed":"Worldwide","knowsAbout":["Data analytics","Forecasting","Workflow automation","AI agents","Process modernisation"],"potentialAction":{"@type":"CommunicateAction","name":"Book a call","target":"#book"}}
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"DECISIA","description":"AI data analytics, AI automation and AI transformation for enterprise operations.","areaServed":"Worldwide","knowsAbout":["Data analytics","Forecasting","Workflow automation","AI agents","Process modernisation"],"potentialAction":{"@type":"CommunicateAction","name":"Book a call","target":"#book"}}
 </script>
 </head>
 <body>
@@ -68,7 +68,7 @@
 <header class="nav nav--centre">
   <div class="wrap nav__bar">
     <a class="skip-link" href="#top">Skip to content</a>
-    <a class="nav__logo" href="#top">DESICIA</a>
+    <a class="nav__logo" href="#top">DECISIA</a>
     <nav class="nav__links" aria-label="Main">
       <div class="nav__item">
         <a class="nav__link" href="#services">Services <svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
@@ -115,13 +115,13 @@
     <div class="wrap"><div class="hero-text">
       <div class="hero__c">
         <a class="pill" href="#method"><span data-assumed>First system live in 12 weeks</span><span class="muted">See the plan</span></a>
-        <h1 id="hero-h">Enterprise AI, from data to action</h1>
-        <p class="hero__lead">DESICIA builds the forecasts, the automations and the process changes that turn your company data into decisions people approve and systems carry out.</p>
+        <h1 id="hero-h">Enterprise AI, <em>from data to action</em></h1>
+        <p class="hero__lead">DECISIA builds forecasts, automations and process changes on Microsoft Azure that turn your company data into decisions people approve and systems carry out.</p>
         <div class="btn-row"><a class="btn btn--primary" href="#book">Book a call<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a><a class="btn btn--secondary" href="#demo">See the live demo</a></div>
       </div>
-      <div class="hero__window hero__window--lit" data-ui-pause-host role="img" aria-label="The DESICIA operations console flags a stockout risk at the Rotterdam distribution centre, reads sales, orders and lead times, proposes a purchase order and waits for approval">
+      <div class="hero__window hero__window--lit" data-ui-pause-host role="img" aria-label="The DECISIA operations console flags a stockout risk at the Rotterdam distribution centre, reads sales, orders and lead times, proposes a purchase order and waits for approval">
         <div class="ly-piece dw ui" aria-hidden="true">
-          <div class="dw__bar"><span class="dw__dots"><i></i><i></i><i></i></span><b>Operations console</b><span class="dw__sep">Rotterdam DC</span><span class="sp"></span><span class="dw__mono">SAP · Snowflake</span></div>
+          <div class="dw__bar"><span class="dw__dots"><i></i><i></i><i></i></span><b>Operations console</b><span class="dw__sep">Rotterdam DC</span><span class="sp"></span><span class="dw__mono">Azure · SAP</span></div>
           <div class="dw__body">
             <div class="dw__list">
               <div class="dw__q">Signals today</div>
@@ -153,10 +153,10 @@
             <li><span class="gaps__name">No path into the systems</span><p>The output stops at a chart and never reaches SAP, Salesforce or the ticket queue.</p></li>
             <li><span class="gaps__name">No measure of success</span><p>Nobody wrote down the number that would prove it worked.</p></li>
           </ul>
-          <p class="thesis__close">DESICIA builds all four steps as one system: data, decision, action, measurement.</p>
+          <p class="thesis__close">DECISIA builds all four steps as one system on Azure: data, decision, action, measurement.</p>
         </div>
         <div class="panel panel--solo span-6 start-7">
-          <div class="dg" data-diagram data-ui-cycles="2"><script type="application/json">{"layout":"bowtie","alt":"Sales, stock and customer data flow from Snowflake, SAP and Salesforce into one forecast, which posts a decision to Slack, raises an order in SAP and updates the CFO report.","sources":[{"label":"Snowflake","icon":"snowflake","sub":"Sales history"},{"label":"SAP","icon":"logos:sap","sub":"Stock and orders"},{"label":"Salesforce","icon":"salesforce","sub":"Customer pipeline"}],"core":{"label":"Forecast"},"targets":[{"label":"Decision","icon":"slack","sub":"Posted to #supply"},{"label":"Order raised","icon":"logos:sap","sub":"After approval","done":true},{"label":"CFO report","icon":"ui:chart-column","sub":"Every Monday"}],"motion":{"cycle":3.2}}</script></div>
+          <div class="dg" data-diagram data-dg-phone="loop"><script type="application/json">{"layout":"bowtie","alt":"Sales, stock and customer data flow from Microsoft Fabric, SAP and Dynamics 365 into one forecast on Azure, which posts a decision to Microsoft Teams, raises an order in SAP and updates the CFO report in Power BI.","sources":[{"label":"Fabric","icon":"microsoft-fabric","sub":"Sales history"},{"label":"SAP","icon":"logos:sap","sub":"Stock and orders"},{"label":"Dynamics 365","icon":"dynamics-365","sub":"Customer pipeline"}],"core":{"label":"Azure forecast"},"targets":[{"label":"Decision","icon":"teams","sub":"Posted to Supply"},{"label":"Order raised","icon":"logos:sap","sub":"After approval","done":true},{"label":"CFO report","icon":"power-bi","sub":"Every Monday"}],"motion":{"cycle":3.2}}</script></div>
         </div>
       </div>
     </div>
@@ -166,12 +166,12 @@
   <section class="section" id="services" style="--hm:2" aria-labelledby="services-h">
     <div class="wrap">
       <div class="section-head">
-        <h2 id="services-h">DESICIA services. <span class="muted">One team for all three, so nothing is lost between them.</span></h2>
+        <h2 id="services-h">DECISIA services. <span class="muted">One team for all three, so nothing is lost between them.</span></h2>
       </div>
       <div class="grid svc">
         <article class="card card--row card--open span-4" id="svc-data">
           <h3>Data analytics and forecasting</h3>
-          <p>Forecasting on your warehouse, with the drivers behind each number shown to the people who decide.</p>
+          <p>Forecasts in Azure Machine Learning on your Fabric data, with the drivers of each number in Power BI.</p>
           <div class="panel">
             <div class="mini ui ui-mini" role="img" aria-label="Weekly demand chart for SKU 4471: actual sales to week 47, then a forecast with its range to week 52">
               <div class="mini__head"><b>Weekly demand</b><span class="mini__mono">SKU 4471</span></div>
@@ -189,7 +189,7 @@
         </article>
         <article class="card card--row card--open span-4" id="svc-auto">
           <h3>Workflow automation</h3>
-          <p>Agents read, decide within limits you set and write back to SAP, Dynamics 365, Salesforce or ServiceNow.</p>
+          <p>Azure OpenAI agents decide within limits you set and write back to SAP, Dynamics 365 or Salesforce.</p>
           <div class="panel">
             <div class="mini ui ui-mini" role="img" aria-label="Automation run log for invoice INV-30917: four steps done, the last one waiting for the accounts payable lead">
               <div class="mini__head"><b>Run 2,481 · Invoice check</b><span class="mini__mono">14:01</span></div>
@@ -205,7 +205,7 @@
         </article>
         <article class="card card--row card--open span-4" id="svc-change">
           <h3>Process transformation</h3>
-          <p>We redesign the process, retire the manual steps and train the team that runs it after us.</p>
+          <p>We redesign the process, retire the manual steps and train the team that runs it on Azure after us.</p>
           <div class="panel">
             <div class="mini ui ui-mini" role="img" aria-label="Migration board with three columns: legacy steps, steps in a parallel run, and steps live in production">
               <div class="mini__head"><b>Replenishment process</b><span class="mini__mono">Week 10</span></div>
@@ -234,22 +234,22 @@
         <button class="tab" role="tab" id="tab-value" aria-selected="false" aria-controls="view-value" type="button">Value estimate</button>
       </div>
       <div class="dwin ui ui-demo" data-visual>
-        <div class="dwin__bar"><span class="dw__dots" aria-hidden="true"><i></i><i></i><i></i></span><b>Demo workspace</b><span class="dw__sep">Supply chain · EU</span><span class="sp"></span><span class="dw__mono" data-demo-clock>Freshness 4 min</span></div>
+        <div class="dwin__bar"><span class="dw__dots" aria-hidden="true"><i></i><i></i><i></i></span><b>Demo workspace</b><span class="dw__sep">Supply chain · Azure West Europe</span><span class="sp"></span><button class="dwin__pause" type="button" aria-pressed="false" aria-label="Pause the data flow" title="Pause the data flow" data-flow-pause><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="4.25" y="3.25" width="2.75" height="9.5" rx="0.9"/><rect x="9" y="3.25" width="2.75" height="9.5" rx="0.9"/></svg></button><span class="dw__mono" data-demo-clock>Freshness 4 min</span></div>
 
         <!-- view 1: pipeline -->
         <div class="dwin__view pipe" role="tabpanel" id="view-pipe" aria-labelledby="tab-pipe" data-pipe>
           <div class="pipe__sources">
             <p class="pipe__label">Sources</p>
-            <div class="src"><img class="ic" src="assets/icons/snowflake.svg" alt="" width="22" height="22"><span><b>Snowflake</b><em>Orders · 41.2M rows</em></span><i class="src__pipe" aria-hidden="true"><i></i></i></div>
+            <div class="src"><img class="ic" src="assets/icons/microsoft-fabric.svg" alt="" width="22" height="22"><span><b>Microsoft Fabric</b><em>Orders · 41.2M rows</em></span><i class="src__pipe" aria-hidden="true"><i></i></i></div>
             <div class="src"><img class="ic" src="assets/icons/sap.svg" alt="" width="22" height="22"><span><b>SAP S/4HANA</b><em>Stock · 18 plants</em></span><i class="src__pipe" aria-hidden="true"><i></i></i></div>
             <div class="src"><img class="ic" src="assets/icons/salesforce.svg" alt="" width="22" height="22"><span><b>Salesforce</b><em>Pipeline · 6,140 deals</em></span><i class="src__pipe" aria-hidden="true"><i></i></i></div>
-            <div class="src"><img class="ic ic-ink" src="assets/icons/kafka.svg" alt="" width="22" height="22"><span><b>Kafka</b><em>Events · 2.3k a second</em></span><i class="src__pipe" aria-hidden="true"><i></i></i></div>
+            <div class="src"><img class="ic" src="assets/icons/azure.svg" alt="" width="22" height="22"><span><b>Azure Event Hubs</b><em>Events · 2.3k a second</em></span><i class="src__pipe" aria-hidden="true"><i></i></i></div>
           </div>
           <ol class="pipe__steps" aria-label="Pipeline steps">
             <li class="step is-done" data-step-i="0"><span class="step__state" aria-hidden="true"></span><b>Ingest</b><em>38 s · 4 sources</em><i class="step__pipe" aria-hidden="true"><i></i></i></li>
-            <li class="step is-done" data-step-i="1"><span class="step__state" aria-hidden="true"></span><b>Validate</b><em>212 of 212 checks</em><i class="step__pipe" aria-hidden="true"><i></i></i></li>
+            <li class="step is-done" data-step-i="1"><span class="step__state" aria-hidden="true"></span><b>Validate</b><em>212/212 checks</em><i class="step__pipe" aria-hidden="true"><i></i></i></li>
             <li class="step is-done" data-step-i="2"><span class="step__state" aria-hidden="true"></span><b>Features</b><em>64 features</em><i class="step__pipe" aria-hidden="true"><i></i></i></li>
-            <li class="step is-done" data-step-i="3"><span class="step__state" aria-hidden="true"></span><b>Forecast</b><em>8 weeks · error 6.1%</em></li>
+            <li class="step is-done" data-step-i="3"><span class="step__state" aria-hidden="true"></span><b>Forecast</b><em>Error 6.1%</em></li>
           </ol>
           <div class="pipe__out" data-pipe-out>
             <p class="pipe__label">Output</p>
@@ -341,8 +341,8 @@
           </ul>
         </div>
         <div class="panel panel--solo panel--titled span-6 start-7">
-          <p class="panel__title">Connects to the systems you run</p>
-          <div class="dg" data-diagram><script type="application/json">{"layout":"hub","alt":"DESICIA connects to Snowflake, Databricks, Microsoft Fabric, SAP, Microsoft Dynamics 365, Salesforce, Oracle, PostgreSQL, Slack and Microsoft Teams.","center":{"label":"DESICIA"},"spokes":[{"label":"Snowflake","icon":"snowflake"},{"label":"Databricks","icon":"databricks"},{"label":"Fabric","icon":"microsoft-fabric"},{"label":"SAP","icon":"logos:sap"},{"label":"Dynamics 365","icon":"dynamics-365"},{"label":"Salesforce","icon":"salesforce"},{"label":"Oracle","icon":"oracle"},{"label":"PostgreSQL","icon":"postgres"},{"label":"Slack","icon":"slack"},{"label":"Teams","icon":"teams"}],"motion":{"pulse":"none"}}</script></div>
+          <p class="panel__title">Built on Azure, connected to the systems you run</p>
+          <div class="dg" data-diagram data-dg-phone="loop"><script type="application/json">{"layout":"hub","alt":"DECISIA connects to Microsoft Azure, Microsoft Fabric, Power BI, Microsoft Dynamics 365, Microsoft Teams, SAP, Salesforce, Snowflake, Databricks and Oracle.","center":{"label":"DECISIA"},"spokes":[{"label":"Azure","icon":"azure"},{"label":"Fabric","icon":"microsoft-fabric"},{"label":"Power BI","icon":"power-bi"},{"label":"Dynamics 365","icon":"dynamics-365"},{"label":"Teams","icon":"teams"},{"label":"SAP","icon":"logos:sap"},{"label":"Salesforce","icon":"salesforce"},{"label":"Snowflake","icon":"snowflake"},{"label":"Databricks","icon":"databricks"},{"label":"Oracle","icon":"oracle"}]}</script></div>
         </div>
       </div>
     </div>
@@ -364,7 +364,7 @@
       </div>
       <ol class="grid steps">
         <li class="span-3"><span class="step-num">1</span><h3>Diagnose in <span data-assumed>weeks 1 and 2</span></h3><p>We pick one decision worth money, write down the metric and audit its data.</p></li>
-        <li class="span-3"><span class="step-num">2</span><h3>Build in <span data-assumed>weeks 3 to 8</span></h3><p>In your cloud account, with a demo every second Friday.</p></li>
+        <li class="span-3"><span class="step-num">2</span><h3>Build in <span data-assumed>weeks 3 to 8</span></h3><p>In your Azure tenant, with a demo every second Friday.</p></li>
         <li class="span-3"><span class="step-num">3</span><h3>Run in parallel, <span data-assumed>weeks 9 to 12</span></h3><p>The system runs beside the old process, then takes over at your sign-off.</p></li>
         <li class="span-3"><span class="step-num">4</span><h3>Operate after week 12</h3><p>We run it on a monthly plan, or hand it to your team with docs and training.</p></li>
       </ol>
@@ -382,7 +382,7 @@
           <div class="faq__item"><h3>Do you replace our data team?</h3><p>We build with them, and they own the system at handover.</p></div>
         </div>
         <div class="faq span-6 start-7">
-          <div class="faq__item"><h3>Which models run the automation?</h3><p>Open models in your cloud, or Azure OpenAI, Anthropic or Google on your own accounts.</p></div>
+          <div class="faq__item"><h3>Which models run the automation?</h3><p>Azure OpenAI in your own tenant by default, or open models on Azure Machine Learning.</p></div>
           <div class="faq__item"><h3>How is pricing set?</h3><p>A fixed price per phase, agreed in writing. No hourly billing.</p></div>
           <div class="faq__item"><h3>Where is the team based?</h3><p>Remote-first, with teams in North America, Europe and Asia.</p></div>
         </div>
@@ -401,10 +401,10 @@
           <h2 id="security-h">Security, ownership and terms</h2>
           <p class="t-lead measure">What we sign before work starts.</p>
           <ul class="rows rows--spec terms">
-            <li><span class="rows__name">Your cloud</span><p>Everything runs in your AWS, Azure or Google Cloud account.</p></li>
+            <li><span class="rows__name">Your Azure tenant</span><p>Everything runs in your Azure subscription and region, behind Entra ID, with keys in Key Vault.</p></li>
             <li><span class="rows__name">No training on your data</span><p>Your data never trains a model, ours or a vendor's.</p></li>
             <li><span class="rows__name">People approve risk</span><p>Payments, orders and messages over your limits wait for a named approver.</p></li>
-            <li><span class="rows__name">Every action logged</span><p>Each read, decision and write lands in an audit log you can query.</p></li>
+            <li><span class="rows__name">Every action logged</span><p>Each read, decision and write lands in an audit log you can query in Azure Monitor.</p></li>
             <li><span class="rows__name">You own the work</span><p>Code, models, prompts and docs are yours from day one.</p></li>
             <li><span class="rows__name">Exit after any phase</span><p>Stop after any phase and keep everything built so far.</p></li>
           </ul>
@@ -418,11 +418,11 @@
                 <tr><td>14:02</td><td>Payment hold · INV-30917</td><td><span class="st st--ok">Approved</span> AP lead</td></tr>
                 <tr><td>13:48</td><td>PO 88213 raised · SAP</td><td><span class="st st--ok">Approved</span> Ops manager</td></tr>
                 <tr><td>13:40</td><td>Forecast refresh · 8 weeks</td><td><span class="st">Automatic</span></td></tr>
-                <tr><td>13:12</td><td>Read · Snowflake ORDERS</td><td><span class="st">Service role</span></td></tr>
+                <tr><td>13:12</td><td>Read · Fabric ORDERS</td><td><span class="st">Service role</span></td></tr>
                 <tr><td>12:55</td><td>Customer email · 12 accounts</td><td><span class="st st--wait">Waiting</span> CS lead</td></tr>
               </tbody>
             </table>
-            <div class="audit__foot"><span class="chip">Region eu-west-1</span><span class="chip">SSO · 4 roles</span><span class="chip">Kept 7 years</span></div>
+            <div class="audit__foot"><span class="chip">Azure West Europe</span><span class="chip">Entra ID · 4 roles</span><span class="chip">Kept 7 years</span></div>
           </div>
         </div>
       </div>
@@ -443,13 +443,13 @@
                 <li class="is-done"><i></i>Request received<span>Today</span></li>
                 <li class="is-wait"><i></i>We reply to fix a time<span>1 working day</span></li>
                 <li><i></i>Call on the decision and its data<span data-assumed>45 min</span></li>
-                <li><i></i>Written scope, price and metric<span>Within a week</span></li>
+                <li><i></i>Scope, price and metric<span>Within a week</span></li>
               </ol>
             </div>
           </div>
         </div>
         <div class="span-6 start-7">
-          <form class="form book" action="mailto:hello@desicia.example" method="post" enctype="text/plain" data-endpoint="/api/contact" data-sending="Sending your request" data-sent="Your call request is in. We reply within one working day to fix a time." data-failed="That did not go through. Your text is still here; try again, or check your connection." novalidate>
+          <form class="form book" action="mailto:hello@decisia.example" method="post" enctype="text/plain" data-endpoint="/api/contact" data-sending="Sending your request" data-sent="Your call request is in. We reply within one working day to fix a time." data-failed="That did not go through. Your text is still here; try again, or check your connection." novalidate>
             <div class="field"><label for="f-name">Name</label>
               <input id="f-name" name="name" type="text" autocomplete="name" required maxlength="120" aria-describedby="f-name-err">
               <p class="field__error" id="f-name-err" hidden>Write your name.</p></div>
@@ -485,7 +485,7 @@
   <div class="wrap">
     <div class="closing__cta close--type">
       <div class="section-head">
-        <h2 id="close-h">Book a call with DESICIA</h2>
+        <h2 id="close-h">Book a call with DECISIA</h2>
         <p>Bring one decision. Leave with a written scope within a week.</p>
       </div>
       <a class="btn btn--primary btn--xl btn--wide" href="#book">Book a call<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
@@ -493,7 +493,7 @@
     <div class="closing__links">
       <div class="grid">
         <div class="span-6 stack-4">
-          <a class="nav__logo" href="#top">DESICIA</a>
+          <a class="nav__logo" href="#top">DECISIA</a>
           <p class="footer__lede">AI analytics, automation and process change for enterprise operations. Remote-first.</p>
         </div>
         <div class="span-2 footer__col"><h3>Services</h3><ul><li><a href="#services">Data analytics</a></li><li><a href="#demo">Automation demo</a></li><li><a href="#industries">Industries</a></li></ul></div>
@@ -501,7 +501,7 @@
         <div class="span-2 footer__col"><h3>Legal</h3><ul><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
       </div>
       <div class="footer__legal">
-        <span>&copy; 2026 DESICIA</span>
+        <span>&copy; 2026 DECISIA</span>
         <div class="socials"></div>
         <span class="credits">Product names and logos are trademarks of their owners</span>
       </div>

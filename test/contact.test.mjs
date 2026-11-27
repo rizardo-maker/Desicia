@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-process.env.DATA_DIR = fs.mkdtempSync(path.join(os.tmpdir(), 'desicia-'));
+process.env.DATA_DIR = fs.mkdtempSync(path.join(os.tmpdir(), 'decisia-'));
 delete process.env.SMTP_HOST;
 const { server, validate } = await import('../server.mjs');
 await new Promise(r => server.listen(0, '127.0.0.1', r));
@@ -26,10 +26,10 @@ r = await fetch(base + '/api/contact', { method: 'POST', headers: { 'content-typ
 assert.equal(r.status, 200);
 
 r = await fetch(base + '/api/contact'); assert.equal(r.status, 405);
-for (const p of ['/server.mjs', '/package.json', '/vercel.json', '/api/_lib/contact.mjs', '/AGENTS.md', '/projects/desicia/BRIEF.md', '/.claude/settings.json', '/.env.example', '/skills-library/', '/test/contact.test.mjs']) {
+for (const p of ['/server.mjs', '/package.json', '/vercel.json', '/api/_lib/contact.mjs', '/AGENTS.md', '/projects/decisia/BRIEF.md', '/.claude/settings.json', '/.env.example', '/skills-library/', '/test/contact.test.mjs']) {
   r = await fetch(base + p); assert.equal(r.status, 404, `${p} must not be served`);
 }
-r = await fetch(base + '/'); assert.equal(r.status, 200); assert.match(await r.text(), /DESICIA/);
+r = await fetch(base + '/'); assert.equal(r.status, 200); assert.match(await r.text(), /DECISIA/);
 
 const log = fs.readFileSync(path.join(process.env.DATA_DIR, 'requests.jsonl'), 'utf8').trim().split('\n');
 assert.equal(log.length, 1, 'only the valid, non-honeypot request is stored');
@@ -38,7 +38,7 @@ server.close();
 
 // the Vercel function (api/contact.js): Web Request in, Response out
 const fn = await import('../api/contact.js');
-const req = (body, headers = {}) => new Request('https://desicia.example/api/contact', { method: 'POST', headers: { 'x-forwarded-for': '203.0.113.9', ...headers }, body });
+const req = (body, headers = {}) => new Request('https://decisia.example/api/contact', { method: 'POST', headers: { 'x-forwarded-for': '203.0.113.9', ...headers }, body });
 const fd2 = new FormData(); for (const [k, v] of Object.entries(good)) fd2.append(k, v);
 const logged = [];
 const origLog = console.log; console.log = (...a) => { logged.push(a.join(' ')); };
