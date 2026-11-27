@@ -1,0 +1,20 @@
+{
+  "DESIGN.md": "2b9f6933e6aab7d1243a81e9fbdf8cabc9b68255e1db26dc74d2886c8c0f9b4b",
+  "index.html": "d2c017c502612789b75ef185ea365e28d843e58c33485025e5d5678168593bf2",
+  "package-lock.json": "4a981cbb00d7e56747ed819eff4702bf97a14a4ec05b1249e40e3ea52c75cea3",
+  "server/app.ts": "35ac01368b2dd242f6673e2514db4539bebb03e0c4a583d350053f4d377ad85c",
+  "server/index.ts": "ffc4a486b6f8842e12d2e032fd4fd720db554d5501c9c5729090b58f7f4bb9f4",
+  "shared/validation.ts": "7b6a898ab748461ed582bb75a52a3ed20ce1a1f7a41aefda58abef073caf72b4",
+  "src/App.tsx": "b32bc0c68feead27df4ef6682d076315a1f70fc6fe170cfa5eac1a56ca5cdbf1",
+  "src/components/Analytics.tsx": "d1d4d2cb366537bf19431199e721dd3b8d57d9dcb169db4fc75585abdb27f7e1",
+  "src/components/AuditDialog.tsx": "0714dede73d33fbe1a47b1085cbc267d1bacf452e6638fca8debc66b4de79621",
+  "src/components/Estimator.tsx": "4435a130f7c59e1cc84eaad04be91799527a4c7f65646efab897db131625de8a",
+  "src/components/Icon.tsx": "aa800652ae48c9f45a4dfedfdf83f6b3b93ae697dc63358c29c8f6644dff6145",
+  "src/components/Workflow.tsx": "272b32748063713dac8f5c755c259d426f144ecdaccb0362d61ad7ae1bfeef3f",
+  "src/components/World.tsx": "86a53bd086573f44cd29c122758aa23a9bb0f0170c8c3e634a193dab5c226a24",
+  "src/engine/lattice.ts": "611d11bed2e0aa5de73f3b82b34d68e2d88def56db909060ec640677c649bf91",
+  "src/engine/motion.ts": "84e08de571b7151640ad00eef600f9d14323ad6bd5caf871af89d73b7ac5e7f3",
+  "src/engine/route.ts": "85280533d7a1aa5b1480ebf265dcd8f312d7328339a1ef7b1e1401b412d95cd0",
+  "src/main.tsx": "7d17366a25d7b9f947138d192326be018ae936f94eea89291fe0709e718a7dfd",
+  "src/styles.css": "ef85eb043cb62f22bd5b9cb846a594c3663620e513f63821b8c0e7eb6f3b9e1e"
+}

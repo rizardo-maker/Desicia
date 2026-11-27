@@ -1,0 +1,628 @@
+[
+ {
+  "vw": 1440,
+  "vh": 900,
+  "L": 88,
+  "R": 1352,
+  "nav": 0,
+  "screen": 900,
+  "hero": {
+   "height": 900,
+   "h1": {
+    "size": 88,
+    "leading": 1.055,
+    "lines": 2,
+    "x": 88,
+    "y": 242,
+    "w": 680,
+    "h": 186
+   },
+   "lead": null,
+   "buttons": null,
+   "visual": null
+  },
+  "sections": [
+   {
+    "where": "#signal section.chapter.hero \"ENTERPRISE AI. BUILT AROUND YOUR\"",
+    "top": 0,
+    "height": 900,
+    "content": 668,
+    "frame": 0
+   },
+   {
+    "where": "#intelligence section.chapter.product-chapter \"01AI-POWERED ANALYTICSEnterprise\"",
+    "top": 900,
+    "height": 900,
+    "content": 729,
+    "frame": 900
+   },
+   {
+    "where": "#automation section.chapter.product-chapter \"02AUTONOMOUS AI AUTOMATIONAI wor\"",
+    "top": 1800,
+    "height": 900,
+    "content": 665,
+    "frame": 1800
+   },
+   {
+    "where": "#transformation section.chapter.product-chapter \"03END-TO-END AI TRANSFORMATIONA \"",
+    "top": 2700,
+    "height": 900,
+    "content": 584,
+    "frame": 2700
+   },
+   {
+    "where": "#contact section.chapter.closing \"04A PRACTICAL NEXT STEPYour AI r\"",
+    "top": 3600,
+    "height": 900,
+    "content": 710,
+    "frame": 3600
+   }
+  ],
+  "findings": [
+   {
+    "rule": "edge-left",
+    "where": "#signal a.capability \"01IntelligenceMake your data a d\"",
+    "detail": "starts at x 353.7; the lines are 88 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#signal p \"Make your data a decision advant\"",
+    "detail": "starts at x 378.8; the lines are 88 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#signal a.capability \"02AutomationMove from insight to\"",
+    "detail": "starts at x 680.8; the lines are 88 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#signal p \"Move from insight to action.\"",
+    "detail": "starts at x 706; the lines are 88 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#signal a.capability \"03TransformationBuild the operat\"",
+    "detail": "starts at x 1008; the lines are 88 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#signal p \"Build the operating model behind\"",
+    "detail": "starts at x 1033.1; the lines are 88 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#intelligence span \"TO A CLEARER DECISION\"",
+    "detail": "starts at x 1235.2; the lines are 88 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#automation p \"Human approval where it counts.A\"",
+    "detail": "starts at x 122; the lines are 88 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#automation h3 \"Check the evidence\"",
+    "detail": "starts at x 650.7; the lines are 88 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#automation p \"Match the supplier, purchase ord\"",
+    "detail": "starts at x 650.7; the lines are 88 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#automation span \"TO GOVERNED EXECUTION\"",
+    "detail": "starts at x 1235.2; the lines are 88 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#transformation h3 \"Your transformation scope\"",
+    "detail": "starts at x 652.7; the lines are 88 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#transformation p \"Explore the capacity in one repe\"",
+    "detail": "starts at x 652.7; the lines are 88 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#transformation p.formula \"People × weekly hours × 48 weeks\"",
+    "detail": "starts at x 652.7; the lines are 88 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#transformation p.estimate-note \"Illustrative capacity, not guara\"",
+    "detail": "starts at x 652.7; the lines are 88 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#contact p \"Agree retention, residency and m\"",
+    "detail": "starts at x 526.7; the lines are 88 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#contact h3 \"Evidence & assurance.\"",
+    "detail": "starts at x 965.3; the lines are 88 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#contact p \"Establish the baseline, controls\"",
+    "detail": "starts at x 965.3; the lines are 88 and the column starts"
+   },
+   {
+    "rule": "neighbour",
+    "where": "#contact section.chapter.closing \"04A PRACTICAL NEXT STEPYour AI r\"",
+    "detail": "framed, 172px of the footer shows"
+   }
+  ],
+  "size": "1440x900",
+  "overflowX": false
+ },
+ {
+  "vw": 1024,
+  "vh": 768,
+  "L": 48,
+  "R": 976,
+  "nav": 0,
+  "screen": 768,
+  "hero": {
+   "height": 850,
+   "h1": {
+    "size": 78,
+    "leading": 1.055,
+    "lines": 2,
+    "x": 48,
+    "y": 244,
+    "w": 600,
+    "h": 165
+   },
+   "lead": null,
+   "buttons": null,
+   "visual": null
+  },
+  "sections": [
+   {
+    "where": "#signal section.chapter.hero \"ENTERPRISE AI. BUILT AROUND YOUR\"",
+    "top": 0,
+    "height": 850,
+    "content": 616,
+    "frame": 0
+   },
+   {
+    "where": "#intelligence section.chapter.product-chapter \"01AI-POWERED ANALYTICSEnterprise\"",
+    "top": 850,
+    "height": 932,
+    "content": 745,
+    "frame": 850
+   },
+   {
+    "where": "#automation section.chapter.product-chapter \"02AUTONOMOUS AI AUTOMATIONAI wor\"",
+    "top": 1782,
+    "height": 900,
+    "content": 668,
+    "frame": 1782
+   },
+   {
+    "where": "#transformation section.chapter.product-chapter \"03END-TO-END AI TRANSFORMATIONA \"",
+    "top": 2682,
+    "height": 900,
+    "content": 557,
+    "frame": 2682
+   },
+   {
+    "where": "#contact section.chapter.closing \"04A PRACTICAL NEXT STEPYour AI r\"",
+    "top": 3582,
+    "height": 850,
+    "content": 695,
+    "frame": 3582
+   }
+  ],
+  "findings": [
+   {
+    "rule": "edge-left",
+    "where": "#signal a.capability \"01IntelligenceMake your data a d\"",
+    "detail": "starts at x 244.1; the lines are 48 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#signal p \"Make your data a decision advant\"",
+    "detail": "starts at x 264.3; the lines are 48 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#signal a.capability \"02AutomationMove from insight to\"",
+    "detail": "starts at x 485.5; the lines are 48 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#signal p \"Move from insight to action.\"",
+    "detail": "starts at x 505.7; the lines are 48 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#signal a.capability \"03TransformationBuild the operat\"",
+    "detail": "starts at x 726.9; the lines are 48 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#signal p \"Build the operating model behind\"",
+    "detail": "starts at x 747.1; the lines are 48 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#intelligence div.console.plate \"Intelligence consoleInteractive \"",
+    "detail": "starts at x 490.3; the lines are 48 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#intelligence span \"TO A CLEARER DECISION\"",
+    "detail": "starts at x 859.2; the lines are 48 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#automation p \"Human approval where it counts.A\"",
+    "detail": "starts at x 82; the lines are 48 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#automation div.workflow.plate \"Workflow studioINVOICE OPERATION\"",
+    "detail": "starts at x 490.3; the lines are 48 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#automation h3 \"Check the evidence\"",
+    "detail": "starts at x 516.3; the lines are 48 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#automation p \"Match the supplier, purchase ord\"",
+    "detail": "starts at x 516.3; the lines are 48 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#automation span \"TO GOVERNED EXECUTION\"",
+    "detail": "starts at x 859.2; the lines are 48 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#transformation div.estimator.plate \"Transformation scopeYOUR SCENARI\"",
+    "detail": "starts at x 490.3; the lines are 48 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#transformation h3 \"Your transformation scope\"",
+    "detail": "starts at x 513.3; the lines are 48 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#transformation p \"Explore the capacity in one repe\"",
+    "detail": "starts at x 513.3; the lines are 48 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#transformation p.formula \"People × weekly hours × 48 weeks\"",
+    "detail": "starts at x 513.3; the lines are 48 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#transformation p.estimate-note \"Illustrative capacity, not guara\"",
+    "detail": "starts at x 513.3; the lines are 48 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#contact p \"Bring us a business bottleneck. \"",
+    "detail": "starts at x 572.4; the lines are 48 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#contact h3 \"Evidence & assurance.\"",
+    "detail": "starts at x 690; the lines are 48 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#contact p \"Establish the baseline, controls\"",
+    "detail": "starts at x 690; the lines are 48 and the column starts"
+   },
+   {
+    "rule": "neighbour",
+    "where": "#contact section.chapter.closing \"04A PRACTICAL NEXT STEPYour AI r\"",
+    "detail": "framed, 125px of the footer shows"
+   },
+   {
+    "rule": "hero-fold",
+    "where": "#signal section.chapter.hero \"ENTERPRISE AI. BUILT AROUND YOUR\"",
+    "detail": "ends at y 850, past the fold (768): 1.11 screens tall"
+   }
+  ],
+  "size": "1024x768",
+  "overflowX": false
+ },
+ {
+  "vw": 768,
+  "vh": 1024,
+  "L": 32,
+  "R": 736,
+  "nav": 0,
+  "screen": 1024,
+  "hero": {
+   "height": 855,
+   "h1": {
+    "size": 72,
+    "leading": 1.055,
+    "lines": 2,
+    "x": 32,
+    "y": 227,
+    "w": 520,
+    "h": 152
+   },
+   "lead": null,
+   "buttons": null,
+   "visual": null
+  },
+  "sections": [
+   {
+    "where": "#signal section.chapter.hero \"ENTERPRISE AI. BUILT AROUND YOUR\"",
+    "top": 0,
+    "height": 855,
+    "content": 615,
+    "frame": 0
+   },
+   {
+    "where": "#intelligence section.chapter.product-chapter \"01AI-POWERED ANALYTICSEnterprise\"",
+    "top": 855,
+    "height": 1404,
+    "content": 1260,
+    "frame": 855
+   },
+   {
+    "where": "#automation section.chapter.product-chapter \"02AUTONOMOUS AI AUTOMATIONAI wor\"",
+    "top": 2259,
+    "height": 1260,
+    "content": 1116,
+    "frame": 2259
+   },
+   {
+    "where": "#transformation section.chapter.product-chapter \"03END-TO-END AI TRANSFORMATIONA \"",
+    "top": 3519,
+    "height": 1385,
+    "content": 1149,
+    "frame": 3519
+   },
+   {
+    "where": "#contact section.chapter.closing \"04A PRACTICAL NEXT STEPYour AI r\"",
+    "top": 4904,
+    "height": 850,
+    "content": 705,
+    "frame": 4904
+   }
+  ],
+  "findings": [
+   {
+    "rule": "edge-left",
+    "where": "#signal p \"Make your data a decision advant\"",
+    "detail": "starts at x 52.1; the lines are 32 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#signal p \"Move from insight to action.\"",
+    "detail": "starts at x 291.8; the lines are 32 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#signal a.capability \"03TransformationBuild the operat\"",
+    "detail": "starts at x 511.3; the lines are 32 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#signal p \"Build the operating model behind\"",
+    "detail": "starts at x 531.5; the lines are 32 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#intelligence p \"Bring disconnected enterprise da\"",
+    "detail": "starts at x 59; the lines are 32 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#intelligence span \"TO A CLEARER DECISION\"",
+    "detail": "starts at x 619.2; the lines are 32 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#automation p \"Put AI agents to work across you\"",
+    "detail": "starts at x 59; the lines are 32 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#automation p \"Match the supplier, purchase ord\"",
+    "detail": "starts at x 85; the lines are 32 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#automation span \"TO GOVERNED EXECUTION\"",
+    "detail": "starts at x 619.2; the lines are 32 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#transformation p \"Start with the business constrai\"",
+    "detail": "starts at x 59; the lines are 32 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#transformation ol.method \"01AuditFind the highest-value fr\"",
+    "detail": "starts at x 59; the lines are 32 and the column starts"
+   },
+   {
+    "rule": "screen-short",
+    "where": "#signal section.chapter.hero \"ENTERPRISE AI. BUILT AROUND YOUR\"",
+    "detail": "855px tall; one screen under the nav is 1024px"
+   },
+   {
+    "rule": "neighbour",
+    "where": "#signal section.chapter.hero \"ENTERPRISE AI. BUILT AROUND YOUR\"",
+    "detail": "framed, 15px of #intelligence section.chapter.product-chapter \"01AI-POWERED ANALYTICSEnterprise\" shows"
+   },
+   {
+    "rule": "screen-short",
+    "where": "#contact section.chapter.closing \"04A PRACTICAL NEXT STEPYour AI r\"",
+    "detail": "850px tall; one screen under the nav is 1024px"
+   },
+   {
+    "rule": "neighbour",
+    "where": "#contact section.chapter.closing \"04A PRACTICAL NEXT STEPYour AI r\"",
+    "detail": "framed, 207px of the footer shows"
+   },
+   {
+    "rule": "hero-fold",
+    "where": "#signal section.chapter.hero \"ENTERPRISE AI. BUILT AROUND YOUR\"",
+    "detail": "ends at y 855, above the fold (1024)"
+   },
+   {
+    "rule": "hero-fold",
+    "where": "#intelligence section.chapter.product-chapter \"01AI-POWERED ANALYTICSEnterprise\"",
+    "detail": "shows on the first screen from y 974"
+   }
+  ],
+  "size": "768x1024",
+  "overflowX": false
+ },
+ {
+  "vw": 390,
+  "vh": 844,
+  "L": 24,
+  "R": 366,
+  "nav": 0,
+  "screen": 844,
+  "hero": {
+   "height": 940,
+   "h1": {
+    "size": 46,
+    "leading": 1.08,
+    "lines": 2,
+    "x": 24,
+    "y": 181,
+    "w": 342,
+    "h": 99
+   },
+   "lead": null,
+   "buttons": null,
+   "visual": null
+  },
+  "sections": [
+   {
+    "where": "#signal section.chapter.hero \"ENTERPRISE AI. BUILT AROUND YOUR\"",
+    "top": 0,
+    "height": 940,
+    "content": 763,
+    "frame": 0
+   },
+   {
+    "where": "#intelligence section.chapter.product-chapter \"01AI-POWERED ANALYTICSEnterprise\"",
+    "top": 940,
+    "height": 1188,
+    "content": 1068,
+    "frame": 940
+   },
+   {
+    "where": "#automation section.chapter.product-chapter \"02AUTONOMOUS AI AUTOMATIONAI wor\"",
+    "top": 2128,
+    "height": 1138,
+    "content": 1018,
+    "frame": 2128
+   },
+   {
+    "where": "#transformation section.chapter.product-chapter \"03END-TO-END AI TRANSFORMATIONA \"",
+    "top": 3265,
+    "height": 1304,
+    "content": 1112,
+    "frame": 3265
+   },
+   {
+    "where": "#contact section.chapter.closing \"04A PRACTICAL NEXT STEPYour AI r\"",
+    "top": 4569,
+    "height": 1066,
+    "content": 937,
+    "frame": 4569
+   }
+  ],
+  "findings": [
+   {
+    "rule": "edge-left",
+    "where": "#signal p \"Make your data a decision advant\"",
+    "detail": "starts at x 226; the lines are 24 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#signal p \"Move from insight to action.\"",
+    "detail": "starts at x 260; the lines are 24 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#signal p \"Build the operating model behind\"",
+    "detail": "starts at x 223; the lines are 24 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#intelligence span \"TO A CLEARER DECISION\"",
+    "detail": "starts at x 294.9; the lines are 24 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#automation p \"Human approval where it counts.A\"",
+    "detail": "starts at x 58; the lines are 24 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#automation span \"TO GOVERNED EXECUTION\"",
+    "detail": "starts at x 294.9; the lines are 24 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#transformation h3 \"Your transformation scope\"",
+    "detail": "starts at x 43; the lines are 24 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#contact h3 \"Deployment boundaries.\"",
+    "detail": "starts at x 63; the lines are 24 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#contact p \"Define private-network boundarie\"",
+    "detail": "starts at x 63; the lines are 24 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#contact h3 \"Data governance.\"",
+    "detail": "starts at x 63; the lines are 24 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#contact p \"Agree retention, residency and m\"",
+    "detail": "starts at x 63; the lines are 24 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#contact h3 \"Evidence & assurance.\"",
+    "detail": "starts at x 63; the lines are 24 and the column starts"
+   },
+   {
+    "rule": "edge-left",
+    "where": "#contact p \"Establish the baseline, controls\"",
+    "detail": "starts at x 63; the lines are 24 and the column starts"
+   },
+   {
+    "rule": "neighbour",
+    "where": "#transformation section.chapter.product-chapter \"03END-TO-END AI TRANSFORMATIONA \"",
+    "detail": "framed, 85px of #contact section.chapter.closing \"04A PRACTICAL NEXT STEPYour AI r\" shows"
+   },
+   {
+    "rule": "hero-fold",
+    "where": "#signal section.chapter.hero \"ENTERPRISE AI. BUILT AROUND YOUR\"",
+    "detail": "ends at y 940, past the fold (844): 1.11 screens tall"
+   }
+  ],
+  "size": "390x844",
+  "overflowX": false
+ }
+]

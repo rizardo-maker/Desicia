@@ -1,0 +1,131 @@
+gate: checking http://localhost:3000 (software); this takes a few minutes on a CPU Chrome
+gate: rounds used up; 42 FAIL open
+  FAIL shader-lint      assets/lattice-lC3bz2KU.js "common"  [1440]
+       a shader uses "common" as a name (line 7: #include <common>): GLSL ES reserves it, so a strict GPU rejects the whole shader and the picture stays empty
+       fix: rename it (flat, smooth, centroid, sample, patch, input, output, filter and the rest are GLSL ES reserved words)
+  FAIL copy-headings    h2#automation-title "AI workflows. Less handoff."  [1440]
+       "AI workflows. Less handoff." names no product, part, place or section (5 headings like it; at most one brand line per page) (and 4 more like it: "Your AI roadmap starts h", "Deployment boundaries.", "Data governance.", 
+       fix: name the thing in every heading: the product, a part, the place or a section noun
+  FAIL empty-area       section#signal "Enterprise AI, put to work."  [1440]
+       61% of the section is empty: 176px above its first content, 42% beside content that covers under half the container, in its 900px of rows (WARN over 35%, FAIL over 50%)
+       fix: fill the section: a picture or a second column beside the words, or more of its own content; the section stays one or two screens tall (T-height)
+  FAIL hero-enter       section#signal  [1440]
+       the hero does not enter on load: no head line setting html.m-enter (motion.md, The hero's entrance)
+       fix: put data-enter on the hero <section> and keep the head line from starter.html that sets html.m-enter
+  FAIL moment-none      (the page)  [1440]
+       a software page (--type) deals no moment: every kind carries one, two on a long page (moments.md)
+       fix: deal one (moments.mjs pick --page software) and mount it in its own section
+  FAIL hero-screen      section#intelligence "01AI-POWERED ANALYTICSEnterprise data.Cl"  [1440]
+       6px of the next section shows on the first screen (from 894px on a 900px screen): nothing below the hero shows at load (SR-1)
+       fix: end the hero at the fold so nothing of the next section shows at load (hero height: 100svh)
+  FAIL section-height   section#intelligence "01AI-POWERED ANALYTICSEnterprise data.Cl"  [1440]
+       the section's content does not fit it: its content is 7px taller than the section (scrollHeight 906, clientHeight 899); 1 part lies outside the section's box (SR-2)
+       fix: fit the content above the section's bottom padding (--padb), or make it two screens (.g2) in two groups
+  FAIL section-air      section#contact > div.wrap.closing-main > div.trust-grid "Deployment boundaries.Define pri  [1440]
+       a top border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)
+       fix: take the rule out: sections and their parts are parted by their ground and the air between them
+  FAIL section-air      section#contact > footer.wrap.footer > div.footer-top "DESICIAEnterprise intelligence. Ope  [1440]
+       a top border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)
+       fix: take the rule out: sections and their parts are parted by their ground and the air between them
+  FAIL container-edges  div#root "Skip to contentDESICIAIntelligenceAutoma"  [1440]
+       a <div> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)
+       fix: build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing
+  FAIL container-edges  section#signal "ENTERPRISE AI. BUILT AROUND YOUR BUSINES"  [1440]
+       the section needs exactly one in-flow child .wrap (it has 2 in-flow children, 2 .wrap) (SR-6)
+       fix: build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing
+  FAIL container-edges  section#signal > div.wrap.hero-main "ENTERPRISE AI. BUILT AROUND YOUR BUSINES"  [1440]
+       the hero's .wrap holds 2 children, 0 of them .hero-text: one .hero-text and at most one strip (and 5 more like it: "FROM FRAGMENTED DATATO A", "01AI-POWERED ANALYTICSEn", "FROM MANUAL HANDOFFSTO G") (SR-6)
+       fix: build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing
+  FAIL container-edges  section#signal > div.wrap.hero-main > div.scene-coordinate.mono > span.coordinate-cross "+  [1440]
+       1 text block starts on a left line at x 808, 720px from the container's left: text starts on the container's left, or on one split line (x 625, 732, 839) (SR-6)
+       fix: start the text on the container's left, or on the one split line every split shares
+  FAIL split-pair       section#contact > div.wrap.closing-main > div.closing-heading "Your AI roadmapstarts here.  [1440]
+       the split's columns are off the page's one pair of lines: its right column starts at x 732, the first split's at 625 (SR-8)
+       fix: start every split's right column on one shared line (wrap.left + k x (width + 24) / 12, k 5, 6 or 7; 6 on a place page) and end the left one 24px before it
+  FAIL no-visual        section#signal "Enterprise AI, put to work."  [390]
+       no picture, effect or mock in this section; a feature section needs a visual
+       fix: give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits
+  FAIL text-only        section#contact "Your AI roadmap starts here."  [390]
+       the closing section is only text: no picture, icon, mock or effect in it
+       fix: give the section a visual: a photograph that fits, the real icons, or a UI fragment on a ground
+  FAIL off-grid         section#signal > div.wrap.hero-main > div.scene-coordinate.mono > div "THE CONNECTED ENTER  [390]
+       left edge at 46.5px, 22.5px off the page margin at 24px (42 elements, like span.coordinate-cross); 3 more in this section off the grid too (strong.capability-title at 47px, strong.capability-title at 47px, strong.capabil
+       fix: move it onto the page margin, or the column edge its section uses
+  FAIL off-grid         section#contact > div.wrap.closing-main > div.section-label.mono "04 A PRACTICAL NEXT STEP  [390]
+       left edge at 75.5px, 12.5px off a common edge of its section at 63px (6 elements, like h3); 1 more in this section off the grid too (span at 53px)
+       fix: move it onto the page margin, or the column edge its section uses
+  FAIL edge-left        #signal a.capability "01IntelligenceMake your data a d"  [1440]
+       starts at x 353.7; the lines are 88 and the column starts
+       fix: start it on the .wrap left line
+  FAIL edge-left        #signal p "Make your data a decision advant"  [1440, 390]
+       starts at x 378.8; the lines are 88 and the column starts
+       fix: start it on the .wrap left line
+  FAIL edge-left        #signal a.capability "02AutomationMove from insight to"  [1440]
+       starts at x 680.8; the lines are 88 and the column starts
+       fix: start it on the .wrap left line
+  FAIL edge-left        #signal p "Move from insight to action."  [1440, 390]
+       starts at x 706; the lines are 88 and the column starts
+       fix: start it on the .wrap left line
+  FAIL edge-left        #signal a.capability "03TransformationBuild the operat"  [1440]
+       starts at x 1008; the lines are 88 and the column starts
+       fix: start it on the .wrap left line
+  FAIL edge-left        #signal p "Build the operating model behind"  [1440, 390]
+       starts at x 1033.1; the lines are 88 and the column starts
+       fix: start it on the .wrap left line
+  FAIL edge-left        #intelligence span "TO A CLEARER DECISION"  [1440, 390]
+       starts at x 1235.2; the lines are 88 and the column starts
+       fix: start it on the .wrap left line
+  FAIL edge-left        #automation p "Human approval where it counts.A"  [1440, 390]
+       starts at x 122; the lines are 88 and the column starts
+       fix: start it on the .wrap left line
+  FAIL edge-left        #automation h3 "Check the evidence"  [1440]
+       starts at x 650.7; the lines are 88 and the column starts
+       fix: start it on the .wrap left line
+  FAIL edge-left        #automation p "Match the supplier, purchase ord"  [1440]
+       starts at x 650.7; the lines are 88 and the column starts
+       fix: start it on the .wrap left line
+  FAIL edge-left        #automation span "TO GOVERNED EXECUTION"  [1440, 390]
+       starts at x 1235.2; the lines are 88 and the column starts
+       fix: start it on the .wrap left line
+  FAIL edge-left        #transformation h3 "Your transformation scope"  [1440, 390]
+       starts at x 652.7; the lines are 88 and the column starts
+       fix: start it on the .wrap left line
+  FAIL edge-left        #transformation p "Explore the capacity in one repe"  [1440]
+       starts at x 652.7; the lines are 88 and the column starts
+       fix: start it on the .wrap left line
+  FAIL edge-left        #transformation p.formula "People × weekly hours × 48 weeks"  [1440]
+       starts at x 652.7; the lines are 88 and the column starts
+       fix: start it on the .wrap left line
+  FAIL edge-left        #transformation p.estimate-note "Illustrative capacity, not guara"  [1440]
+       starts at x 652.7; the lines are 88 and the column starts
+       fix: start it on the .wrap left line
+  FAIL edge-left        #contact p "Agree retention, residency and m"  [1440, 390]
+       starts at x 526.7; the lines are 88 and the column starts
+       fix: start it on the .wrap left line
+  FAIL edge-left        #contact h3 "Evidence & assurance."  [1440, 390]
+       starts at x 965.3; the lines are 88 and the column starts
+       fix: start it on the .wrap left line
+  FAIL edge-left        #contact p "Establish the baseline, controls"  [1440, 390]
+       starts at x 965.3; the lines are 88 and the column starts
+       fix: start it on the .wrap left line
+  FAIL neighbour        #contact section.chapter.closing "04A PRACTICAL NEXT STEPYour AI r"  [1440]
+       framed, 194px of the footer shows
+       fix: keep the next section's heading and picture out of this screen
+  FAIL edge-left        #contact h3 "Deployment boundaries."  [390]
+       starts at x 63; the lines are 24 and the column starts
+       fix: start it on the .wrap left line
+  FAIL edge-left        #contact p "Define private-network boundarie"  [390]
+       starts at x 63; the lines are 24 and the column starts
+       fix: start it on the .wrap left line
+  FAIL edge-left        #contact h3 "Data governance."  [390]
+       starts at x 63; the lines are 24 and the column starts
+       fix: start it on the .wrap left line
+  FAIL neighbour        #transformation section.chapter.product-chapter "03END-TO-END AI TRANSFORMATIONA "  [390]
+       framed, 85px of #contact section.chapter.closing "04A PRACTICAL NEXT STEPYour AI r" shows
+       fix: keep the next section's heading and picture out of this screen
+  FAIL hero-fold        #signal section.chapter.hero "ENTERPRISE AI. BUILT AROUND YOUR"  [390]
+       ends at y 940, past the fold (844): 1.11 screens tall
+       fix: the hero fills the first screen alone, its button inside it
+  32 WARN (not blocking), first: no-visual section#signal "Enterprise AI, put to wo; copy-buttons header.header > div.wrap.header-inner > ; section-gaps section#signal / section#intelligence; hole section#signal "Enterprise AI, put to wo; nav-family div#root > div.site.active-1 > header.he
+Stop fixing: put these open FAILs and the waivers in your report, then finish.
+GATE: OPEN 42 (rounds used up)

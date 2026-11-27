@@ -1,0 +1,163 @@
+{
+ "files": [
+  {
+   "words": 801,
+   "headings": [
+    "Enterprise AI, put to work.",
+    "Enterprise data. Clear decisions.",
+    "AI workflows. Less handoff.",
+    "Check the evidence",
+    "A clear path to AI-native.",
+    "Your transformation scope",
+    "Your AI roadmap starts here.",
+    "Deployment boundaries.",
+    "Data governance.",
+    "Evidence & assurance.",
+    "Start with your business.",
+    "Your request data."
+   ],
+   "findings": [
+    {
+     "sev": "WARN",
+     "id": "copy-two-fragment",
+     "count": 2,
+     "msg": "two-fragment headings \"X. Y.\": 2, budget 1",
+     "fix": "spend it once where it lands hardest; give the other headings a plain label, a claim or the thing they name",
+     "examples": [
+      "Enterprise data. Clear decisions.",
+      "AI workflows. Less handoff."
+     ],
+     "hits": [
+      {
+       "match": "Enterprise data. Clear decisions.",
+       "sentence": "Enterprise data. Clear decisions."
+      },
+      {
+       "match": "AI workflows. Less handoff.",
+       "sentence": "AI workflows. Less handoff."
+      }
+     ],
+     "budget": 1
+    },
+    {
+     "sev": "WARN",
+     "id": "copy-stat-strip",
+     "count": 1,
+     "msg": "stat strip x1",
+     "fix": "a strip only of figures the brief gives (a price, hours, a count); otherwise put each number in the sentence it proves, or leave it out",
+     "examples": [
+      "$4.82m / 5.0 / 3.5 / 2.0 / +18.2% / +6.4%"
+     ],
+     "hits": [
+      {
+       "match": "$4.82m / 5.0 / 3.5 / 2.0 / +18.2% / +6.4%",
+       "sentence": "$4.82m / 5.0 / 3.5 / 2.0 / +18.2% / +6.4%"
+      }
+     ]
+    },
+    {
+     "sev": "WARN",
+     "id": "copy-numbered",
+     "count": 21,
+     "msg": "21 step numbers",
+     "fix": "number only steps that happen in order",
+     "examples": [],
+     "hits": []
+    },
+    {
+     "sev": "WARN",
+     "id": "copy-eyebrows",
+     "count": 6,
+     "msg": "6 eyebrow or kicker labels",
+     "fix": "one or two a page; a heading that names the thing needs no label over it",
+     "examples": [],
+     "hits": []
+    },
+    {
+     "sev": "INFO",
+     "id": "copy-contrast",
+     "count": 2,
+     "msg": "contrast frames (\"X, not Y\", isn't, rather than, instead of, without the): 2 of 2",
+     "fix": "",
+     "examples": [
+      "\", not t\" in: Start with the business constraint, not the technology.",
+      "\", not g\" in: Illustrative capacity, not guaranteed savings."
+     ],
+     "hits": [
+      {
+       "match": ", not t",
+       "sentence": "Start with the business constraint, not the technology."
+      },
+      {
+       "match": ", not g",
+       "sentence": "Illustrative capacity, not guaranteed savings."
+      }
+     ],
+     "budget": 2
+    },
+    {
+     "sev": "INFO",
+     "id": "copy-triads",
+     "count": 8,
+     "msg": "8 lists of three (about one in 100 words)",
+     "fix": "fine when there are three things; never back to back",
+     "examples": [
+      "Route decisions, handle exceptions and keep",
+      "Define systems, controls and measures",
+      "Define private-network boundaries, integration scope and deployment",
+      "Agree retention, residency and model-provider"
+     ],
+     "hits": [
+      {
+       "match": "Route decisions, handle exceptions and keep",
+       "sentence": "Route decisions, handle exceptions and keep"
+      },
+      {
+       "match": "Define systems, controls and measures",
+       "sentence": "Define systems, controls and measures"
+      },
+      {
+       "match": "Define private-network boundaries, integration scope and deployment",
+       "sentence": "Define private-network boundaries, integration scope and deployment"
+      },
+      {
+       "match": "Agree retention, residency and model-provider",
+       "sentence": "Agree retention, residency and model-provider"
+      },
+      {
+       "match": "Establish the baseline, controls and measurable",
+       "sentence": "Establish the baseline, controls and measurable"
+      },
+      {
+       "match": "company, priority and context",
+       "sentence": "company, priority and context"
+      },
+      {
+       "match": "No analytics cookies, advertising trackers or third-party",
+       "sentence": "No analytics cookies, advertising trackers or third-party"
+      },
+      {
+       "match": "controller contact, lawful processing basis and approved",
+       "sentence": "controller contact, lawful processing basis and approved"
+      }
+     ]
+    },
+    {
+     "sev": "INFO",
+     "id": "copy-rhythm",
+     "count": 0,
+     "msg": "56 sentences, mean 11.2 words, spread 9.3, 18% of 4 words or fewer",
+     "fix": "",
+     "examples": [],
+     "hits": []
+    }
+   ],
+   "file": ".taste-skill/gate/consistency/rendered.html",
+   "kind": "software"
+  }
+ ],
+ "cross": {
+  "heroes": [],
+  "shared": []
+ }
+}

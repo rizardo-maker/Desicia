@@ -1,0 +1,800 @@
+{
+  "date": "2026-11-27T12:26:43.218Z",
+  "base": "http://localhost:3000",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 900,
+      "overflow": 0,
+      "wrappers": [
+        {
+          "left": 88,
+          "right": 88,
+          "top": 0,
+          "bottom": 88,
+          "width": 1264,
+          "height": 88
+        },
+        {
+          "left": 88,
+          "right": 88,
+          "top": 0,
+          "bottom": 767,
+          "width": 1264,
+          "height": 767
+        },
+        {
+          "left": 88,
+          "right": 88,
+          "top": 767,
+          "bottom": 900,
+          "width": 1264,
+          "height": 133
+        },
+        {
+          "left": 88,
+          "right": 88,
+          "top": 893.96875,
+          "bottom": 1807.046875,
+          "width": 1264,
+          "height": 913.078125
+        },
+        {
+          "left": 88,
+          "right": 88,
+          "top": 1746.8125,
+          "bottom": 1760,
+          "width": 1264,
+          "height": 13.1875
+        },
+        {
+          "left": 88,
+          "right": 88,
+          "top": 1858.078125,
+          "bottom": 2642.921875,
+          "width": 1264,
+          "height": 784.84375
+        },
+        {
+          "left": 88,
+          "right": 88,
+          "top": 2646.8125,
+          "bottom": 2660,
+          "width": 1264,
+          "height": 13.1875
+        },
+        {
+          "left": 88,
+          "right": 88,
+          "top": 2756.859375,
+          "bottom": 3544.125,
+          "width": 1264,
+          "height": 787.265625
+        },
+        {
+          "left": 88,
+          "right": 88,
+          "top": 3601,
+          "bottom": 4163.734375,
+          "width": 1264,
+          "height": 562.734375
+        },
+        {
+          "left": 88,
+          "right": 88,
+          "top": 4358,
+          "bottom": 4500,
+          "width": 1264,
+          "height": 142
+        }
+      ],
+      "headings": [
+        {
+          "text": "Intelligence,put to work.",
+          "left": 88,
+          "right": 672,
+          "top": 246.72772216796875,
+          "bottom": 432.38397216796875,
+          "width": 680,
+          "height": 185.65625,
+          "lines": 2
+        },
+        {
+          "text": "See the signal.Make the call.",
+          "left": 88,
+          "right": 850.9375,
+          "top": 1174,
+          "bottom": 1300.53125,
+          "width": 501.0625,
+          "height": 126.53125,
+          "lines": 2
+        },
+        {
+          "text": "Less handoff.More momentum.",
+          "left": 88,
+          "right": 850.9375,
+          "top": 2063.03125,
+          "bottom": 2189.5625,
+          "width": 501.0625,
+          "height": 126.53125,
+          "lines": 2
+        },
+        {
+          "text": "A clear pathto AI-native.",
+          "left": 88,
+          "right": 850.9375,
+          "top": 2914.703125,
+          "bottom": 3041.234375,
+          "width": 501.0625,
+          "height": 126.53125,
+          "lines": 2
+        },
+        {
+          "text": "Your next chapterstarts with clarity.",
+          "left": 88,
+          "right": 717.09375,
+          "top": 3802.28125,
+          "bottom": 3939.90625,
+          "width": 634.90625,
+          "height": 137.625,
+          "lines": 2
+        }
+      ],
+      "chapters": [
+        {
+          "id": "signal",
+          "height": 900
+        },
+        {
+          "id": "intelligence",
+          "height": 900
+        },
+        {
+          "id": "automation",
+          "height": 900
+        },
+        {
+          "id": "transformation",
+          "height": 900
+        },
+        {
+          "id": "contact",
+          "height": 900
+        }
+      ],
+      "heroVisible": true,
+      "ctaVisible": true,
+      "scene": {
+        "frames": 7,
+        "fps": 0,
+        "drawCalls": 4,
+        "triangles": 4128,
+        "dpr": 1,
+        "context": "webgl",
+        "paused": false
+      },
+      "vitals": {
+        "lcp": 628,
+        "cls": 0.002796933004329561
+      },
+      "axeViolations": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "overflow": 0,
+      "wrappers": [
+        {
+          "left": 48,
+          "right": 48,
+          "top": 0,
+          "bottom": 88,
+          "width": 928,
+          "height": 88
+        },
+        {
+          "left": 48,
+          "right": 48,
+          "top": 0,
+          "bottom": 730,
+          "width": 928,
+          "height": 730
+        },
+        {
+          "left": 48,
+          "right": 48,
+          "top": 730,
+          "bottom": 850,
+          "width": 928,
+          "height": 120
+        },
+        {
+          "left": 48,
+          "right": 48,
+          "top": 851,
+          "bottom": 1781.75,
+          "width": 928,
+          "height": 930.75
+        },
+        {
+          "left": 48,
+          "right": 48,
+          "top": 1728.5625,
+          "bottom": 1741.75,
+          "width": 928,
+          "height": 13.1875
+        },
+        {
+          "left": 48,
+          "right": 48,
+          "top": 1827.328125,
+          "bottom": 2637.171875,
+          "width": 928,
+          "height": 809.84375
+        },
+        {
+          "left": 48,
+          "right": 48,
+          "top": 2628.5625,
+          "bottom": 2641.75,
+          "width": 928,
+          "height": 13.1875
+        },
+        {
+          "left": 48,
+          "right": 48,
+          "top": 2739.921875,
+          "bottom": 3524.578125,
+          "width": 928,
+          "height": 784.65625
+        },
+        {
+          "left": 48,
+          "right": 48,
+          "top": 3582.75,
+          "bottom": 4109.1875,
+          "width": 928,
+          "height": 526.4375
+        },
+        {
+          "left": 48,
+          "right": 48,
+          "top": 4224.75,
+          "bottom": 4431.75,
+          "width": 928,
+          "height": 207
+        }
+      ],
+      "headings": [
+        {
+          "text": "Intelligence,put to work.",
+          "left": 48,
+          "right": 376,
+          "top": 244.25,
+          "bottom": 408.8125,
+          "width": 600,
+          "height": 164.5625,
+          "lines": 2
+        },
+        {
+          "text": "See the signal.Make the call.",
+          "left": 48,
+          "right": 578.65625,
+          "top": 1156.015625,
+          "bottom": 1253.671875,
+          "width": 397.34375,
+          "height": 97.65625,
+          "lines": 2
+        },
+        {
+          "text": "Less handoff.More momentum.",
+          "left": 48,
+          "right": 578.65625,
+          "top": 2060.9375,
+          "bottom": 2158.59375,
+          "width": 397.34375,
+          "height": 97.65625,
+          "lines": 2
+        },
+        {
+          "text": "A clear pathto AI-native.",
+          "left": 48,
+          "right": 578.65625,
+          "top": 2912.609375,
+          "bottom": 3010.265625,
+          "width": 397.34375,
+          "height": 97.65625,
+          "lines": 2
+        },
+        {
+          "text": "Your next chapterstarts with clarity.",
+          "left": 48,
+          "right": 491.640625,
+          "top": 3792.609375,
+          "bottom": 3901.359375,
+          "width": 484.359375,
+          "height": 108.75,
+          "lines": 2
+        }
+      ],
+      "chapters": [
+        {
+          "id": "signal",
+          "height": 850
+        },
+        {
+          "id": "intelligence",
+          "height": 932
+        },
+        {
+          "id": "automation",
+          "height": 900
+        },
+        {
+          "id": "transformation",
+          "height": 900
+        },
+        {
+          "id": "contact",
+          "height": 850
+        }
+      ],
+      "heroVisible": true,
+      "ctaVisible": true,
+      "scene": {
+        "frames": 23,
+        "fps": 0,
+        "drawCalls": 4,
+        "triangles": 4128,
+        "dpr": 1,
+        "context": "webgl",
+        "paused": false
+      },
+      "vitals": {
+        "lcp": 144,
+        "cls": 0.00528370738417531
+      },
+      "axeViolations": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "overflow": 0,
+      "wrappers": [
+        {
+          "left": 32,
+          "right": 32,
+          "top": 0,
+          "bottom": 76,
+          "width": 704,
+          "height": 76
+        },
+        {
+          "left": 32,
+          "right": 32,
+          "top": 0,
+          "bottom": 735,
+          "width": 704,
+          "height": 735
+        },
+        {
+          "left": 32,
+          "right": 32,
+          "top": 735,
+          "bottom": 855,
+          "width": 704,
+          "height": 120
+        },
+        {
+          "left": 59,
+          "right": 59,
+          "top": 856,
+          "bottom": 2259.046875,
+          "width": 650,
+          "height": 1403.046875
+        },
+        {
+          "left": 32,
+          "right": 32,
+          "top": 2220.859375,
+          "bottom": 2234.046875,
+          "width": 704,
+          "height": 13.1875
+        },
+        {
+          "left": 59,
+          "right": 59,
+          "top": 2260.046875,
+          "bottom": 3518.828125,
+          "width": 650,
+          "height": 1258.78125
+        },
+        {
+          "left": 32,
+          "right": 32,
+          "top": 3480.640625,
+          "bottom": 3493.828125,
+          "width": 704,
+          "height": 13.1875
+        },
+        {
+          "left": 59,
+          "right": 59,
+          "top": 3519.828125,
+          "bottom": 4851.546875,
+          "width": 650,
+          "height": 1331.71875
+        },
+        {
+          "left": 32,
+          "right": 32,
+          "top": 4852.546875,
+          "bottom": 5414.25,
+          "width": 704,
+          "height": 561.703125
+        },
+        {
+          "left": 32,
+          "right": 32,
+          "top": 5494.546875,
+          "bottom": 5701.546875,
+          "width": 704,
+          "height": 207
+        }
+      ],
+      "headings": [
+        {
+          "text": "Intelligence,put to work.",
+          "left": 32,
+          "right": 216,
+          "top": 226.546875,
+          "bottom": 378.453125,
+          "width": 520,
+          "height": 151.90625,
+          "lines": 2
+        },
+        {
+          "text": "See the signal.Make the call.",
+          "left": 59,
+          "right": 59,
+          "top": 1013.84375,
+          "bottom": 1130.4375,
+          "width": 650,
+          "height": 116.59375,
+          "lines": 2
+        },
+        {
+          "text": "Less handoff.More momentum.",
+          "left": 59,
+          "right": 59,
+          "top": 2417.890625,
+          "bottom": 2534.484375,
+          "width": 650,
+          "height": 116.59375,
+          "lines": 2
+        },
+        {
+          "text": "A clear pathto AI-native.",
+          "left": 59,
+          "right": 59,
+          "top": 3677.671875,
+          "bottom": 3794.265625,
+          "width": 650,
+          "height": 116.59375,
+          "lines": 2
+        },
+        {
+          "text": "Your next chapterstarts with clarity.",
+          "left": 32,
+          "right": 32,
+          "top": 5012.390625,
+          "bottom": 5132.265625,
+          "width": 704,
+          "height": 119.875,
+          "lines": 2
+        }
+      ],
+      "chapters": [
+        {
+          "id": "signal",
+          "height": 855
+        },
+        {
+          "id": "intelligence",
+          "height": 1404
+        },
+        {
+          "id": "automation",
+          "height": 1260
+        },
+        {
+          "id": "transformation",
+          "height": 1333
+        },
+        {
+          "id": "contact",
+          "height": 850
+        }
+      ],
+      "heroVisible": true,
+      "ctaVisible": true,
+      "scene": {
+        "frames": 14,
+        "fps": 0,
+        "drawCalls": 4,
+        "triangles": 4128,
+        "dpr": 1,
+        "context": "webgl",
+        "paused": false
+      },
+      "vitals": {
+        "lcp": 628,
+        "cls": 0
+      },
+      "axeViolations": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": 0,
+      "wrappers": [
+        {
+          "left": 24,
+          "right": 24,
+          "top": 0,
+          "bottom": 72,
+          "width": 342,
+          "height": 72
+        },
+        {
+          "left": 24,
+          "right": 24,
+          "top": 0,
+          "bottom": 792,
+          "width": 342,
+          "height": 792
+        },
+        {
+          "left": 24,
+          "right": 24,
+          "top": 792,
+          "bottom": 940,
+          "width": 342,
+          "height": 148
+        },
+        {
+          "left": 24,
+          "right": 24,
+          "top": 941,
+          "bottom": 2127.5625,
+          "width": 342,
+          "height": 1186.5625
+        },
+        {
+          "left": 24,
+          "right": 24,
+          "top": 2097.5,
+          "bottom": 2106.5625,
+          "width": 342,
+          "height": 9.0625
+        },
+        {
+          "left": 24,
+          "right": 24,
+          "top": 2128.5625,
+          "bottom": 3265.203125,
+          "width": 342,
+          "height": 1136.640625
+        },
+        {
+          "left": 24,
+          "right": 24,
+          "top": 3235.140625,
+          "bottom": 3244.203125,
+          "width": 342,
+          "height": 9.0625
+        },
+        {
+          "left": 24,
+          "right": 24,
+          "top": 3266.203125,
+          "bottom": 4547.671875,
+          "width": 342,
+          "height": 1281.46875
+        },
+        {
+          "left": 24,
+          "right": 24,
+          "top": 4548.671875,
+          "bottom": 5278.296875,
+          "width": 342,
+          "height": 729.625
+        },
+        {
+          "left": 24,
+          "right": 24,
+          "top": 5278.296875,
+          "bottom": 5489.484375,
+          "width": 342,
+          "height": 211.1875
+        }
+      ],
+      "headings": [
+        {
+          "text": "Intelligence,put to work.",
+          "left": 24,
+          "right": 24,
+          "top": 180.71875,
+          "bottom": 280.0625,
+          "width": 342,
+          "height": 99.34375,
+          "lines": 2
+        },
+        {
+          "text": "See the signal.Make the call.",
+          "left": 24,
+          "right": 24,
+          "top": 1072.546875,
+          "bottom": 1157.640625,
+          "width": 342,
+          "height": 85.09375,
+          "lines": 2
+        },
+        {
+          "text": "Less handoff.More momentum.",
+          "left": 24,
+          "right": 24,
+          "top": 2260.109375,
+          "bottom": 2345.203125,
+          "width": 342,
+          "height": 85.09375,
+          "lines": 2
+        },
+        {
+          "text": "A clear pathto AI-native.",
+          "left": 24,
+          "right": 24,
+          "top": 3397.75,
+          "bottom": 3482.84375,
+          "width": 342,
+          "height": 85.09375,
+          "lines": 2
+        },
+        {
+          "text": "Your next chapterstarts with clarity.",
+          "left": 24,
+          "right": 24,
+          "top": 4680.21875,
+          "bottom": 4765.3125,
+          "width": 342,
+          "height": 85.09375,
+          "lines": 2
+        }
+      ],
+      "chapters": [
+        {
+          "id": "signal",
+          "height": 940
+        },
+        {
+          "id": "intelligence",
+          "height": 1188
+        },
+        {
+          "id": "automation",
+          "height": 1138
+        },
+        {
+          "id": "transformation",
+          "height": 1282
+        },
+        {
+          "id": "contact",
+          "height": 942
+        }
+      ],
+      "heroVisible": true,
+      "ctaVisible": true,
+      "vitals": {
+        "lcp": 136,
+        "cls": 0.009550315769488497
+      },
+      "axeViolations": []
+    }
+  ],
+  "interactions": [
+    {
+      "name": "analytics tabs update dataset and forecast switch",
+      "pass": true
+    },
+    {
+      "name": "workflow inspector and human approval checkpoint",
+      "pass": true
+    },
+    {
+      "name": "capacity estimator recalculates using its published formula",
+      "pass": true
+    },
+    {
+      "name": "every chapter anchor and rail stays functional",
+      "pass": true
+    },
+    {
+      "name": "motion pause stops rendering, resume continues",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n55 !== 54\n"
+    },
+    {
+      "name": "audit dialog validation, focus trap and Escape",
+      "pass": true
+    },
+    {
+      "name": "audit API saves a real request and displays receipt",
+      "pass": true
+    },
+    {
+      "name": "API failure is recoverable, without fake success",
+      "pass": true
+    },
+    {
+      "name": "privacy notice opens and closes",
+      "pass": true
+    },
+    {
+      "name": "mobile menu, navigation and no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "reduced-motion fallback remains complete with no WebGL engine",
+      "pass": true
+    },
+    {
+      "name": "forced no-GPU path preserves the visual and controls",
+      "pass": true
+    },
+    {
+      "name": "320px stress test has no horizontal overflow",
+      "pass": true
+    }
+  ],
+  "errors": [
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+  ],
+  "performance": {
+    "scene": {
+      "frames": 35,
+      "fps": 9,
+      "drawCalls": 4,
+      "triangles": 4128,
+      "dpr": 1,
+      "context": "webgl",
+      "paused": false
+    },
+    "vitals": {
+      "lcp": 576,
+      "cls": 0
+    },
+    "resources": [
+      {
+        "name": "index-CShLRb_M.js",
+        "transfer": 0
+      },
+      {
+        "name": "index-DMFuGY8f.css",
+        "transfer": 0
+      },
+      {
+        "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+        "transfer": 0
+      },
+      {
+        "name": "manrope-latin-wght-normal-DHIcAJRg.woff2",
+        "transfer": 0
+      },
+      {
+        "name": "lattice-DGTpDkR6.js",
+        "transfer": 0
+      }
+    ]
+  }
+}

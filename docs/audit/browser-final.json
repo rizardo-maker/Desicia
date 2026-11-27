@@ -1,0 +1,812 @@
+{
+  "expectedHttpErrors": [
+    "Failed to load resource: the server responded with a status of 503 (Service Unavailable)"
+  ],
+  "date": "2026-11-27T13:02:00.395Z",
+  "base": "http://localhost:3000",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 900,
+      "overflow": 0,
+      "wrappers": [
+        {
+          "left": 88,
+          "right": 88,
+          "top": 0,
+          "bottom": 88,
+          "width": 1264,
+          "height": 88
+        },
+        {
+          "left": 88,
+          "right": 88,
+          "top": 0,
+          "bottom": 767,
+          "width": 1264,
+          "height": 767
+        },
+        {
+          "left": 88,
+          "right": 88,
+          "top": 767,
+          "bottom": 900,
+          "width": 1264,
+          "height": 133
+        },
+        {
+          "left": 88,
+          "right": 88,
+          "top": 893.96875,
+          "bottom": 1807.046875,
+          "width": 1264,
+          "height": 913.078125
+        },
+        {
+          "left": 88,
+          "right": 88,
+          "top": 1712.8125,
+          "bottom": 1726,
+          "width": 1264,
+          "height": 13.1875
+        },
+        {
+          "left": 88,
+          "right": 88,
+          "top": 1858.078125,
+          "bottom": 2642.921875,
+          "width": 1264,
+          "height": 784.84375
+        },
+        {
+          "left": 88,
+          "right": 88,
+          "top": 2612.8125,
+          "bottom": 2626,
+          "width": 1264,
+          "height": 13.1875
+        },
+        {
+          "left": 88,
+          "right": 88,
+          "top": 2739.34375,
+          "bottom": 3561.640625,
+          "width": 1264,
+          "height": 822.296875
+        },
+        {
+          "left": 88,
+          "right": 88,
+          "top": 3601,
+          "bottom": 4210.1875,
+          "width": 1264,
+          "height": 609.1875
+        },
+        {
+          "left": 88,
+          "right": 88,
+          "top": 4306,
+          "bottom": 4500,
+          "width": 1264,
+          "height": 194
+        }
+      ],
+      "headings": [
+        {
+          "text": "Enterprise AI,put to work.",
+          "left": 88,
+          "right": 672,
+          "top": 242.34371948242188,
+          "bottom": 427.9999694824219,
+          "width": 680,
+          "height": 185.65625,
+          "lines": 2
+        },
+        {
+          "text": "Enterprise data.Clear decisions.",
+          "left": 88,
+          "right": 839.34375,
+          "top": 1057.8125,
+          "bottom": 1184.34375,
+          "width": 512.65625,
+          "height": 126.53125,
+          "lines": 2
+        },
+        {
+          "text": "AI workflows.Less handoff.",
+          "left": 88,
+          "right": 839.34375,
+          "top": 2021.921875,
+          "bottom": 2148.453125,
+          "width": 512.65625,
+          "height": 126.53125,
+          "lines": 2
+        },
+        {
+          "text": "A clear pathto AI-native.",
+          "left": 88,
+          "right": 839.34375,
+          "top": 2903.1875,
+          "bottom": 3029.71875,
+          "width": 512.65625,
+          "height": 126.53125,
+          "lines": 2
+        },
+        {
+          "text": "Your AI roadmapstarts here.",
+          "left": 88,
+          "right": 839.34375,
+          "top": 3778.84375,
+          "bottom": 3905.375,
+          "width": 512.65625,
+          "height": 126.53125,
+          "lines": 2
+        }
+      ],
+      "chapters": [
+        {
+          "id": "signal",
+          "height": 900
+        },
+        {
+          "id": "intelligence",
+          "height": 900
+        },
+        {
+          "id": "automation",
+          "height": 900
+        },
+        {
+          "id": "transformation",
+          "height": 900
+        },
+        {
+          "id": "contact",
+          "height": 900
+        }
+      ],
+      "heroVisible": true,
+      "ctaVisible": true,
+      "scene": {
+        "frames": 10,
+        "fps": 0,
+        "drawCalls": 4,
+        "triangles": 4128,
+        "dpr": 1,
+        "context": "webgl",
+        "paused": false
+      },
+      "vitals": {
+        "lcp": 568,
+        "cls": 0.002796933004329561
+      },
+      "axeViolations": []
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "overflow": 0,
+      "wrappers": [
+        {
+          "left": 48,
+          "right": 48,
+          "top": 0,
+          "bottom": 88,
+          "width": 928,
+          "height": 88
+        },
+        {
+          "left": 48,
+          "right": 48,
+          "top": 0,
+          "bottom": 730,
+          "width": 928,
+          "height": 730
+        },
+        {
+          "left": 48,
+          "right": 48,
+          "top": 730,
+          "bottom": 850,
+          "width": 928,
+          "height": 120
+        },
+        {
+          "left": 48,
+          "right": 48,
+          "top": 851,
+          "bottom": 1781.75,
+          "width": 928,
+          "height": 930.75
+        },
+        {
+          "left": 48,
+          "right": 48,
+          "top": 1728.5625,
+          "bottom": 1741.75,
+          "width": 928,
+          "height": 13.1875
+        },
+        {
+          "left": 48,
+          "right": 48,
+          "top": 1827.328125,
+          "bottom": 2637.171875,
+          "width": 928,
+          "height": 809.84375
+        },
+        {
+          "left": 48,
+          "right": 48,
+          "top": 2628.5625,
+          "bottom": 2641.75,
+          "width": 928,
+          "height": 13.1875
+        },
+        {
+          "left": 48,
+          "right": 48,
+          "top": 2713.09375,
+          "bottom": 3551.390625,
+          "width": 928,
+          "height": 838.296875
+        },
+        {
+          "left": 48,
+          "right": 48,
+          "top": 3582.75,
+          "bottom": 4185.640625,
+          "width": 928,
+          "height": 602.890625
+        },
+        {
+          "left": 48,
+          "right": 48,
+          "top": 4224.75,
+          "bottom": 4431.75,
+          "width": 928,
+          "height": 207
+        }
+      ],
+      "headings": [
+        {
+          "text": "Enterprise AI,put to work.",
+          "left": 48,
+          "right": 376,
+          "top": 244.25,
+          "bottom": 408.8125,
+          "width": 600,
+          "height": 164.5625,
+          "lines": 2
+        },
+        {
+          "text": "Enterprise data.Clear decisions.",
+          "left": 48,
+          "right": 578.65625,
+          "top": 1156.015625,
+          "bottom": 1253.671875,
+          "width": 397.34375,
+          "height": 97.65625,
+          "lines": 2
+        },
+        {
+          "text": "AI workflows.Less handoff.",
+          "left": 48,
+          "right": 578.65625,
+          "top": 2060.9375,
+          "bottom": 2158.59375,
+          "width": 397.34375,
+          "height": 97.65625,
+          "lines": 2
+        },
+        {
+          "text": "A clear pathto AI-native.",
+          "left": 48,
+          "right": 578.65625,
+          "top": 2912.59375,
+          "bottom": 3010.25,
+          "width": 397.34375,
+          "height": 97.65625,
+          "lines": 2
+        },
+        {
+          "text": "Your AI roadmapstarts here.",
+          "left": 48,
+          "right": 491.640625,
+          "top": 3792.609375,
+          "bottom": 3901.359375,
+          "width": 484.359375,
+          "height": 108.75,
+          "lines": 2
+        }
+      ],
+      "chapters": [
+        {
+          "id": "signal",
+          "height": 850
+        },
+        {
+          "id": "intelligence",
+          "height": 932
+        },
+        {
+          "id": "automation",
+          "height": 900
+        },
+        {
+          "id": "transformation",
+          "height": 900
+        },
+        {
+          "id": "contact",
+          "height": 850
+        }
+      ],
+      "heroVisible": true,
+      "ctaVisible": true,
+      "scene": {
+        "frames": 23,
+        "fps": 0,
+        "drawCalls": 4,
+        "triangles": 4128,
+        "dpr": 1,
+        "context": "webgl",
+        "paused": false
+      },
+      "vitals": {
+        "lcp": 148,
+        "cls": 0.00528370738417531
+      },
+      "axeViolations": []
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "overflow": 0,
+      "wrappers": [
+        {
+          "left": 32,
+          "right": 32,
+          "top": 0,
+          "bottom": 76,
+          "width": 704,
+          "height": 76
+        },
+        {
+          "left": 32,
+          "right": 32,
+          "top": 0,
+          "bottom": 904,
+          "width": 704,
+          "height": 904
+        },
+        {
+          "left": 32,
+          "right": 32,
+          "top": 904,
+          "bottom": 1024,
+          "width": 704,
+          "height": 120
+        },
+        {
+          "left": 32,
+          "right": 32,
+          "top": 1025,
+          "bottom": 2428.046875,
+          "width": 704,
+          "height": 1403.046875
+        },
+        {
+          "left": 32,
+          "right": 32,
+          "top": 2389.859375,
+          "bottom": 2403.046875,
+          "width": 704,
+          "height": 13.1875
+        },
+        {
+          "left": 32,
+          "right": 32,
+          "top": 2429.046875,
+          "bottom": 3687.265625,
+          "width": 704,
+          "height": 1258.21875
+        },
+        {
+          "left": 32,
+          "right": 32,
+          "top": 3649.078125,
+          "bottom": 3662.265625,
+          "width": 704,
+          "height": 13.1875
+        },
+        {
+          "left": 32,
+          "right": 32,
+          "top": 3688.265625,
+          "bottom": 5067.03125,
+          "width": 704,
+          "height": 1378.765625
+        },
+        {
+          "left": 32,
+          "right": 32,
+          "top": 5068.03125,
+          "bottom": 5708.828125,
+          "width": 704,
+          "height": 640.796875
+        },
+        {
+          "left": 32,
+          "right": 32,
+          "top": 5710.03125,
+          "bottom": 5917.03125,
+          "width": 704,
+          "height": 207
+        }
+      ],
+      "headings": [
+        {
+          "text": "Enterprise AI,put to work.",
+          "left": 32,
+          "right": 216,
+          "top": 226.546875,
+          "bottom": 378.453125,
+          "width": 520,
+          "height": 151.90625,
+          "lines": 2
+        },
+        {
+          "text": "Enterprise data.Clear decisions.",
+          "left": 32,
+          "right": 32,
+          "top": 1182.84375,
+          "bottom": 1299.4375,
+          "width": 704,
+          "height": 116.59375,
+          "lines": 2
+        },
+        {
+          "text": "AI workflows.Less handoff.",
+          "left": 32,
+          "right": 32,
+          "top": 2586.890625,
+          "bottom": 2703.484375,
+          "width": 704,
+          "height": 116.59375,
+          "lines": 2
+        },
+        {
+          "text": "A clear pathto AI-native.",
+          "left": 32,
+          "right": 32,
+          "top": 3846.109375,
+          "bottom": 3962.703125,
+          "width": 704,
+          "height": 116.59375,
+          "lines": 2
+        },
+        {
+          "text": "Your AI roadmapstarts here.",
+          "left": 32,
+          "right": 32,
+          "top": 5227.875,
+          "bottom": 5347.75,
+          "width": 704,
+          "height": 119.875,
+          "lines": 2
+        }
+      ],
+      "chapters": [
+        {
+          "id": "signal",
+          "height": 1024
+        },
+        {
+          "id": "intelligence",
+          "height": 1404
+        },
+        {
+          "id": "automation",
+          "height": 1259
+        },
+        {
+          "id": "transformation",
+          "height": 1380
+        },
+        {
+          "id": "contact",
+          "height": 850
+        }
+      ],
+      "heroVisible": true,
+      "ctaVisible": true,
+      "scene": {
+        "frames": 12,
+        "fps": 0,
+        "drawCalls": 4,
+        "triangles": 4128,
+        "dpr": 1,
+        "context": "webgl",
+        "paused": false
+      },
+      "vitals": {
+        "lcp": 584,
+        "cls": 0.0041105843653591965
+      },
+      "axeViolations": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": 0,
+      "wrappers": [
+        {
+          "left": 24,
+          "right": 24,
+          "top": 0,
+          "bottom": 72,
+          "width": 342,
+          "height": 72
+        },
+        {
+          "left": 24,
+          "right": 24,
+          "top": 0,
+          "bottom": 792,
+          "width": 342,
+          "height": 792
+        },
+        {
+          "left": 24,
+          "right": 24,
+          "top": 792,
+          "bottom": 940,
+          "width": 342,
+          "height": 148
+        },
+        {
+          "left": 24,
+          "right": 24,
+          "top": 941,
+          "bottom": 2127.5625,
+          "width": 342,
+          "height": 1186.5625
+        },
+        {
+          "left": 24,
+          "right": 24,
+          "top": 2097.5,
+          "bottom": 2106.5625,
+          "width": 342,
+          "height": 9.0625
+        },
+        {
+          "left": 24,
+          "right": 24,
+          "top": 2128.5625,
+          "bottom": 3265.203125,
+          "width": 342,
+          "height": 1136.640625
+        },
+        {
+          "left": 24,
+          "right": 24,
+          "top": 3235.140625,
+          "bottom": 3244.203125,
+          "width": 342,
+          "height": 9.0625
+        },
+        {
+          "left": 24,
+          "right": 24,
+          "top": 3266.203125,
+          "bottom": 4565.984375,
+          "width": 342,
+          "height": 1299.78125
+        },
+        {
+          "left": 24,
+          "right": 24,
+          "top": 4566.984375,
+          "bottom": 5428.1875,
+          "width": 342,
+          "height": 861.203125
+        },
+        {
+          "left": 24,
+          "right": 24,
+          "top": 5428.1875,
+          "bottom": 5641.375,
+          "width": 342,
+          "height": 213.1875
+        }
+      ],
+      "headings": [
+        {
+          "text": "Enterprise AI,put to work.",
+          "left": 24,
+          "right": 24,
+          "top": 180.71875,
+          "bottom": 280.0625,
+          "width": 342,
+          "height": 99.34375,
+          "lines": 2
+        },
+        {
+          "text": "Enterprise data.Clear decisions.",
+          "left": 24,
+          "right": 24,
+          "top": 1072.546875,
+          "bottom": 1157.640625,
+          "width": 342,
+          "height": 85.09375,
+          "lines": 2
+        },
+        {
+          "text": "AI workflows.Less handoff.",
+          "left": 24,
+          "right": 24,
+          "top": 2260.109375,
+          "bottom": 2345.203125,
+          "width": 342,
+          "height": 85.09375,
+          "lines": 2
+        },
+        {
+          "text": "A clear pathto AI-native.",
+          "left": 24,
+          "right": 24,
+          "top": 3397.75,
+          "bottom": 3482.84375,
+          "width": 342,
+          "height": 85.09375,
+          "lines": 2
+        },
+        {
+          "text": "Your AI roadmapstarts here.",
+          "left": 24,
+          "right": 24,
+          "top": 4698.53125,
+          "bottom": 4783.625,
+          "width": 342,
+          "height": 85.09375,
+          "lines": 2
+        }
+      ],
+      "chapters": [
+        {
+          "id": "signal",
+          "height": 940
+        },
+        {
+          "id": "intelligence",
+          "height": 1188
+        },
+        {
+          "id": "automation",
+          "height": 1138
+        },
+        {
+          "id": "transformation",
+          "height": 1301
+        },
+        {
+          "id": "contact",
+          "height": 1075
+        }
+      ],
+      "heroVisible": true,
+      "ctaVisible": true,
+      "vitals": {
+        "lcp": 192,
+        "cls": 0.009550315769488497
+      },
+      "axeViolations": []
+    }
+  ],
+  "interactions": [
+    {
+      "name": "analytics tabs update dataset and forecast switch",
+      "pass": true
+    },
+    {
+      "name": "workflow inspector and human approval checkpoint",
+      "pass": true
+    },
+    {
+      "name": "capacity estimator recalculates using its published formula",
+      "pass": true
+    },
+    {
+      "name": "every chapter anchor and rail stays functional",
+      "pass": true
+    },
+    {
+      "name": "direct chapter URL restores the intended location",
+      "pass": true
+    },
+    {
+      "name": "motion pause stops rendering, resume continues",
+      "pass": true
+    },
+    {
+      "name": "audit dialog validation, focus trap and Escape",
+      "pass": true
+    },
+    {
+      "name": "audit API saves a real request and displays receipt",
+      "pass": true
+    },
+    {
+      "name": "API failure is recoverable, without fake success",
+      "pass": true
+    },
+    {
+      "name": "privacy notice opens and closes",
+      "pass": true
+    },
+    {
+      "name": "enterprise diligence disclosures expand with real content",
+      "pass": true
+    },
+    {
+      "name": "keyboard focus is never hidden by the fixed header",
+      "pass": true
+    },
+    {
+      "name": "mobile menu, navigation and no horizontal overflow",
+      "pass": true
+    },
+    {
+      "name": "reduced-motion fallback remains complete with no WebGL engine",
+      "pass": true
+    },
+    {
+      "name": "forced no-GPU path preserves the visual and controls",
+      "pass": true
+    },
+    {
+      "name": "320px stress test has no horizontal overflow",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "performance": {
+    "scene": {
+      "frames": 60,
+      "fps": 10,
+      "drawCalls": 4,
+      "triangles": 2364,
+      "dpr": 0.75,
+      "context": "static-fallback",
+      "paused": false
+    },
+    "vitals": {
+      "lcp": 556,
+      "cls": 0
+    },
+    "resources": [
+      {
+        "name": "index-DhFGs67B.js",
+        "transfer": 0
+      },
+      {
+        "name": "index-ClJhX3iX.css",
+        "transfer": 0
+      },
+      {
+        "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+        "transfer": 0
+      },
+      {
+        "name": "manrope-latin-wght-normal-DHIcAJRg.woff2",
+        "transfer": 0
+      },
+      {
+        "name": "lattice-lC3bz2KU.js",
+        "transfer": 0
+      }
+    ]
+  }
+}

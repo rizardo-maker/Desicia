@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "installed_at": "2026-11-27",
+  "sources": [
+    {
+      "id": "mengto-skills",
+      "repository": "https://github.com/MengTo/Skills.git",
+      "commit": "3a8517e09e9a258a8b8a1dfdb71579abe75f1c22",
+      "license": "MIT",
+      "copies": [
+        {
+          "source": "agent-skills/web-design/landing-page",
+          "destination": ".agents/skills/landing-page"
+        },
+        {
+          "source": "agent-skills/web-design/build-awwwards-quality-sites",
+          "destination": ".agents/skills/build-awwwards-quality-sites"
+        },
+        {
+          "source": "agent-skills/web-design/build-threejs-scroll-worlds",
+          "destination": ".agents/skills/build-threejs-scroll-worlds"
+        },
+        {
+          "source": "agent-skills/web-design/cinematic-scroll-storytelling",
+          "destination": ".agents/skills/cinematic-scroll-storytelling"
+        },
+        {
+          "source": "agent-skills/web-design/falling-leaves",
+          "destination": ".agents/skills/falling-leaves"
+        },
+        {
+          "source": "agent-skills/web-design/pointer-trail-emitter",
+          "destination": ".agents/skills/pointer-trail-emitter"
+        },
+        {
+          "source": "agent-skills/ui/no-ai-design-slop",
+          "destination": ".agents/skills/no-ai-design-slop"
+        },
+        {
+          "source": "agent-skills/ui/audit-ai-design-slop",
+          "destination": ".agents/skills/audit-ai-design-slop"
+        },
+        {
+          "source": "agent-skills/codex/stitched-full-page-capture",
+          "destination": ".agents/skills/stitched-full-page-capture"
+        },
+        {
+          "source": "agent-skills/codex/html-to-interaction-prompts",
+          "destination": ".agents/skills/html-to-interaction-prompts"
+        },
+        {
+          "source": "agent-skills/codex/audit-reference-originality",
+          "destination": ".agents/skills/audit-reference-originality"
+        },
+        {
+          "source": "agent-skills/codex/optimize-web-animations",
+          "destination": ".agents/skills/optimize-web-animations"
+        },
+        {
+          "source": "agent-skills/codex/iterate-until-verified",
+          "destination": ".agents/skills/iterate-until-verified"
+        },
+        {
+          "source": "LICENSE",
+          "destination": "third_party/licenses/mengto-skills.txt"
+        }
+      ]
+    },
+    {
+      "id": "open-design",
+      "repository": "https://github.com/nexu-io/open-design.git",
+      "commit": "10f3f96e7d3cadcadd25b2b2f3a188c96877be0e",
+      "license": "Apache-2.0",
+      "copies": [
+        {
+          "source": "skills/frontend-design",
+          "destination": ".agents/skills/frontend-design"
+        },
+        {
+          "source": "skills/web-design-guidelines",
+          "destination": ".agents/skills/web-design-guidelines"
+        },
+        {
+          "source": "design-templates/aster-atelier",
+          "destination": ".agents/skills/aster-atelier"
+        },
+        {
+          "source": "design-templates/saas-landing",
+          "destination": ".agents/skills/saas-landing"
+        },
+        {
+          "source": "design-templates/kami-landing",
+          "destination": ".agents/skills/kami-landing"
+        },
+        {
+          "source": "design-templates/critique",
+          "destination": ".agents/skills/critique"
+        },
+        {
+          "source": "craft",
+          "destination": "third_party/open-design/craft"
+        },
+        {
+          "source": "LICENSE",
+          "destination": "third_party/licenses/open-design.txt"
+        }
+      ]
+    },
+    {
+      "id": "taste-skill",
+      "repository": "https://github.com/Leonxlnx/taste-skill.git",
+      "commit": "952435f63acece7d2fcb4b4d3c1786c1c43603e0",
+      "license": "MIT",
+      "copies": [
+        {
+          "source": "skills/taste-skill",
+          "destination": ".agents/skills/design-taste-frontend"
+        },
+        {
+          "source": "LICENSE",
+          "destination": "third_party/licenses/taste-skill.txt"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "kage",
+      "repository": "https://github.com/MengTo/kage.git",
+      "commit": "4399487d2fb42bce39c7b032fbbb50d230bf4f0b",
+      "license": null,
+      "use": "Reference study; no direct copies from this repository. MengTo Skills separately bundles a Kage demo in build-threejs-scroll-worlds under its MIT distribution. Do not reuse reference artwork in company sites. See docs/design/kage-study.md."
+    }
+  ]
+}

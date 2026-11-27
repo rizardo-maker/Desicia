@@ -1,0 +1,1377 @@
+{
+  "status": "open",
+  "round": 3,
+  "at": "2026-11-27T13:05:29.529Z",
+  "open": [
+    {
+      "check": "shader-lint",
+      "where": "assets/lattice-lC3bz2KU.js \"common\"",
+      "msg": "a shader uses \"common\" as a name (line 7: #include <common>): GLSL ES reserves it, so a strict GPU rejects the whole shader and the picture stays empty",
+      "fix": "rename it (flat, smooth, centroid, sample, patch, input, output, filter and the rest are GLSL ES reserved words)",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "shader-lint"
+      ],
+      "wheres": [
+        "assets/lattice-lC3bz2KU.js \"common\""
+      ]
+    },
+    {
+      "check": "copy-headings",
+      "where": "h2#automation-title \"AI workflows. Less handoff.\"",
+      "msg": "\"AI workflows. Less handoff.\" names no product, part, place or section (5 headings like it; at most one brand line per page) (and 4 more like it: \"Your AI roadmap starts h\", \"Deployment boundaries.\", \"Data governance.\", \"Evidence & assurance.\")",
+      "fix": "name the thing in every heading: the product, a part, the place or a section noun",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "copy-headings"
+      ],
+      "wheres": [
+        "h2#automation-title \"AI workflows. Less handoff.\""
+      ]
+    },
+    {
+      "check": "empty-area",
+      "where": "section#signal \"Enterprise AI, put to work.\"",
+      "msg": "61% of the section is empty: 176px above its first content, 42% beside content that covers under half the container, in its 900px of rows (WARN over 35%, FAIL over 50%)",
+      "fix": "fill the section: a picture or a second column beside the words, or more of its own content; the section stays one or two screens tall (T-height)",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "empty-area"
+      ],
+      "wheres": [
+        "section#signal \"Enterprise AI, put to work.\""
+      ]
+    },
+    {
+      "check": "hero-enter",
+      "where": "section#signal",
+      "msg": "the hero does not enter on load: no head line setting html.m-enter (motion.md, The hero's entrance)",
+      "fix": "put data-enter on the hero <section> and keep the head line from starter.html that sets html.m-enter",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "hero-enter"
+      ],
+      "wheres": [
+        "section#signal"
+      ]
+    },
+    {
+      "check": "moment-none",
+      "where": "(the page)",
+      "msg": "a software page (--type) deals no moment: every kind carries one, two on a long page (moments.md)",
+      "fix": "deal one (moments.mjs pick --page software) and mount it in its own section",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "moment-none"
+      ],
+      "wheres": [
+        "(the page)"
+      ]
+    },
+    {
+      "check": "hero-screen",
+      "where": "section#intelligence \"01AI-POWERED ANALYTICSEnterprise data.Cl\"",
+      "msg": "6px of the next section shows on the first screen (from 894px on a 900px screen): nothing below the hero shows at load (SR-1)",
+      "fix": "end the hero at the fold so nothing of the next section shows at load (hero height: 100svh)",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "hero-screen"
+      ],
+      "wheres": [
+        "section#intelligence \"01AI-POWERED ANALYTICSEnterprise data.Cl\""
+      ]
+    },
+    {
+      "check": "section-height",
+      "where": "section#intelligence \"01AI-POWERED ANALYTICSEnterprise data.Cl\"",
+      "msg": "the section's content does not fit it: its content is 7px taller than the section (scrollHeight 906, clientHeight 899); 1 part lies outside the section's box (SR-2)",
+      "fix": "fit the content above the section's bottom padding (--padb), or make it two screens (.g2) in two groups",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "section-height"
+      ],
+      "wheres": [
+        "section#intelligence \"01AI-POWERED ANALYTICSEnterprise data.Cl\"",
+        "section#intelligence > div.wrap.split \"01AI-POWERED ANALYTICSEnterprise data.Cl\""
+      ]
+    },
+    {
+      "check": "section-air",
+      "where": "section#contact > div.wrap.closing-main > div.trust-grid \"Deployment boundaries.Define private-net\"",
+      "msg": "a top border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)",
+      "fix": "take the rule out: sections and their parts are parted by their ground and the air between them",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "section-air"
+      ],
+      "wheres": [
+        "section#contact > div.wrap.closing-main > div.trust-grid \"Deployment boundaries.Define private-net\""
+      ]
+    },
+    {
+      "check": "section-air",
+      "where": "section#contact > footer.wrap.footer > div.footer-top \"DESICIAEnterprise intelligence. Operatio\"",
+      "msg": "a top border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)",
+      "fix": "take the rule out: sections and their parts are parted by their ground and the air between them",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "section-air"
+      ],
+      "wheres": [
+        "section#contact > footer.wrap.footer > div.footer-top \"DESICIAEnterprise intelligence. Operatio\""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "div#root \"Skip to contentDESICIAIntelligenceAutoma\"",
+      "msg": "a <div> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)",
+      "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "div#root \"Skip to contentDESICIAIntelligenceAutoma\""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "section#signal \"ENTERPRISE AI. BUILT AROUND YOUR BUSINES\"",
+      "msg": "the section needs exactly one in-flow child .wrap (it has 2 in-flow children, 2 .wrap) (SR-6)",
+      "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "section#signal \"ENTERPRISE AI. BUILT AROUND YOUR BUSINES\""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "section#signal > div.wrap.hero-main \"ENTERPRISE AI. BUILT AROUND YOUR BUSINES\"",
+      "msg": "the hero's .wrap holds 2 children, 0 of them .hero-text: one .hero-text and at most one strip (and 5 more like it: \"FROM FRAGMENTED DATATO A\", \"01AI-POWERED ANALYTICSEn\", \"FROM MANUAL HANDOFFSTO G\") (SR-6)",
+      "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "section#signal > div.wrap.hero-main \"ENTERPRISE AI. BUILT AROUND YOUR BUSINES\""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "section#signal > div.wrap.hero-main > div.scene-coordinate.mono > span.coordinate-cross \"+\"",
+      "msg": "1 text block starts on a left line at x 808, 720px from the container's left: text starts on the container's left, or on one split line (x 625, 732, 839) (SR-6)",
+      "fix": "start the text on the container's left, or on the one split line every split shares",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "section#signal > div.wrap.hero-main > div.scene-coordinate.mono > span.coordinate-cross \"+\""
+      ]
+    },
+    {
+      "check": "split-pair",
+      "where": "section#contact > div.wrap.closing-main > div.closing-heading \"Your AI roadmapstarts here.Bring us a bu\"",
+      "msg": "the split's columns are off the page's one pair of lines: its right column starts at x 732, the first split's at 625 (SR-8)",
+      "fix": "start every split's right column on one shared line (wrap.left + k x (width + 24) / 12, k 5, 6 or 7; 6 on a place page) and end the left one 24px before it",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "split-pair"
+      ],
+      "wheres": [
+        "section#contact > div.wrap.closing-main > div.closing-heading \"Your AI roadmapstarts here.Bring us a bu\""
+      ]
+    },
+    {
+      "check": "no-visual",
+      "where": "section#signal \"Enterprise AI, put to work.\"",
+      "msg": "no picture, effect or mock in this section; a feature section needs a visual",
+      "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+      "widths": [
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "no-visual"
+      ],
+      "wheres": [
+        "section#signal \"Enterprise AI, put to work.\""
+      ]
+    },
+    {
+      "check": "text-only",
+      "where": "section#contact \"Your AI roadmap starts here.\"",
+      "msg": "the closing section is only text: no picture, icon, mock or effect in it",
+      "fix": "give the section a visual: a photograph that fits, the real icons, or a UI fragment on a ground",
+      "widths": [
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "text-only"
+      ],
+      "wheres": [
+        "section#contact \"Your AI roadmap starts here.\""
+      ]
+    },
+    {
+      "check": "off-grid",
+      "where": "section#signal > div.wrap.hero-main > div.scene-coordinate.mono > div \"THE CONNECTED ENTERPRISE DATA → INTELLIG\"",
+      "msg": "left edge at 46.5px, 22.5px off the page margin at 24px (42 elements, like span.coordinate-cross); 3 more in this section off the grid too (strong.capability-title at 47px, strong.capability-title at 47px, strong.capability-title at 47px)",
+      "fix": "move it onto the page margin, or the column edge its section uses",
+      "widths": [
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "off-grid"
+      ],
+      "wheres": [
+        "section#signal > div.wrap.hero-main > div.scene-coordinate.mono > div \"THE CONNECTED ENTERPRISE DATA → INTELLIG\""
+      ]
+    },
+    {
+      "check": "off-grid",
+      "where": "section#contact > div.wrap.closing-main > div.section-label.mono \"04 A PRACTICAL NEXT STEP\"",
+      "msg": "left edge at 75.5px, 12.5px off a common edge of its section at 63px (6 elements, like h3); 1 more in this section off the grid too (span at 53px)",
+      "fix": "move it onto the page margin, or the column edge its section uses",
+      "widths": [
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "off-grid"
+      ],
+      "wheres": [
+        "section#contact > div.wrap.closing-main > div.section-label.mono \"04 A PRACTICAL NEXT STEP\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#signal a.capability \"01IntelligenceMake your data a d\"",
+      "msg": "starts at x 353.7; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#signal a.capability \"01IntelligenceMake your data a d\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#signal p \"Make your data a decision advant\"",
+      "msg": "starts at x 378.8; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#signal p \"Make your data a decision advant\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#signal a.capability \"02AutomationMove from insight to\"",
+      "msg": "starts at x 680.8; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#signal a.capability \"02AutomationMove from insight to\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#signal p \"Move from insight to action.\"",
+      "msg": "starts at x 706; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#signal p \"Move from insight to action.\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#signal a.capability \"03TransformationBuild the operat\"",
+      "msg": "starts at x 1008; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#signal a.capability \"03TransformationBuild the operat\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#signal p \"Build the operating model behind\"",
+      "msg": "starts at x 1033.1; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#signal p \"Build the operating model behind\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#intelligence span \"TO A CLEARER DECISION\"",
+      "msg": "starts at x 1235.2; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#intelligence span \"TO A CLEARER DECISION\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#automation p \"Human approval where it counts.A\"",
+      "msg": "starts at x 122; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#automation p \"Human approval where it counts.A\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#automation h3 \"Check the evidence\"",
+      "msg": "starts at x 650.7; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#automation h3 \"Check the evidence\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#automation p \"Match the supplier, purchase ord\"",
+      "msg": "starts at x 650.7; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#automation p \"Match the supplier, purchase ord\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#automation span \"TO GOVERNED EXECUTION\"",
+      "msg": "starts at x 1235.2; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#automation span \"TO GOVERNED EXECUTION\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#transformation h3 \"Your transformation scope\"",
+      "msg": "starts at x 652.7; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#transformation h3 \"Your transformation scope\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#transformation p \"Explore the capacity in one repe\"",
+      "msg": "starts at x 652.7; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#transformation p \"Explore the capacity in one repe\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#transformation p.formula \"People × weekly hours × 48 weeks\"",
+      "msg": "starts at x 652.7; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#transformation p.formula \"People × weekly hours × 48 weeks\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#transformation p.estimate-note \"Illustrative capacity, not guara\"",
+      "msg": "starts at x 652.7; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#transformation p.estimate-note \"Illustrative capacity, not guara\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#contact p \"Agree retention, residency and m\"",
+      "msg": "starts at x 526.7; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#contact p \"Agree retention, residency and m\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#contact h3 \"Evidence & assurance.\"",
+      "msg": "starts at x 965.3; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#contact h3 \"Evidence & assurance.\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#contact p \"Establish the baseline, controls\"",
+      "msg": "starts at x 965.3; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#contact p \"Establish the baseline, controls\""
+      ]
+    },
+    {
+      "check": "neighbour",
+      "where": "#contact section.chapter.closing \"04A PRACTICAL NEXT STEPYour AI r\"",
+      "msg": "framed, 194px of the footer shows",
+      "fix": "keep the next section's heading and picture out of this screen",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "neighbour"
+      ],
+      "wheres": [
+        "#contact section.chapter.closing \"04A PRACTICAL NEXT STEPYour AI r\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#contact h3 \"Deployment boundaries.\"",
+      "msg": "starts at x 63; the lines are 24 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#contact h3 \"Deployment boundaries.\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#contact p \"Define private-network boundarie\"",
+      "msg": "starts at x 63; the lines are 24 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#contact p \"Define private-network boundarie\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#contact h3 \"Data governance.\"",
+      "msg": "starts at x 63; the lines are 24 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#contact h3 \"Data governance.\""
+      ]
+    },
+    {
+      "check": "neighbour",
+      "where": "#transformation section.chapter.product-chapter \"03END-TO-END AI TRANSFORMATIONA \"",
+      "msg": "framed, 85px of #contact section.chapter.closing \"04A PRACTICAL NEXT STEPYour AI r\" shows",
+      "fix": "keep the next section's heading and picture out of this screen",
+      "widths": [
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "neighbour"
+      ],
+      "wheres": [
+        "#transformation section.chapter.product-chapter \"03END-TO-END AI TRANSFORMATIONA \""
+      ]
+    },
+    {
+      "check": "hero-fold",
+      "where": "#signal section.chapter.hero \"ENTERPRISE AI. BUILT AROUND YOUR\"",
+      "msg": "ends at y 940, past the fold (844): 1.11 screens tall",
+      "fix": "the hero fills the first screen alone, its button inside it",
+      "widths": [
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "hero-fold"
+      ],
+      "wheres": [
+        "#signal section.chapter.hero \"ENTERPRISE AI. BUILT AROUND YOUR\""
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "check": "shader-lint",
+      "where": "assets/lattice-lC3bz2KU.js \"common\"",
+      "msg": "a shader uses \"common\" as a name (line 7: #include <common>): GLSL ES reserves it, so a strict GPU rejects the whole shader and the picture stays empty",
+      "fix": "rename it (flat, smooth, centroid, sample, patch, input, output, filter and the rest are GLSL ES reserved words)",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "shader-lint"
+      ],
+      "wheres": [
+        "assets/lattice-lC3bz2KU.js \"common\""
+      ]
+    },
+    {
+      "check": "copy-headings",
+      "where": "h2#automation-title \"AI workflows. Less handoff.\"",
+      "msg": "\"AI workflows. Less handoff.\" names no product, part, place or section (5 headings like it; at most one brand line per page) (and 4 more like it: \"Your AI roadmap starts h\", \"Deployment boundaries.\", \"Data governance.\", \"Evidence & assurance.\")",
+      "fix": "name the thing in every heading: the product, a part, the place or a section noun",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "copy-headings"
+      ],
+      "wheres": [
+        "h2#automation-title \"AI workflows. Less handoff.\""
+      ]
+    },
+    {
+      "check": "empty-area",
+      "where": "section#signal \"Enterprise AI, put to work.\"",
+      "msg": "61% of the section is empty: 176px above its first content, 42% beside content that covers under half the container, in its 900px of rows (WARN over 35%, FAIL over 50%)",
+      "fix": "fill the section: a picture or a second column beside the words, or more of its own content; the section stays one or two screens tall (T-height)",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "empty-area"
+      ],
+      "wheres": [
+        "section#signal \"Enterprise AI, put to work.\""
+      ]
+    },
+    {
+      "check": "hero-enter",
+      "where": "section#signal",
+      "msg": "the hero does not enter on load: no head line setting html.m-enter (motion.md, The hero's entrance)",
+      "fix": "put data-enter on the hero <section> and keep the head line from starter.html that sets html.m-enter",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "hero-enter"
+      ],
+      "wheres": [
+        "section#signal"
+      ]
+    },
+    {
+      "check": "moment-none",
+      "where": "(the page)",
+      "msg": "a software page (--type) deals no moment: every kind carries one, two on a long page (moments.md)",
+      "fix": "deal one (moments.mjs pick --page software) and mount it in its own section",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "moment-none"
+      ],
+      "wheres": [
+        "(the page)"
+      ]
+    },
+    {
+      "check": "hero-screen",
+      "where": "section#intelligence \"01AI-POWERED ANALYTICSEnterprise data.Cl\"",
+      "msg": "6px of the next section shows on the first screen (from 894px on a 900px screen): nothing below the hero shows at load (SR-1)",
+      "fix": "end the hero at the fold so nothing of the next section shows at load (hero height: 100svh)",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "hero-screen"
+      ],
+      "wheres": [
+        "section#intelligence \"01AI-POWERED ANALYTICSEnterprise data.Cl\""
+      ]
+    },
+    {
+      "check": "section-height",
+      "where": "section#intelligence \"01AI-POWERED ANALYTICSEnterprise data.Cl\"",
+      "msg": "the section's content does not fit it: its content is 7px taller than the section (scrollHeight 906, clientHeight 899); 1 part lies outside the section's box (SR-2)",
+      "fix": "fit the content above the section's bottom padding (--padb), or make it two screens (.g2) in two groups",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "section-height"
+      ],
+      "wheres": [
+        "section#intelligence \"01AI-POWERED ANALYTICSEnterprise data.Cl\"",
+        "section#intelligence > div.wrap.split \"01AI-POWERED ANALYTICSEnterprise data.Cl\""
+      ]
+    },
+    {
+      "check": "section-air",
+      "where": "section#contact > div.wrap.closing-main > div.trust-grid \"Deployment boundaries.Define private-net\"",
+      "msg": "a top border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)",
+      "fix": "take the rule out: sections and their parts are parted by their ground and the air between them",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "section-air"
+      ],
+      "wheres": [
+        "section#contact > div.wrap.closing-main > div.trust-grid \"Deployment boundaries.Define private-net\""
+      ]
+    },
+    {
+      "check": "section-air",
+      "where": "section#contact > footer.wrap.footer > div.footer-top \"DESICIAEnterprise intelligence. Operatio\"",
+      "msg": "a top border across 100% of the container, between the section's content: sections and their parts are told apart by air and ground, not lines (SR-3)",
+      "fix": "take the rule out: sections and their parts are parted by their ground and the air between them",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "section-air"
+      ],
+      "wheres": [
+        "section#contact > footer.wrap.footer > div.footer-top \"DESICIAEnterprise intelligence. Operatio\""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "div#root \"Skip to contentDESICIAIntelligenceAutoma\"",
+      "msg": "a <div> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)",
+      "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "div#root \"Skip to contentDESICIAIntelligenceAutoma\""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "section#signal \"ENTERPRISE AI. BUILT AROUND YOUR BUSINES\"",
+      "msg": "the section needs exactly one in-flow child .wrap (it has 2 in-flow children, 2 .wrap) (SR-6)",
+      "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "section#signal \"ENTERPRISE AI. BUILT AROUND YOUR BUSINES\""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "section#signal > div.wrap.hero-main \"ENTERPRISE AI. BUILT AROUND YOUR BUSINES\"",
+      "msg": "the hero's .wrap holds 2 children, 0 of them .hero-text: one .hero-text and at most one strip (and 5 more like it: \"FROM FRAGMENTED DATATO A\", \"01AI-POWERED ANALYTICSEn\", \"FROM MANUAL HANDOFFSTO G\") (SR-6)",
+      "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "section#signal > div.wrap.hero-main \"ENTERPRISE AI. BUILT AROUND YOUR BUSINES\""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "section#signal > div.wrap.hero-main > div.scene-coordinate.mono > span.coordinate-cross \"+\"",
+      "msg": "1 text block starts on a left line at x 808, 720px from the container's left: text starts on the container's left, or on one split line (x 625, 732, 839) (SR-6)",
+      "fix": "start the text on the container's left, or on the one split line every split shares",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "section#signal > div.wrap.hero-main > div.scene-coordinate.mono > span.coordinate-cross \"+\""
+      ]
+    },
+    {
+      "check": "split-pair",
+      "where": "section#contact > div.wrap.closing-main > div.closing-heading \"Your AI roadmapstarts here.Bring us a bu\"",
+      "msg": "the split's columns are off the page's one pair of lines: its right column starts at x 732, the first split's at 625 (SR-8)",
+      "fix": "start every split's right column on one shared line (wrap.left + k x (width + 24) / 12, k 5, 6 or 7; 6 on a place page) and end the left one 24px before it",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "split-pair"
+      ],
+      "wheres": [
+        "section#contact > div.wrap.closing-main > div.closing-heading \"Your AI roadmapstarts here.Bring us a bu\""
+      ]
+    },
+    {
+      "check": "no-visual",
+      "where": "section#signal \"Enterprise AI, put to work.\"",
+      "msg": "no picture, effect or mock in this section; a feature section needs a visual",
+      "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+      "widths": [
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "no-visual"
+      ],
+      "wheres": [
+        "section#signal \"Enterprise AI, put to work.\""
+      ]
+    },
+    {
+      "check": "text-only",
+      "where": "section#contact \"Your AI roadmap starts here.\"",
+      "msg": "the closing section is only text: no picture, icon, mock or effect in it",
+      "fix": "give the section a visual: a photograph that fits, the real icons, or a UI fragment on a ground",
+      "widths": [
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "text-only"
+      ],
+      "wheres": [
+        "section#contact \"Your AI roadmap starts here.\""
+      ]
+    },
+    {
+      "check": "off-grid",
+      "where": "section#signal > div.wrap.hero-main > div.scene-coordinate.mono > div \"THE CONNECTED ENTERPRISE DATA → INTELLIG\"",
+      "msg": "left edge at 46.5px, 22.5px off the page margin at 24px (42 elements, like span.coordinate-cross); 3 more in this section off the grid too (strong.capability-title at 47px, strong.capability-title at 47px, strong.capability-title at 47px)",
+      "fix": "move it onto the page margin, or the column edge its section uses",
+      "widths": [
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "off-grid"
+      ],
+      "wheres": [
+        "section#signal > div.wrap.hero-main > div.scene-coordinate.mono > div \"THE CONNECTED ENTERPRISE DATA → INTELLIG\""
+      ]
+    },
+    {
+      "check": "off-grid",
+      "where": "section#contact > div.wrap.closing-main > div.section-label.mono \"04 A PRACTICAL NEXT STEP\"",
+      "msg": "left edge at 75.5px, 12.5px off a common edge of its section at 63px (6 elements, like h3); 1 more in this section off the grid too (span at 53px)",
+      "fix": "move it onto the page margin, or the column edge its section uses",
+      "widths": [
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "off-grid"
+      ],
+      "wheres": [
+        "section#contact > div.wrap.closing-main > div.section-label.mono \"04 A PRACTICAL NEXT STEP\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#signal a.capability \"01IntelligenceMake your data a d\"",
+      "msg": "starts at x 353.7; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#signal a.capability \"01IntelligenceMake your data a d\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#signal p \"Make your data a decision advant\"",
+      "msg": "starts at x 378.8; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#signal p \"Make your data a decision advant\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#signal a.capability \"02AutomationMove from insight to\"",
+      "msg": "starts at x 680.8; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#signal a.capability \"02AutomationMove from insight to\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#signal p \"Move from insight to action.\"",
+      "msg": "starts at x 706; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#signal p \"Move from insight to action.\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#signal a.capability \"03TransformationBuild the operat\"",
+      "msg": "starts at x 1008; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#signal a.capability \"03TransformationBuild the operat\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#signal p \"Build the operating model behind\"",
+      "msg": "starts at x 1033.1; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#signal p \"Build the operating model behind\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#intelligence span \"TO A CLEARER DECISION\"",
+      "msg": "starts at x 1235.2; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#intelligence span \"TO A CLEARER DECISION\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#automation p \"Human approval where it counts.A\"",
+      "msg": "starts at x 122; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#automation p \"Human approval where it counts.A\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#automation h3 \"Check the evidence\"",
+      "msg": "starts at x 650.7; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#automation h3 \"Check the evidence\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#automation p \"Match the supplier, purchase ord\"",
+      "msg": "starts at x 650.7; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#automation p \"Match the supplier, purchase ord\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#automation span \"TO GOVERNED EXECUTION\"",
+      "msg": "starts at x 1235.2; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#automation span \"TO GOVERNED EXECUTION\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#transformation h3 \"Your transformation scope\"",
+      "msg": "starts at x 652.7; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#transformation h3 \"Your transformation scope\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#transformation p \"Explore the capacity in one repe\"",
+      "msg": "starts at x 652.7; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#transformation p \"Explore the capacity in one repe\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#transformation p.formula \"People × weekly hours × 48 weeks\"",
+      "msg": "starts at x 652.7; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#transformation p.formula \"People × weekly hours × 48 weeks\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#transformation p.estimate-note \"Illustrative capacity, not guara\"",
+      "msg": "starts at x 652.7; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#transformation p.estimate-note \"Illustrative capacity, not guara\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#contact p \"Agree retention, residency and m\"",
+      "msg": "starts at x 526.7; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#contact p \"Agree retention, residency and m\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#contact h3 \"Evidence & assurance.\"",
+      "msg": "starts at x 965.3; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#contact h3 \"Evidence & assurance.\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#contact p \"Establish the baseline, controls\"",
+      "msg": "starts at x 965.3; the lines are 88 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#contact p \"Establish the baseline, controls\""
+      ]
+    },
+    {
+      "check": "neighbour",
+      "where": "#contact section.chapter.closing \"04A PRACTICAL NEXT STEPYour AI r\"",
+      "msg": "framed, 194px of the footer shows",
+      "fix": "keep the next section's heading and picture out of this screen",
+      "widths": [
+        1440
+      ],
+      "from": "layout",
+      "ids": [
+        "neighbour"
+      ],
+      "wheres": [
+        "#contact section.chapter.closing \"04A PRACTICAL NEXT STEPYour AI r\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#contact h3 \"Deployment boundaries.\"",
+      "msg": "starts at x 63; the lines are 24 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#contact h3 \"Deployment boundaries.\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#contact p \"Define private-network boundarie\"",
+      "msg": "starts at x 63; the lines are 24 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#contact p \"Define private-network boundarie\""
+      ]
+    },
+    {
+      "check": "edge-left",
+      "where": "#contact h3 \"Data governance.\"",
+      "msg": "starts at x 63; the lines are 24 and the column starts",
+      "fix": "start it on the .wrap left line",
+      "widths": [
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "edge-left"
+      ],
+      "wheres": [
+        "#contact h3 \"Data governance.\""
+      ]
+    },
+    {
+      "check": "neighbour",
+      "where": "#transformation section.chapter.product-chapter \"03END-TO-END AI TRANSFORMATIONA \"",
+      "msg": "framed, 85px of #contact section.chapter.closing \"04A PRACTICAL NEXT STEPYour AI r\" shows",
+      "fix": "keep the next section's heading and picture out of this screen",
+      "widths": [
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "neighbour"
+      ],
+      "wheres": [
+        "#transformation section.chapter.product-chapter \"03END-TO-END AI TRANSFORMATIONA \""
+      ]
+    },
+    {
+      "check": "hero-fold",
+      "where": "#signal section.chapter.hero \"ENTERPRISE AI. BUILT AROUND YOUR\"",
+      "msg": "ends at y 940, past the fold (844): 1.11 screens tall",
+      "fix": "the hero fills the first screen alone, its button inside it",
+      "widths": [
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "hero-fold"
+      ],
+      "wheres": [
+        "#signal section.chapter.hero \"ENTERPRISE AI. BUILT AROUND YOUR\""
+      ]
+    }
+  ],
+  "warnings": 32,
+  "waivers": []
+}

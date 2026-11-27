@@ -1,0 +1,21 @@
+# Local upstream checkouts and tool caches (never ship with the company site)
+.cache/
+node_modules/
+.taste-skill/
+shots/
+reports/design/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+# Build output
+dist/
+build/
+.next/
+out/
+coverage/
+
+# Application runtime and compiled server
+.data/
+server-build/
