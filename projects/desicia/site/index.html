@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en" data-type="software" data-radius="sharp" data-ground="sage" data-buttons="tonal" data-motion>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>DESICIA: Enterprise AI, data analytics and automation</title>
+<meta name="description" content="DESICIA builds forecasting, automation and the process change around them, inside your cloud, with a first system in production in 12 weeks.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DESICIA">
+<meta property="og:title" content="DESICIA: Enterprise AI, data analytics and automation">
+<meta property="og:description" content="Forecasts, automations and process change that turn company data into approved decisions and system actions.">
+<meta property="og:image" content="share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DESICIA: Enterprise AI, from data to action">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#f5f8f3">
+<!-- <link rel="canonical" href="https://[the client's domain]/"> : add once the domain is known (REPORT.md) -->
+<meta name="site-kind" content="software">
+<meta name="page-type" content="software">
+<link rel="preload" href="fonts/schibsted-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="assets/system.css">
+<link rel="stylesheet" href="assets/ui/cards.css">
+<link rel="stylesheet" href="assets/motion/motion.css">
+<link rel="stylesheet" href="assets/backgrounds/backgrounds.css">
+<link rel="stylesheet" href="assets/layout/layout.css">
+<link rel="stylesheet" href="assets/icons/icon.css">
+<style>
+:root {
+  --p-bg: #f5f8f3; --p-surface: #ebefe8; --p-ink: #131914; --p-muted: #4c534d;
+  --p-accent: #006d41; --p-accent-ink: #f5f8f3; --p-action: #006d41; --p-action-ink: #f5f8f3;
+  --p-inv-bg: #131914; --p-inv-surface: #212922; --p-inv-ink: #f5f8f3; --p-inv-muted: #a0a7a1;
+  --p-inv-accent: #f5f8f3; --p-inv-accent-ink: #131914; --p-inv-action: #f5f8f3; --p-inv-action-ink: #131914;
+  --font-display: "Schibsted Grotesk", system-ui, sans-serif;
+  --font-text: "Schibsted Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --display-weight: 400;
+  --display-tracking: -0.035em;
+  --display-tracking-xl: -0.042em;
+  --ly-scale: 0.98;
+}
+</style>
+<link rel="stylesheet" href="assets/diagrams/diagram.css">
+<link rel="stylesheet" href="css/desicia.css">
+<script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+<script src="assets/backgrounds/backgrounds.js"></script>
+<script>document.documentElement.classList.add('mo-js');setTimeout(()=>document.documentElement.classList.add('mo-safe'),2500)</script>
+<link rel="modulepreload" href="assets/moments/moments.js">
+<link rel="modulepreload" href="assets/moments/lib.js">
+<link rel="modulepreload" href="assets/moments/iris-opens/moment.js">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"DESICIA","description":"AI data analytics, AI automation and AI transformation for enterprise operations.","areaServed":"Worldwide","knowsAbout":["Data analytics","Forecasting","Workflow automation","AI agents","Process modernisation"],"potentialAction":{"@type":"CommunicateAction","name":"Book a call","target":"#book"}}
+</script>
+</head>
+<body>
+<!-- type: software (AI engineering firm whose deliverable is running software; taste kind software, so the demo,
+     tabs and diagrams are allowed)
+     deal: hero centred, nav nav-centre, close close-type, footer footer-statement, rhythm dark-band, buttons tonal,
+     mark wordmark, effect: a still mesh of the page tones in CSS (gradient-mesh's own tones; its WebGL frame rendered black islands in headless checks, so the still is drawn in CSS), ground sage (lit panels)
+     moments: iris-opens on #demo (dealt with letters-assemble, which was left out: letter-by-letter type is the
+     category cliche found in research, see research/COMPETITORS.md)
+     beats: hero loop (console story) · #demo iris-opens + the click-driven pipeline and automation runs
+     screens at 1440x900: top, thesis, services, demo, industries, method, questions, security, book, contact -->
+
+<header class="nav nav--centre">
+  <div class="wrap nav__bar">
+    <a class="skip-link" href="#top">Skip to content</a>
+    <a class="nav__logo" href="#top">DESICIA</a>
+    <nav class="nav__links" aria-label="Main">
+      <div class="nav__item">
+        <a class="nav__link" href="#services">Services <svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5l3 3 3-3" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="nav__menu">
+          <div class="wrap grid">
+            <div class="menu-col span-4">
+              <p class="t-label">Services</p>
+              <a href="#svc-data">Data analytics<span>Forecasts and answers from your data</span></a>
+              <a href="#svc-auto">Automation<span>Agents that act inside your systems</span></a>
+              <a href="#svc-change">Transformation<span>New processes your teams can run</span></a>
+            </div>
+            <div class="menu-col span-4">
+              <p class="t-label">See it work</p>
+              <a href="#tab-pipe" data-open-tab>Data pipeline<span>Sources to forecast, step by step</span></a>
+              <a href="#tab-auto" data-open-tab>Automation run<span>An agent that waits for your approval</span></a>
+              <a href="#tab-value" data-open-tab>Value estimate<span>Your numbers, our formula</span></a>
+            </div>
+            <div class="menu-col span-4">
+              <p class="t-label">Working with us</p>
+              <a href="#method">Process<span>Twelve weeks to production</span></a>
+              <a href="#security">Security<span>Your cloud, your code, your data</span></a>
+              <a href="#questions">Questions<span>Data, models, pricing, location</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav__item"><a class="nav__link" href="#demo">Demo</a></div>
+      <div class="nav__item"><a class="nav__link" href="#industries">Industries</a></div>
+      <div class="nav__item"><a class="nav__link" href="#method">Process</a></div>
+      <div class="nav__item"><a class="nav__link" href="#security">Security</a></div>
+    </nav>
+    <div class="nav__actions">
+      <a class="btn btn--primary" href="#book">Book a call</a>
+    </div>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Menu">
+      <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M2 5h14M2 13h14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- 1 HERO (centred): the console's story is the page's one timed loop; its ground is the one effect, drawn once -->
+  <section class="hero hero--centred" data-enter aria-labelledby="hero-h">
+    <div class="wrap"><div class="hero-text">
+      <div class="hero__c">
+        <a class="pill" href="#method"><span data-assumed>First system live in 12 weeks</span><span class="muted">See the plan</span></a>
+        <h1 id="hero-h">Enterprise AI, from data to action</h1>
+        <p class="hero__lead">DESICIA builds the forecasts, the automations and the process changes that turn your company data into decisions people approve and systems carry out.</p>
+        <div class="btn-row"><a class="btn btn--primary" href="#book">Book a call<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a><a class="btn btn--secondary" href="#demo">See the live demo</a></div>
+      </div>
+      <div class="hero__window hero__window--lit" data-ui-pause-host role="img" aria-label="The DESICIA operations console flags a stockout risk at the Rotterdam distribution centre, reads sales, orders and lead times, proposes a purchase order and waits for approval">
+        <div class="ly-piece dw" aria-hidden="true">
+          <div class="dw__bar"><span class="dw__dots"><i></i><i></i><i></i></span><b>Operations console</b><span class="dw__sep">Rotterdam DC</span><span class="sp"></span><span class="dw__mono">SAP · Snowflake</span></div>
+          <div class="dw__body">
+            <div class="dw__list">
+              <div class="dw__q">Signals today</div>
+              <div class="dw__item is-on"><i class="dw__dot dw__dot--warn"></i><b>Stockout risk · SKU 4471</b><time>09:12</time><span>Rotterdam DC · 9 days of cover</span></div>
+              <div class="dw__item"><i class="dw__dot"></i><b>Invoice mismatch · 3 POs</b><time>08:57</time><span>Accounts payable · €6,940 open</span></div>
+              <div class="dw__item"><i class="dw__dot"></i><b>Churn risk · 12 accounts</b><time>08:31</time><span>Customer success · renewals in Q1</span></div>
+            </div>
+            <div class="dw__thread" data-ly-steps="900">
+              <div class="dw__msg dw__msg--signal"><span class="dw__tag">Forecast</span>SKU 4471 will run out at Rotterdam DC in 9 days.</div>
+              <div class="dw__tool" data-step><span class="dw__spin"></span>Read 26 weeks of sales, 14 open orders and supplier lead times</div>
+              <div class="dw__msg dw__msg--bot" data-step>Raise PO 88213: 1,200 units, €18,420, arriving in 6 days. Stock stays above two weeks of cover.<small>4 sources</small></div>
+              <div class="dw__acts" data-step><span class="is-primary">Approve</span><span>Edit</span><em>Needs approval above €10,000</em></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div></div>
+  </section>
+
+  <!-- 2 THESIS: split 6/6, the gaps left, the loop drawn as a bowtie right -->
+  <section class="section" id="thesis" aria-labelledby="thesis-h">
+    <div class="wrap">
+      <div class="grid grid--top split">
+        <div class="span-6 split__text">
+          <h2 id="thesis-h">Where AI and analytics projects stall</h2>
+          <p class="t-lead measure">A model gets built and a dashboard ships, yet no decision changes. The value sits in the step after the insight.</p>
+          <ul class="gaps">
+            <li><span class="gaps__name">No owner for the decision</span><p>Nobody agreed who acts on the forecast, or by when.</p></li>
+            <li><span class="gaps__name">No path into the systems</span><p>The output stops at a chart and never reaches SAP, Salesforce or the ticket queue.</p></li>
+            <li><span class="gaps__name">No measure of success</span><p>Nobody wrote down the number that would prove it worked.</p></li>
+          </ul>
+          <p class="thesis__close">DESICIA builds all four steps as one system: data, decision, action, measurement.</p>
+        </div>
+        <div class="panel panel--solo span-6 start-7">
+          <div class="dg" data-diagram data-ui-cycles="2"><script type="application/json">{"layout":"bowtie","alt":"Sales, stock and customer data flow from Snowflake, SAP and Salesforce into one forecast, which posts a decision to Slack, raises an order in SAP and updates the CFO report.","sources":[{"label":"Snowflake","icon":"snowflake","sub":"Sales history"},{"label":"SAP","icon":"logos:sap","sub":"Stock and orders"},{"label":"Salesforce","icon":"salesforce","sub":"Customer pipeline"}],"core":{"label":"Forecast"},"targets":[{"label":"Decision","icon":"slack","sub":"Posted to #supply"},{"label":"Order raised","icon":"logos:sap","sub":"After approval","done":true},{"label":"CFO report","icon":"ui:chart-column","sub":"Every Monday"}],"motion":{"cycle":3.2}}</script></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 SERVICES: three open cards, each with its own working UI in the panel (card > panel > UI, two deep) -->
+  <section class="section" id="services" style="--hm:2" aria-labelledby="services-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="services-h">DESICIA services. <span class="muted">One team for all three, so nothing is lost between them.</span></h2>
+      </div>
+      <div class="grid svc">
+        <article class="card card--row card--open span-4" id="svc-data">
+          <h3>Data analytics and forecasting</h3>
+          <p>Forecasting on your warehouse, with the drivers behind each number shown to the people who decide.</p>
+          <div class="panel">
+            <div class="mini ui ui-mini" role="img" aria-label="Weekly demand chart for SKU 4471: actual sales to week 47, then a forecast with its range to week 52">
+              <div class="mini__head"><b>Weekly demand</b><span class="mini__mono">SKU 4471</span></div>
+              <svg class="chart" viewBox="0 0 320 168" aria-hidden="true">
+                <path class="chart__grid" d="M0 30H320M0 70H320M0 110H320"/>
+                <path class="chart__band" d="M200 64 L230 52 L260 44 L290 50 L320 40 L320 92 L290 98 L260 90 L230 96 L200 84 Z"/>
+                <path class="chart__actual" d="M0 104 L20 98 L40 101 L60 90 L80 94 L100 86 L120 88 L140 78 L160 82 L180 72 L200 74"/>
+                <path class="chart__fc" d="M200 74 L230 74 L260 67 L290 74 L320 66"/>
+                <circle class="chart__now" cx="200" cy="74" r="3.5"/>
+                <text class="chart__note" x="316" y="20" text-anchor="end">Promotion +18% · lead time +4 days</text>
+                <g class="chart__axis"><text x="0" y="146">W40</text><text x="80" y="146">W44</text><text x="200" y="146" text-anchor="middle">W47</text><text x="320" y="146" text-anchor="end">W52</text><text x="200" y="164" text-anchor="middle" class="chart__key">Now</text></g>
+              </svg>
+                          </div>
+          </div>
+        </article>
+        <article class="card card--row card--open span-4" id="svc-auto">
+          <h3>Workflow automation</h3>
+          <p>Agents read, decide within limits you set and write back to SAP, Salesforce or ServiceNow.</p>
+          <div class="panel">
+            <div class="mini ui ui-mini" role="img" aria-label="Automation run log for invoice INV-30917: four steps done, the last one waiting for the accounts payable lead">
+              <div class="mini__head"><b>Run 2,481 · Invoice check</b><span class="mini__mono">14:01</span></div>
+              <ol class="log">
+                <li class="is-done"><i></i>Read invoice INV-30917<span>0.4 s</span></li>
+                <li class="is-done"><i></i>Matched to PO 77120<span>€2,310 over</span></li>
+                <li class="is-done"><i></i>Checked contract clause 7.2<span>Price fixed</span></li>
+                <li class="is-done"><i></i>Drafted supplier query<span>1 draft</span></li>
+                <li class="is-wait"><i></i>Waiting for AP lead<span>Approve</span></li>
+              </ol>
+            </div>
+          </div>
+        </article>
+        <article class="card card--row card--open span-4" id="svc-change">
+          <h3>Process transformation</h3>
+          <p>We redesign the process, retire the manual steps and train the team that runs it after us.</p>
+          <div class="panel">
+            <div class="mini ui ui-mini" role="img" aria-label="Migration board with three columns: legacy steps, steps in a parallel run, and steps live in production">
+              <div class="mini__head"><b>Replenishment process</b><span class="mini__mono">Week 10</span></div>
+              <div class="board">
+                <div class="board__col"><p>Legacy</p><span class="board__t board__t--old">Excel reorder sheet</span><span class="board__t board__t--old">Email approvals</span></div>
+                <div class="board__col"><p>Parallel run</p><span class="board__t">Forecast v2</span><span class="board__t">Supplier query agent</span></div>
+                <div class="board__col"><p>Live</p><span class="board__t board__t--live">Daily stock signal</span><span class="board__t board__t--live">CFO pack</span></div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 DEMO: the dark band, iris-opens; three click-driven views of one workspace (js/demo.js) -->
+  <section class="section ground-inverse demo" id="demo" data-moment="iris-opens" data-moment-opts='{"from":"base"}' aria-labelledby="demo-h">
+    <div class="wrap">
+      <div class="section-head demo__head">
+        <h2 id="demo-h">Live data and automation demo</h2>
+        <p>One demo workspace in three views. Run the pipeline, approve the automation, then enter your own numbers.</p>
+      </div>
+      <div class="tabs demo__tabs" role="tablist" aria-label="Demo views">
+        <button class="tab" role="tab" id="tab-pipe" aria-selected="true" aria-controls="view-pipe" type="button">Pipeline</button>
+        <button class="tab" role="tab" id="tab-auto" aria-selected="false" aria-controls="view-auto" type="button">Automation</button>
+        <button class="tab" role="tab" id="tab-value" aria-selected="false" aria-controls="view-value" type="button">Value estimate</button>
+      </div>
+      <div class="dwin ui ui-demo" data-visual>
+        <div class="dwin__bar"><span class="dw__dots" aria-hidden="true"><i></i><i></i><i></i></span><b>Demo workspace</b><span class="dw__sep">Supply chain · EU</span><span class="sp"></span><span class="dw__mono" data-demo-clock>Freshness 4 min</span></div>
+
+        <!-- view 1: pipeline -->
+        <div class="dwin__view pipe" role="tabpanel" id="view-pipe" aria-labelledby="tab-pipe" data-pipe>
+          <div class="pipe__sources">
+            <p class="pipe__label">Sources</p>
+            <div class="src"><img class="ic" src="assets/icons/snowflake.svg" alt="" width="22" height="22"><span><b>Snowflake</b><em>Orders · 41.2M rows</em></span><i class="src__pipe" aria-hidden="true"><i></i></i></div>
+            <div class="src"><img class="ic" src="assets/icons/sap.svg" alt="" width="22" height="22"><span><b>SAP S/4HANA</b><em>Stock · 18 plants</em></span><i class="src__pipe" aria-hidden="true"><i></i></i></div>
+            <div class="src"><img class="ic" src="assets/icons/salesforce.svg" alt="" width="22" height="22"><span><b>Salesforce</b><em>Pipeline · 6,140 deals</em></span><i class="src__pipe" aria-hidden="true"><i></i></i></div>
+            <div class="src"><img class="ic ic-ink" src="assets/icons/kafka.svg" alt="" width="22" height="22"><span><b>Kafka</b><em>Events · 2.3k a second</em></span><i class="src__pipe" aria-hidden="true"><i></i></i></div>
+          </div>
+          <ol class="pipe__steps" aria-label="Pipeline steps">
+            <li class="step is-done" data-step-i="0"><span class="step__state" aria-hidden="true"></span><b>Ingest</b><em>38 s · 4 sources</em><i class="step__pipe" aria-hidden="true"><i></i></i></li>
+            <li class="step is-done" data-step-i="1"><span class="step__state" aria-hidden="true"></span><b>Validate</b><em>212 of 212 checks</em><i class="step__pipe" aria-hidden="true"><i></i></i></li>
+            <li class="step is-done" data-step-i="2"><span class="step__state" aria-hidden="true"></span><b>Features</b><em>64 features</em><i class="step__pipe" aria-hidden="true"><i></i></i></li>
+            <li class="step is-done" data-step-i="3"><span class="step__state" aria-hidden="true"></span><b>Forecast</b><em>8 weeks · error 6.1%</em></li>
+          </ol>
+          <div class="pipe__out" data-pipe-out>
+            <p class="pipe__label">Output</p>
+            <p class="pipe__headline"><b>Stockout risk · SKU 4471</b><span>Rotterdam DC runs out in 9 days</span></p>
+            <div class="bars" aria-hidden="true"><i style="--v:.62"></i><i style="--v:.58"></i><i style="--v:.47"></i><i style="--v:.36"></i><i style="--v:.22"></i><i style="--v:.12"></i><i style="--v:.05"></i><i style="--v:0"></i></div>
+            <p class="pipe__meta">Weeks of cover, next 8 weeks</p>
+            <p class="pipe__handoff"><span class="okdot" aria-hidden="true"></span>Sent to the automation queue</p>
+          </div>
+          <div class="pipe__foot">
+            <button class="btn btn--secondary btn--sm" type="button" data-pipe-run>Run pipeline</button>
+            <p class="demo__status" role="status" data-pipe-status>Last run finished 09:12 · 212 of 212 checks passed</p>
+          </div>
+        </div>
+
+        <!-- view 2: automation run with a real approval -->
+        <div class="dwin__view auto" role="tabpanel" id="view-auto" aria-labelledby="tab-auto" hidden data-auto>
+          <ol class="auto__run">
+            <li class="arun is-done"><i aria-hidden="true"></i><b>Trigger</b><span>Invoice INV-30917 does not match PO 77120 · €2,310 over</span></li>
+            <li class="arun is-done"><i aria-hidden="true"></i><b>Read the contract</b><span>Clause 7.2 fixes the unit price until 31 March</span></li>
+            <li class="arun is-done"><i aria-hidden="true"></i><b>Checked 3 earlier invoices</b><span>All billed at the contract price</span></li>
+            <li class="arun is-done"><i aria-hidden="true"></i><b>Drafted a supplier query</b><span>Asks for a corrected invoice, cites clause 7.2</span></li>
+            <li class="arun arun--ask" data-auto-ask>
+              <i aria-hidden="true"></i>
+              <div class="ask">
+                <p class="ask__q">Hold payment and send the query to the supplier?</p>
+                <p class="ask__why">Above your €1,000 limit, so it waits for a person.</p>
+                <div class="ask__btns"><button class="btn btn--primary btn--sm" type="button" data-auto-approve>Approve</button><button class="btn btn--secondary btn--sm" type="button" data-auto-reject>Reject</button></div>
+              </div>
+            </li>
+            <li class="arun arun--after is-done" data-auto-after hidden><i aria-hidden="true"></i><b data-auto-r1>Payment held in SAP</b><span data-auto-r2>Query sent to the supplier · logged to the audit trail</span></li>
+          </ol>
+          <div class="auto__ctx" aria-label="Invoice compared with the purchase order">
+            <p class="pipe__label">Invoice against order</p>
+            <table class="cmp">
+              <thead><tr><th scope="col">Line</th><th scope="col">PO 77120</th><th scope="col">INV-30917</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Units</th><td>2,000</td><td>2,000</td></tr>
+                <tr><th scope="row">Unit price</th><td>€23.30</td><td class="is-off">€24.455</td></tr>
+                <tr><th scope="row">Total</th><td>€46,600</td><td class="is-off">€48,910</td></tr>
+              </tbody>
+            </table>
+            <p class="auto__note">Difference €2,310 · supplier 4 of 212</p>
+          </div>
+          <div class="pipe__foot">
+            <button class="btn btn--secondary btn--sm" type="button" data-auto-replay>Replay run</button>
+            <p class="demo__status" role="status" data-auto-status>Run 2,482 is waiting for your approval</p>
+          </div>
+        </div>
+
+        <!-- view 3: value estimate (the visitor's numbers) -->
+        <div class="dwin__view value" role="tabpanel" id="view-value" aria-labelledby="tab-value" hidden data-value>
+          <form class="value__in" aria-label="Your process" onsubmit="return false">
+            <div class="rng"><label for="v-people">People on the process</label><output for="v-people" data-out="people">12</output><input id="v-people" type="range" min="1" max="200" step="1" value="12" data-v="people"></div>
+            <div class="rng"><label for="v-hours">Hours each spends on it per week</label><output for="v-hours" data-out="hours">9</output><input id="v-hours" type="range" min="1" max="40" step="1" value="9" data-v="hours"></div>
+            <div class="rng"><label for="v-cost">Loaded cost per hour</label><output for="v-cost" data-out="cost">$68</output><input id="v-cost" type="range" min="20" max="250" step="1" value="68" data-v="cost"></div>
+            <div class="rng"><label for="v-share">Share of the work automated</label><output for="v-share" data-out="share">60%</output><input id="v-share" type="range" min="10" max="90" step="5" value="60" data-v="share"></div>
+          </form>
+          <div class="value__out" aria-live="polite">
+            <div class="vfig"><p class="vfig__label">Hours returned per year</p><p class="vfig__num" data-res="hours">2,981</p></div>
+            <div class="vfig"><p class="vfig__label">Value per year</p><p class="vfig__num" data-res="value">$202,708</p></div>
+            <div class="vcmp" aria-hidden="true">
+              <div class="vcmp__row"><span>Today</span><i style="--w:1"></i><b data-res="today">108 h a week</b></div>
+              <div class="vcmp__row"><span>After</span><i class="is-after" style="--w:.4" data-res-bar></i><b data-res="after">43 h a week</b></div>
+            </div>
+            <p class="value__formula">people × hours × 46 weeks × share automated × cost per hour</p>
+          </div>
+          <div class="pipe__foot">
+            <p class="demo__status demo__status--wide">Your inputs, our formula. We test the real figure in the first two weeks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 INDUSTRIES: split 6/6, rows left, the hub of systems right -->
+  <section class="section" id="industries" aria-labelledby="industries-h">
+    <div class="wrap">
+      <div class="grid grid--top split">
+        <div class="span-6 split__text">
+          <h2 id="industries-h">Industries and integrations</h2>
+          <p class="t-lead measure">Industries with many decisions a day and the data to back them.</p>
+          <ul class="rows inds">
+            <li><span class="rows__name">Financial services</span><p>Credit-risk early warning, reconciliation, KYC review queues</p></li>
+            <li><span class="rows__name">Retail and consumer goods</span><p>Demand forecasting, replenishment, markdown pricing</p></li>
+            <li><span class="rows__name">Manufacturing</span><p>Maintenance prediction, quality checks, supplier risk</p></li>
+            <li><span class="rows__name">Logistics</span><p>Capacity planning, exception handling, invoice audit</p></li>
+            <li><span class="rows__name">Healthcare operations</span><p>Staff scheduling, claims triage, supply levels</p></li>
+            <li><span class="rows__name">Software companies</span><p>Churn prediction, renewal forecasts, support routing</p></li>
+          </ul>
+        </div>
+        <div class="panel panel--solo panel--titled span-6 start-7">
+          <p class="panel__title">Connects to the systems you run</p>
+          <div class="dg" data-diagram><script type="application/json">{"layout":"hub","alt":"DESICIA connects to Snowflake, Databricks, SAP, Salesforce, Oracle, PostgreSQL, Slack and Microsoft Teams.","center":{"label":"DESICIA"},"spokes":[{"label":"Snowflake","icon":"snowflake"},{"label":"Databricks","icon":"databricks"},{"label":"SAP","icon":"logos:sap"},{"label":"Salesforce","icon":"salesforce"},{"label":"Oracle","icon":"oracle"},{"label":"PostgreSQL","icon":"postgres"},{"label":"Slack","icon":"slack"},{"label":"Teams","icon":"teams"}],"motion":{"pulse":"none"}}</script></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 METHOD: the 12 weeks as a gantt across the wrap, four steps under it (order is the content) -->
+  <section class="section ground-surface" id="method" aria-labelledby="method-h">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="method-h">The engagement process</h2>
+        <p class="measure">The same engineers from the first workshop to production.</p>
+      </div>
+      <div class="gantt" role="img" aria-label="Twelve-week plan: diagnose in weeks 1 and 2, build in weeks 3 to 8 with a demo every second week, parallel run in weeks 9 to 12 ending in sign-off, then operate." data-assumed>
+        <div class="gantt__row gantt__head" aria-hidden="true"><span class="gantt__name">Phase</span><span>W1</span><span>W2</span><span>W3</span><span>W4</span><span>W5</span><span>W6</span><span>W7</span><span>W8</span><span>W9</span><span>W10</span><span>W11</span><span>W12</span><span>After</span></div>
+        <div class="gantt__row" aria-hidden="true"><span class="gantt__name">Diagnose</span><i class="gbar gbar--1" style="--s:2;--e:4"></i></div>
+        <div class="gantt__row" aria-hidden="true"><span class="gantt__name">Build</span><i class="gbar gbar--2" style="--s:4;--e:10"><b class="gtick" style="--p:33.333%">Demo</b><b class="gtick" style="--p:66.666%">Demo</b></i></div>
+        <div class="gantt__row" aria-hidden="true"><span class="gantt__name">Parallel run</span><i class="gbar gbar--3" style="--s:10;--e:14"><b class="gtick" style="--p:0%">Demo</b><b class="gtick" style="--p:50%">Demo</b><b class="gtick gtick--sign" style="--p:100%">Sign-off</b></i></div>
+        <div class="gantt__row" aria-hidden="true"><span class="gantt__name">Operate</span><i class="gbar gbar--4" style="--s:14;--e:15"></i></div>
+      </div>
+      <ol class="grid steps">
+        <li class="span-3"><span class="step-num">1</span><h3>Diagnose in <span data-assumed>weeks 1 and 2</span></h3><p>We pick one decision worth money, write down the metric and audit its data.</p></li>
+        <li class="span-3"><span class="step-num">2</span><h3>Build in <span data-assumed>weeks 3 to 8</span></h3><p>In your cloud account, with a demo every second Friday.</p></li>
+        <li class="span-3"><span class="step-num">3</span><h3>Run in parallel, <span data-assumed>weeks 9 to 12</span></h3><p>The system runs beside the old process, then takes over at your sign-off.</p></li>
+        <li class="span-3"><span class="step-num">4</span><h3>Operate after week 12</h3><p>We run it on a monthly plan, or hand it to your team with docs and training.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 7 QUESTIONS: the calm section, every answer open -->
+  <section class="section" id="questions" aria-labelledby="questions-h">
+    <div class="wrap">
+      <div class="section-head"><h2 id="questions-h">Questions buyers ask</h2></div>
+      <div class="grid grid--top">
+        <div class="faq span-6">
+          <div class="faq__item"><h3>Our data is messy. Can we start in week 1?</h3><p>Yes. Weeks 1 and 2 audit the data, and the first system uses only sources that pass.</p></div>
+          <div class="faq__item"><h3>Which customers have you served?</h3><p>None we can name yet. You get a written diagnosis in two weeks and can stop there.</p></div>
+          <div class="faq__item"><h3>Do you replace our data team?</h3><p>We build with them, and they own the system at handover.</p></div>
+        </div>
+        <div class="faq span-6 start-7">
+          <div class="faq__item"><h3>Which models run the automation?</h3><p>Open models in your cloud, or Azure OpenAI, Anthropic or Google on your own accounts.</p></div>
+          <div class="faq__item"><h3>How is pricing set?</h3><p>A fixed price per phase, agreed in writing. No hourly billing.</p></div>
+          <div class="faq__item"><h3>Where is the team based?</h3><p>Remote-first, with teams in North America, Europe and Asia.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 SECURITY: split 6/6, commitments left, the audit log right.
+       Proof slots for later, kept out of the page until the client supplies real material: -->
+  <template data-slot="logos"><!-- customer logos with written permission: .logos row, real files only --></template>
+  <template data-slot="case-studies"><!-- one case per decision: the metric agreed, the result measured, a named quote with a face --></template>
+  <section class="section" id="security" aria-labelledby="security-h">
+    <div class="wrap">
+      <div class="grid grid--top split">
+        <div class="span-6 split__text">
+          <h2 id="security-h">Security, ownership and terms</h2>
+          <p class="t-lead measure">What we sign before work starts.</p>
+          <ul class="rows rows--spec terms">
+            <li><span class="rows__name">Your cloud</span><p>Everything runs in your AWS, Azure or Google Cloud account.</p></li>
+            <li><span class="rows__name">No training on your data</span><p>Your data never trains a model, ours or a vendor's.</p></li>
+            <li><span class="rows__name">People approve risk</span><p>Payments, orders and messages over your limits wait for a named approver.</p></li>
+            <li><span class="rows__name">Every action logged</span><p>Each read, decision and write lands in an audit log you can query.</p></li>
+            <li><span class="rows__name">You own the work</span><p>Code, models, prompts and docs are yours from day one.</p></li>
+            <li><span class="rows__name">Exit after any phase</span><p>Stop after any phase and keep everything built so far.</p></li>
+          </ul>
+        </div>
+        <div class="panel panel--solo span-6 start-7">
+          <div class="mini mini--log ui ui-mini" role="img" aria-label="Audit log with five entries: a payment hold and a purchase order approved by named people, an automatic forecast refresh, a data read by a service role and a customer email waiting for approval">
+            <div class="mini__head"><b>Audit log</b><span class="mini__mono">Today · 5 of 1,204</span></div>
+            <table class="audit">
+              <thead><tr><th scope="col">Time</th><th scope="col">Action</th><th scope="col">By</th></tr></thead>
+              <tbody>
+                <tr><td>14:02</td><td>Payment hold · INV-30917</td><td><span class="st st--ok">Approved</span> AP lead</td></tr>
+                <tr><td>13:48</td><td>PO 88213 raised · SAP</td><td><span class="st st--ok">Approved</span> Ops manager</td></tr>
+                <tr><td>13:40</td><td>Forecast refresh · 8 weeks</td><td><span class="st">Automatic</span></td></tr>
+                <tr><td>13:12</td><td>Read · Snowflake ORDERS</td><td><span class="st">Service role</span></td></tr>
+                <tr><td>12:55</td><td>Customer email · 12 accounts</td><td><span class="st st--wait">Waiting</span> CS lead</td></tr>
+              </tbody>
+            </table>
+            <div class="audit__foot"><span class="chip">Region eu-west-1</span><span class="chip">SSO · 4 roles</span><span class="chip">Kept 7 years</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 BOOK: the consultation form, posted to /api/contact (server.mjs) -->
+  <section class="section ground-surface" id="book" aria-labelledby="book-h">
+    <div class="wrap">
+      <div class="grid grid--top split">
+        <div class="span-5 split__text">
+          <h2 id="book-h">Book a call</h2>
+          <p class="t-lead measure"><span data-assumed>45 minutes</span> with an engineer who would build your system. Bring one decision you want to improve.</p>
+          <div class="panel panel--solo panel--book">
+            <div class="mini ui ui-mini mini--plan" role="img" aria-label="What happens after you send the form: we reply within one working day to fix a time, a 45-minute call on the decision and its data, then a written scope, price and success metric within a week">
+              <div class="mini__head"><b>After you send the form</b><span class="mini__mono">3 steps</span></div>
+              <ol class="log log--plan">
+                <li class="is-done"><i></i>Request received<span>Today</span></li>
+                <li class="is-wait"><i></i>We reply to fix a time<span>1 working day</span></li>
+                <li><i></i>Call on the decision and its data<span data-assumed>45 min</span></li>
+                <li><i></i>Written scope, price and metric<span>Within a week</span></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <div class="span-6 start-7">
+          <form class="form book" action="mailto:hello@desicia.example" method="post" enctype="text/plain" data-endpoint="/api/contact" data-sending="Sending your request" data-sent="Your call request is in. We reply within one working day to fix a time." data-failed="That did not go through. Your text is still here; try again, or check your connection." novalidate>
+            <div class="field"><label for="f-name">Name</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required maxlength="120" aria-describedby="f-name-err">
+              <p class="field__error" id="f-name-err" hidden>Write your name.</p></div>
+            <div class="field"><label for="f-email">Work email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="200" aria-describedby="f-email-err">
+              <p class="field__error" id="f-email-err" hidden>Write a work email address with an @.</p></div>
+            <div class="field"><label for="f-company">Company</label>
+              <input id="f-company" name="company" type="text" autocomplete="organization" required maxlength="160" aria-describedby="f-company-err">
+              <p class="field__error" id="f-company-err" hidden>Write your company's name.</p></div>
+            <div class="field"><label for="f-area">Area</label>
+              <select id="f-area" name="area" required aria-describedby="f-area-err">
+                <option value="" selected disabled>Choose one</option>
+                <option>Data analytics</option>
+                <option>Automation</option>
+                <option>Transformation</option>
+                <option>Not sure yet</option>
+              </select>
+              <p class="field__error" id="f-area-err" hidden>Pick the area closest to your problem.</p></div>
+            <div class="field field--wide"><label for="f-msg">What should change</label>
+              <textarea id="f-msg" name="message" rows="4" required minlength="10" maxlength="2000" aria-describedby="f-msg-err"></textarea>
+              <p class="field__error" id="f-msg-err" hidden>Write a sentence or two about the decision you want to improve.</p></div>
+            <div class="hp" aria-hidden="true"><label for="f-site">Leave this empty</label><input id="f-site" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+            <div class="btn-row"><button class="btn btn--primary" type="submit">Book a call</button></div>
+            <p class="form__status" role="status" data-form-status></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer closing footer--statement" id="contact" aria-labelledby="close-h">
+  <div class="wrap">
+    <div class="closing__cta close--type">
+      <div class="section-head">
+        <h2 id="close-h">Book a call with DESICIA</h2>
+        <p>Bring one decision. Leave with a written scope within a week.</p>
+      </div>
+      <a class="btn btn--primary btn--xl btn--wide" href="#book">Book a call<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
+    </div>
+    <div class="closing__links">
+      <div class="grid">
+        <div class="span-6 stack-4">
+          <a class="nav__logo" href="#top">DESICIA</a>
+          <p class="footer__lede">AI analytics, automation and process change for enterprise operations. Remote-first.</p>
+        </div>
+        <div class="span-2 footer__col"><h3>Services</h3><ul><li><a href="#services">Data analytics</a></li><li><a href="#demo">Automation demo</a></li><li><a href="#industries">Industries</a></li></ul></div>
+        <div class="span-2 footer__col"><h3>Company</h3><ul><li><a href="#method">Process</a></li><li><a href="#security">Security</a></li><li><a href="#questions">Questions</a></li></ul></div>
+        <div class="span-2 footer__col"><h3>Legal</h3><ul><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
+      </div>
+      <div class="footer__legal">
+        <span>&copy; 2026 DESICIA</span>
+        <div class="socials"></div>
+        <span class="credits">Product names and logos are trademarks of their owners</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<nav class="actionbar" aria-label="Quick actions">
+  <a class="btn btn--primary" href="#book">Book a call</a>
+</nav>
+
+<script type="module" src="assets/system.js"></script>
+<script type="module" src="assets/motion/motion.js"></script>
+<script type="module" src="assets/layout/layout.js"></script>
+<script type="module" src="assets/diagrams/mount.js"></script>
+<script type="module" src="js/demo.js"></script>
+</body>
+</html>

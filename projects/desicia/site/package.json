@@ -1,0 +1,15 @@
+{
+  "name": "desicia-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DESICIA website: static page + contact endpoint",
+  "type": "module",
+  "engines": { "node": ">=18.17" },
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node test/contact.test.mjs"
+  },
+  "optionalDependencies": {
+    "nodemailer": "^6.9.16"
+  }
+}

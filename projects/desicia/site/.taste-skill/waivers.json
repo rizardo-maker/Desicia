@@ -1,0 +1,7 @@
+[
+  {
+    "check": "contrast",
+    "target": "div.dg-node.dg-node--core-pill > span.dg-label",
+    "reason": "False reading. The label is light text on its own dark gradient pill (about 17:1). At this 390 stop the text-hidden plate is shot while the fixed mobile action bar (paper ground) covers the pill: the checker's ground lookup skips fixed layers but its screenshot does not, so it compares white text with paper (1.1:1). The same artefact gave round 1's gantt-name 2.7:1 (ink over the bar's green button)."
+  }
+]
