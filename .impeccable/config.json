@@ -1,0 +1,4 @@
+{
+  "detector": { "ignoreRules": [], "ignoreFiles": ["skills-library/**", ".claude/**", ".agents/**"], "ignoreValues": [] },
+  "hook": { "enabled": true, "limits": { "maxFindings": 5, "maxChars": 8000 } }
+}
