@@ -1,0 +1,121 @@
+[
+  {
+    "file": "databricks.svg",
+    "icon": "logos:databricks-icon",
+    "name": "Databricks",
+    "kind": "colour",
+    "source": "gilbarbara/logos@d6960edc1b7309d392c76e40d3a320df7f9ff85c",
+    "author": "Gil Barbara",
+    "licence": "CC0-1.0",
+    "url": "https://github.com/gilbarbara/logos",
+    "trademark": true,
+    "markUrl": "https://www.databricks.com/"
+  },
+  {
+    "file": "kafka.svg",
+    "icon": "logos:kafka-icon",
+    "name": "Kafka",
+    "kind": "colour",
+    "source": "gilbarbara/logos@d6960edc1b7309d392c76e40d3a320df7f9ff85c",
+    "author": "Gil Barbara",
+    "licence": "CC0-1.0",
+    "url": "https://github.com/gilbarbara/logos",
+    "trademark": true,
+    "markUrl": "https://kafka.apache.org/"
+  },
+  {
+    "file": "oracle.svg",
+    "icon": "logos:oracle",
+    "name": "Oracle",
+    "kind": "colour",
+    "source": "gilbarbara/logos@d6960edc1b7309d392c76e40d3a320df7f9ff85c",
+    "author": "Gil Barbara",
+    "licence": "CC0-1.0",
+    "url": "https://github.com/gilbarbara/logos",
+    "trademark": true,
+    "markUrl": "https://www.oracle.com/database/"
+  },
+  {
+    "file": "postgres.svg",
+    "icon": "logos:postgresql",
+    "name": "PostgreSQL",
+    "kind": "colour",
+    "source": "gilbarbara/logos@d6960edc1b7309d392c76e40d3a320df7f9ff85c",
+    "author": "Gil Barbara",
+    "licence": "CC0-1.0",
+    "url": "https://github.com/gilbarbara/logos",
+    "trademark": true,
+    "markUrl": "https://www.postgresql.org/"
+  },
+  {
+    "file": "salesforce.svg",
+    "icon": "logos:salesforce",
+    "name": "Salesforce",
+    "kind": "colour",
+    "source": "gilbarbara/logos@d6960edc1b7309d392c76e40d3a320df7f9ff85c",
+    "author": "Gil Barbara",
+    "licence": "CC0-1.0",
+    "url": "https://github.com/gilbarbara/logos",
+    "trademark": true,
+    "markUrl": "https://www.salesforce.com/"
+  },
+  {
+    "file": "sap.svg",
+    "icon": "logos:sap",
+    "name": "Sap",
+    "kind": "colour",
+    "source": "gilbarbara/logos@d6960edc1b7309d392c76e40d3a320df7f9ff85c",
+    "author": "Gil Barbara",
+    "licence": "CC0-1.0",
+    "url": "https://github.com/gilbarbara/logos",
+    "trademark": true,
+    "markUrl": "https://www.sap.com/"
+  },
+  {
+    "file": "slack.svg",
+    "icon": "logos:slack-icon",
+    "name": "Slack",
+    "kind": "colour",
+    "source": "gilbarbara/logos@d6960edc1b7309d392c76e40d3a320df7f9ff85c",
+    "author": "Gil Barbara",
+    "licence": "CC0-1.0",
+    "url": "https://github.com/gilbarbara/logos",
+    "trademark": true,
+    "markUrl": "https://slack.com/"
+  },
+  {
+    "file": "snowflake.svg",
+    "icon": "logos:snowflake-icon",
+    "name": "Snowflake",
+    "kind": "colour",
+    "source": "gilbarbara/logos@d6960edc1b7309d392c76e40d3a320df7f9ff85c",
+    "author": "Gil Barbara",
+    "licence": "CC0-1.0",
+    "url": "https://github.com/gilbarbara/logos",
+    "trademark": true,
+    "markUrl": "https://www.snowflake.com/"
+  },
+  {
+    "file": "teams.svg",
+    "icon": "logos:microsoft-teams",
+    "name": "Microsoft Teams",
+    "kind": "colour",
+    "source": "gilbarbara/logos@d6960edc1b7309d392c76e40d3a320df7f9ff85c",
+    "author": "Gil Barbara",
+    "licence": "CC0-1.0",
+    "url": "https://github.com/gilbarbara/logos",
+    "trademark": true,
+    "markUrl": "https://teams.com/"
+  },
+  {
+    "file": "ui-chart-column.svg",
+    "icon": "ui:chart-column",
+    "name": "Chart Column",
+    "kind": "line",
+    "source": "@iconify-json/lucide@1.2.100",
+    "author": "Lucide Contributors",
+    "licence": "ISC",
+    "url": "https://github.com/lucide-icons/lucide",
+    "trademark": false
+  }
+]

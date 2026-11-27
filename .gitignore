@@ -1,0 +1,10 @@
+node_modules/
+.cache/
+.DS_Store
+# taste-skill / impeccable run artefacts
+.taste-skill/chrome-*/
+**/.taste-skill/chrome-*/
+shots/
+**/shots/
+.impeccable/build/
+.impeccable/review/

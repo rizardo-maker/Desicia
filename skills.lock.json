@@ -1,0 +1,20 @@
+{
+  "taste-skill": {
+    "repo": "https://github.com/Leonxlnx/taste-skill",
+    "commit": "952435f63acece7d2fcb4b4d3c1786c1c43603e0",
+    "date": "2026-11-27",
+    "role": "validation"
+  },
+  "impeccable": {
+    "repo": "https://github.com/pbakaus/impeccable",
+    "commit": "2fc5e1459efbbf06d92c7306517c286bf12490cf",
+    "date": "2026-11-26",
+    "role": "colour-type-critique"
+  },
+  "open-design": {
+    "repo": "https://github.com/nexu-io/open-design",
+    "commit": "10f3f96e7d3cadcadd25b2b2f3a188c96877be0e",
+    "date": "2026-11-27",
+    "role": "skill-library"
+  }
+}

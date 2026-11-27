@@ -1,0 +1,8 @@
+node_modules/
+data/
+.env
+# taste-skill working files (Chrome profiles, screenshots, crops); the gate records and waivers stay
+.taste-skill/chrome-*/
+.taste-skill/shots/
+.taste-skill/consistency/
+.taste-skill/gate/

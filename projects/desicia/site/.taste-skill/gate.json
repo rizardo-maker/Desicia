@@ -1,0 +1,269 @@
+{
+ "start": "2026-11-27T15:30:41.968Z",
+ "round": 3,
+ "idle": 0,
+ "errors": 0,
+ "status": "open",
+ "history": [
+  {
+   "at": "2026-11-27T15:32:50.530Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 2,
+   "round": 1,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-27T15:36:01.300Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 2,
+   "round": 2,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-27T16:53:26.394Z",
+   "mode": "manual",
+   "status": "open",
+   "fails": 1,
+   "round": 3,
+   "reused": false,
+   "stopHookActive": false
+  }
+ ],
+ "max": 3,
+ "marker": {
+  "page": "index.html",
+  "url": null,
+  "root": null,
+  "kind": "software",
+  "category": null,
+  "primary": "Book a call",
+  "rounds": 3,
+  "start": "2026-11-27T15:30:41.968Z",
+  "by": "gate.mjs --start"
+ },
+ "manual": true,
+ "roundKey": "a38a5255c0fda169:e075f3b2",
+ "roundFree": false,
+ "idleFree": false,
+ "blockKey": null,
+ "fp": "a38a5255c0fda169",
+ "page": "index.html",
+ "found": {
+  "fails": [
+   {
+    "check": "contrast",
+    "where": "div.dg > div.dg-nodes > div.dg-node.dg-node--core-pill > span.dg-label \"DESICIA\"",
+    "msg": "body text over a effect reads at 1.1:1 at its worst tenth (needs 4.5:1), on a busy ground",
+    "fix": "put the text on a calm part of the picture, or on a solid panel",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "contrast"
+    ],
+    "wheres": [
+     "div.dg > div.dg-nodes > div.dg-node.dg-node--core-pill > span.dg-label \"DESICIA\""
+    ]
+   }
+  ],
+  "warns": [
+   {
+    "check": "flush",
+    "where": "section#demo > div.mo-io__stage > div.mo-io__cover",
+    "msg": "its first line sits 17px under the top edge of section#demo, where the ground changes",
+    "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "text-only",
+    "where": "section#questions \"Questions buyers ask\"",
+    "msg": "the section is only text: no picture, icon, mock or effect in it",
+    "fix": "give the section a visual: a photograph that fits, the real icons, or a UI fragment on a ground",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "button-styles",
+    "where": "button#tab-pipe \"Pipeline\"",
+    "msg": "the selected tab \"Pipeline\" is drawn as a filled soft in #eef1ed (its sliding indicator), a fill none of the page's buttons use (#006d41, #c6cdc2): it reads as one more button style (inside a held section or scroll scene, whose motion --quick does not check)",
+    "fix": "draw the selected tab as a line under its word, or in the primary button's fill",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "heading-scale",
+    "where": "div.grid.grid--top > div.faq.span-6:nth-of-type(1) > div.faq__item:nth-of-type(1) > h3 \"Our data is messy. Can we start in week \"",
+    "msg": "h3 headings in 3 sizes, 18px (\"Data analytics and forec\") to 22px (x1.22)",
+    "fix": "size headings by level: the h1 largest, one size per level, each level below the one above",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "main#top > section.hero.hero--centred / section#thesis",
+    "msg": "180px between these sections, -45% against the median 329px",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#services / section#demo",
+    "msg": "uneven space at the edge of a band: 176px outside its edge, 17px inside it (the space on either side of a change of ground reads as one gap only when the two match)",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "header.nav.nav--centre > div.wrap.nav__bar > a.nav__logo \"DESICIA\"",
+    "msg": "\"DESICIA\" opens a section headed \"Enterprise AI, from data to action\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "fade-cut",
+    "where": "div#view-pipe > div.pipe__out > p.pipe__label \"Output\"",
+    "msg": "a line of div.dwin.ui fades out under its edge (\"Output\"): drawn at a fraction of #b3bcb5 on #1f2b25, half-erased (inside a held section or scroll scene, whose motion --quick does not check)",
+    "fix": "fit the mock's rows inside its panel (fewer rows, a taller panel), or end the fade below the last whole row: no row half-erased",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-length",
+    "where": "section#questions \"Questions buyers ask\"",
+    "msg": "3 sections over 90 words a screen outside the UI mocks (\"Questions buyers ask\" 118, \"Security, ownership and \" 96, \"The engagement process\" 93); 71 words a screen across the page (635 words in 9 screens): a tech page says it in about 80 or fewer",
+    "fix": "cut every section to its heading, one line and the product UI: the UI says the rest; no second paragraph, no list of feature sentences",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "grounds",
+    "where": "section#demo \"Live data and automation demo One demo w\"",
+    "msg": "4 flat grounds across the page (#f5f8f3 section x6, #101814 section, #ebefe8 section x2, #cdd6c6 footer): three at most (the base, a surface, an inverse)",
+    "fix": "three flat grounds at most (the base, one surface, one inverse): lay the other bands on one of them",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "action-repeat",
+    "where": "header.nav.nav--centre > div.wrap.nav__bar > div.nav__actions > a.btn.btn--primary \"book a call\"",
+    "msg": "\"book a call\" shows 2 times on the first screen at 1440px (nav, hero): the nav's button and the hero's; nothing else on the screen may repeat it",
+    "fix": "show the action once a screen besides the nav's button: the hero's, the close's or the phone bar's, never all at once",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "assumed",
+    "where": "div.hero-text > div.hero__c:nth-of-type(1) > a.pill > span:nth-of-type(1) \"First system live in 12 weeks\"",
+    "msg": "7 facts marked as assumed, for the report: \"First system live in 12 weeks\", \"Phase W1 W2 W3 W4 W5 W6 W7 W8 W9 W10 W11 W12 After Diagnose \", \"weeks 1 and 2\", \"weeks 3 to 8\", \"weeks 9 to 12\", \"45 minutes\", \"45 min\"",
+    "fix": "list each assumed fact in the report for the client to confirm, or take it from the brief",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav",
+    "where": "header.nav.nav--centre > div.wrap.nav__bar > button.nav__toggle",
+    "msg": "the nav is lopsided: its last item ends 13px inside the content's edge (366px), while its first starts on the other edge",
+    "fix": "start the nav's first item and end its last on the content's two edges",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "cta",
+    "where": "section#services \"DESICIA services. One team for all three\"",
+    "msg": "a section over 1.5 screens long with no link or button in it",
+    "fix": "add the action: a button in the hero, one on every priced item, one in the closing section",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "fade-cut",
+    "where": "div.mini.ui > ol.log > li:nth-of-type(3) > span \"Price fixed\"",
+    "msg": "a line of div.mini.ui fades out under its edge (\"Price fixed\"): drawn at a fraction of #4c534d on #fcfefc, half-erased",
+    "fix": "fit the mock's rows inside its panel (fewer rows, a taller panel), or end the fade below the last whole row: no row half-erased",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "fade-cut",
+    "where": "div#view-pipe > ol.pipe__steps > li.step:nth-of-type(3) > b \"Features\"",
+    "msg": "2 lines of div.dwin.ui fade out under its edge (\"Features\", \"Forecast\"): drawn at a fraction of #eef1ed on #1f2b25, half-erased (inside a held section or scroll scene, whose motion --quick does not check)",
+    "fix": "fit the mock's rows inside its panel (fewer rows, a taller panel), or end the fade below the last whole row: no row half-erased",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   }
+  ],
+  "crashed": [],
+  "seconds": {
+   "consistency": 125,
+   "layout": 4
+  }
+ },
+ "open": [
+  {
+   "check": "contrast",
+   "where": "div.dg > div.dg-nodes > div.dg-node.dg-node--core-pill > span.dg-label \"DESICIA\"",
+   "msg": "body text over a effect reads at 1.1:1 at its worst tenth (needs 4.5:1), on a busy ground",
+   "fix": "put the text on a calm part of the picture, or on a solid panel",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "contrast"
+   ],
+   "wheres": [
+    "div.dg > div.dg-nodes > div.dg-node.dg-node--core-pill > span.dg-label \"DESICIA\""
+   ]
+  }
+ ],
+ "waived": [],
+ "warnCount": 16,
+ "at": "2026-11-27T16:53:26.395Z",
+ "openTold": true
+}
